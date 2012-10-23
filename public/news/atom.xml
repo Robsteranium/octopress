@@ -4,7 +4,7 @@
   <title><![CDATA[Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/blog/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-10-23T11:55:18+01:00</updated>
+  <updated>2012-10-23T13:45:11+01:00</updated>
   <id>http://infonomics.ltd.uk/blog/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,5 +12,434 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[An Introduction to GNU-R]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/"/>
+    <updated>2010-09-23T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk</id>
+    <content type="html"><![CDATA[<p>The Manchester Free Software group has invited me to give a talk on&nbsp;<a target="_blank" href="http://www.r-project.org/">GNU-R</a>.</p>
+
+
+<p><a target="_blank" href="http://libreplanet.org/wiki/Manchester/2010-10-19">http://libreplanet.org/wiki/<wbr></wbr>Manchester/2010-10-19</a></p>
+
+
+<ul>
+<li><a title="http://madlab.org.uk/" rel="nofollow" target="_blank" href="http://madlab.org.uk/">Madlab</a>&nbsp;(Manchester Digital Laboratory) Upstairs,&nbsp;36-40&nbsp;<a title="http://www.openstreetmap.org/?lat=53.484241&amp;lon=-2.236324&amp;zoom=18&amp;layers=B000FTF" rel="nofollow" target="_blank" href="http://www.openstreetmap.org/?lat=53.484241&amp;lon=-2.236324&amp;zoom=18&amp;layers=B000FTF">Edge Street</a>, Manchester, M4 1HN (between Thomas St and the Craft Centre, opposite A Bar Called Common).</li>
+<li>Tuesday, 19th October 2010 (3rd Tuesday of the month) 19:00 - 20:30</li>
+</ul>
+
+
+<p>R is a system for statistical computation and graphics. &nbsp;At Infonomics we use R to handle much of our analytic work, particularly where there is repeated processing of data, complex statistical models, or requirements for data graphics that go beyond the limitations of spreadsheets. &nbsp;We&#8217;ve used it, for example, in the&nbsp;<a href="http://reports.infonomics.ltd.uk/">AutoReporter</a>.</p>
+
+
+<p>The talk will provide: an introduction to R, discussion of when (and when not) to use R, and a guided tour of it&#8217;s capabilities with examples. &nbsp;It&#8217;s also a chance to learn about the secrets of some of our tools of the trade. We expect that audience will comprise those with a interest in data/ statistics, software and/ or visualisation.</p>
+
+
+<p><a href="http://libreplanet.org/wiki/Manchester">Manchester Free Software</a>&nbsp;was formed in response to the growing need for a group based in the Manchester area that focuses on Free Software and GNU/Linux primarily, but also on issues such as Digital Restrictions Management and other issues which infringe on the freedoms of computer users.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Introducting the AutoReporter]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter/"/>
+    <updated>2010-08-18T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter</id>
+    <content type="html"><![CDATA[<p>
+<img class="left" src="http://infonomics.ltd.uk/blog/images/post_images/robot3.png" title="AutoReporter" >
+We&#8217;ve been busy developing some new products.&nbsp; We&#8217;re proud to announce the launch of the <a href="http://reports.infonomics.ltd.uk/">Auto-Reporter</a>.</p>
+
+
+<p>The AutoReporter writes economic and statistical reports automatically.&nbsp; Our algorithm gathers, analyses, visualises, and interprets data.&nbsp; Because the process is robotic, it can rewrite whole reports with the tweak of a parameter.&nbsp; You can follow this link to read a <a href="http://reports.infonomics.ltd.uk/AutoReporter_v1.pdf">white paper describing the method</a>.&nbsp; You can may also want to download an <a href="http://reports.infonomics.ltd.uk/DownturnMcr.pdf">example report</a> (showing how the economic downturn will affect Manchester&#8217;s economy).</p>
+
+
+<!--more-->
+
+
+<p>There are a range of benefits:</p>
+
+
+<ul>
+    <li><strong>Don&rsquo;t repeat yourself</strong>: once a report is written it  may be regenerated many times, most importantly, every time new data is  made available &ndash; even years after the original draft;</li>
+    <li><strong>Be transparent and credible</strong>: scripted reports  connect open data to decisions through analysis.  The evidence base, and  the logic used for interpretation is transparent and therefore  credible;</li>
+    <li><strong>Don&rsquo;t worry about carrying errors forward</strong>: with  manually generated research, any mistakes made at the beginning are  costly as the error will be carried forward through subsequent stages.   Even after an error is discovered and corrected, subsequent tasks may need to  be redone (if they are based on the erroneous data).  With reproducible  research this process requires no costly repetition of manual tasks;</li>
+    <li><strong>Benefit from lessons learned from other&rsquo;s mistakes</strong>:  a single report could be generated for multiple circumstances.  It&rsquo;s  likely that if your organisation values the report then others will too.   As a result, organisations may find that sharing ideas and techniques  will be of mutual benefit (notwithstanding issues of confidentiality or  competition);</li>
+    <li><strong>Accuracy</strong>: The numbers and graphics reported are  accurate.  They&#8217;re calculated from source data each time the report is  run.  This avoids problems with mismatched versions of data and analysis  that often arise from inconsistent manual updates.</li>
+    <li><strong>Power</strong>: Once a report has been written for one area,  it may be reproduced for others.  You&rsquo;ve written a report for your  borough and now you want one for each ward?  Fine!  Just change the  parameters on the report (data permitting) and you can generate the same  analysis (data tables and charts) for each neighbourhood.</li>
+</ul>
+
+
+<p>You can read a <a href="http://infonomics.ltd.uk/portfolio_project/8">case study</a> about how Innovas Consulting employed this tool to produce 60+ tailored Enterprise Catalyst reports to schools in Yorkshire as part of an evaluation of enterprise activities in the region.</p>
+
+
+<p>We&#8217;re keen to develop the technology further with our associates.&nbsp; We can prepare web applications that fit within your own websites, presented in with your own style and branding.&nbsp; This sort of technology will be valuable if you:</p>
+
+
+<ul>
+    <li>employ a common methodology to different clients,</li>
+    <li>are keen to demonstrate credibility with reproducible research,</li>
+    <li>regularly update your analysis with new data, and/or</li>
+    <li>need to produce tailored reports or analyses in bulk (i.e. across many topics, indicators or areas).</li>
+</ul>
+
+
+<p>There are more exciting innovations in the pipeline so watch this space!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Impact Evaluation Methods]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2010/04/27/impact-evaluation-methods/"/>
+    <updated>2010-04-27T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2010/04/27/impact-evaluation-methods</id>
+    <content type="html"><![CDATA[<p>This is a brief review of impact evaluation methods.&nbsp; We consider the: <a href="http://www.berr.gov.uk/files/file21900.pdf ">Impact Evaluation Framework</a> for Regional Development Agencies, the <a href="http://www.offpat.info/Publication.aspx?ID=2536">English Partnerships Additionality Guide</a>, and the <a href="http://www.sroi-uk.org/component/option,com_docman/task,cat_view/gid,29/Itemid,38/">Social Return on Investment</a> method.<br />
+<br />
+We will demonstrate that:</p>
+
+
+<ul>
+    <li>it&#8217;s vital to realise that the results monitored by projects should not all count towards a measure of impact (as some of those results may have happened anyway);</li>
+    <li>the method of calculating impact may be as interesting as the results of those calculations and, since interpretations may vary, transparency is vital to credibility;</li>
+    <li>an appreciation of context is fundamental to successful impact evaluation.</li>
+</ul>
+
+
+<!--more-->
+
+
+<p><h2>From the easy-to-measure to the hard-to-prove </h2><br />
+Each method builds upon the notion that, in order to evaluate the impact of public policy, we must consider outcomes rather than simply outputs.&nbsp; That is to say, that simply counting the results of activities (or even the level of activity) is not enough - we must investigate the consequences of those results.<br />
+Each method translates gross outcomes to net outcomes.&nbsp; This is in response to the observation that not every observed benefit arises as a direct consequence of the intervention in question.&nbsp; Instead, by drawing on the notion of &#8216;additionally&#8217; we may begin to question what might have happened without the support.&nbsp; Impact evaluation then, takes us from the easy to measure to the hard to prove.&nbsp; Each method recommends that a &#8216;theory of change&#8217; be established so that the chain logic from inputs to impacts is explicit.<br />
+This logic chain ought to cover the whole policy process from problem to solution.&nbsp; An understanding of the business case for investment is therefore absolutely vital to evaluation.<br />
+<br />
+<h2>Additional Impact</h2><br />
+The methods do not include the same concepts and have markedly different recommendations on how impact ought to be calculated.&nbsp; Generally speaking, the following elements are considered:</p>
+
+
+<ul>
+    <li>Deadweight (aka the reference case): those benefits that might have occurred anyway (not to be confused with &#8216;deadweight loss&#8217; that refers to the loss of consumer and producer surplus that occurs when a tax reduces the quantity of trade).</li>
+    <li>Displacement: the increase in benefits that is offset by a reduction elsewhere (e.g. where a business grows at the expense of competitors there is no net benefit to the economy).</li>
+    <li>Substitution: the possibility that people have transferred existing activity in order to benefit from the policy under evaluation (rather than through an existing route to the outcome).</li>
+    <li>Multipliers: the indirect, or &#8216;second-round&#8217; benefits that arise as a consequence of the direct benefits.</li>
+    <li>Leakage: the possibility that some benefits accrue to people who are not part of the target group.</li>
+    <li>Leverage: where the intervention induces other stakeholders to contribute additional expenditure (or reduce that expenditure).</li>
+    <li>Unintended effects: benefits or costs that were not anticipated.</li>
+    <li>Attribution: those results that were not the direct result of the policy intervention under question - i.e. those results for which other groups were responsible.</li>
+</ul>
+
+
+<p>These factors are usually treated as ratios that are applied to the gross value in order to calculate a net value.<br />
+The English Parnterships Additionality Guide calculates net impact as the difference between a set of intervention options and a reference case (a counter-factual hypothesis of what would have happened otherwise) where measures of leakage, displace, substation and multipliers are applied to both the invention option and the reference case.<br />
+The <acronym title="Social Return on Investment">SROI</acronym> method requires that outputs or outcomes are converted into sterling by drawing upon financial proxies that may be used to translate intangible social benefits into a standard unit of account.&nbsp; These are commonly the unit costs of alternate interventions or estimates from hedonic pricing models.</p>
+
+
+<p><br />
+<h2>Theory into Practice</h2><br />
+There is a degree of overlap between these concepts.&nbsp; Substitution may be also appear as displacement (was the alternative activity public or private?) or deadweight (is it fair to say that the benefits would have happened anyway if that result was attributable to another policy?).&nbsp; Attribution and deadweight may also be seen to overlap (again, was the result achieved by another policy?).<br />
+Furthermore, linear models that combine these factors may over-simplify the complexity of the underlying situation.&nbsp; For example, it will be difficult to attribute responsibility for the benefits separately to each of those involved where two partners had to work in concert to achieve the outcome (in such a case the benefit might be counted twice - once for each partner).&nbsp; It might also be argued that multipliers ought to be applied to substitution and displacement effects (which in turn will also have second round effects).&nbsp; In reality the chain of causality will be non-linear, and may even be cyclical, with the outcomes from one stage contributing to those in another.&nbsp; In this situation it becomes very difficult to avoid counting outcomes more than once.<br />
+This complexity is particularly relevant when conducting Social Return on Investment analysis as this approach to impact evaluation accounts for the social value that arises from economic value.&nbsp; For example, where an unemployed person gains employment there is a obvious economic benefit to that individual (immediately the salary and, over the longer-term, career opportunities will improve) and also social benefits such as savings on transfer payments (as the individual will stop claiming Job Seekers Allowance and start making income tax contributions).&nbsp; The rule of thumb suggested in the SROI guidance is that, to avoid double-counting, one should consider: &quot;am I counting the same value, for the same stakeholder, twice?&quot;.<br />
+<br />
+<h2>Impact is in the eye of the stakeholder</h2><br />
+Context and perspective are vital to the interpretation of impact.&nbsp; Since no policy operates in a vacuum, and there will usually be related programmes of intervention, evaluators must consider how the policy interacts with other forms of public support as well as how it impacts the targeted beneficiaries.<br />
+Consideration of each stakeholder is designed into the SROI method.&nbsp; Indeed this method essentially advocates that the impact on each stakeholder be considered in parallel with separate impact calculations being made for each.&nbsp; The discussion above highlights the difficulty evaluators face in distinguishing between stakeholders.&nbsp; Indeed it&#8217;s not clear how collective benefits (those that may be said to be more than the sum of the individual outcomes - the inward investment that a town enjoys as a result of a better skilled workforce is more than simply the aggregate productivity increase among trainees) ought to be modelled, if at all, although a general &quot;state&quot; stakeholder may be called-upon as a catch-all for those benefits enjoyed by society.<br />
+The <acronym title="Impact Evaluation Framework">IEF</acronym> method incorporates external (i.e. non-<acronym title="Regional Development Agency">RDA</acronym>) stakeholders under the assessment of &quot;strategic added value&quot;.&nbsp; This models the impact that the RDA has upon partners in terms of:</p>
+
+
+<ul>
+    <li>Strategic leadership &amp; catalyst: Articulating and communicating regional development needs, opportunities and solutions to partners and stakeholders in the region and elsewhere;</li>
+    <li>Strategic influence: Carrying out or stimulating activity that defines the distinctive roles of partners, gets them to commit to shared strategic objectives and to behave and allocate their funds accordingly;</li>
+    <li>Leverage: Providing financial and other incentives to mobilise partner and stakeholder resources &ndash; equipment, people as well as funding</li>
+    <li>Synergy: Using organisational capacity, knowledge and expertise to improve information exchange and knowledge transfer and coordination and/or integration of the design and delivery of interventions between partners;</li>
+    <li>Engagement: Setting up the mechanisms and incentives for more effective and deliberative engagement of stakeholders in the design and delivery of regional and sub-regional priorities and programmes.</li>
+</ul>
+
+
+<p>By comparison with the SROI method, the notion of Strategic Added Value is less mathematical.&nbsp; <acronym title="Strategic Added Value">SAV</acronym> does not model the impact on each stakeholder explicitly and instead takes a &#8216;soft-systems&#8217; approach where the focus is on organisational structures and processes rather than on measuring benefits accrued.</p>
+
+
+<p>&nbsp;</p>
+
+
+<p><h2>Summary</h2><br />
+The discussion of factors of additionality demonstrates that counting gross outputs will not provide a fair perspective and that outcomes must be considered when evaluating impact.</p>
+
+
+<p>In practice these factors may overlap and combine.&nbsp; An understanding of context is vital to disentangle the interplay of these factors.</p>
+
+
+<p>These factors will vary again when viewed from the perspective of different stakeholders.&nbsp; A balanced impact evaluation will take this into account.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Statisticians are sexy!]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2009/09/14/statisticians-are-sexy/"/>
+    <updated>2009-09-14T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2009/09/14/statisticians-are-sexy</id>
+    <content type="html"><![CDATA[<p>Plain-speaking Economics professor-cum-googler <a href="http://people.ischool.berkeley.edu/~hal/">Hal R. Varian</a> believes that the &quot;sexy job in the next ten years will be statisticians&quot;.</p>
+
+
+<!--more-->
+
+
+<p>He reasons that, since data is cheap (often free) and ubiquitous, complimentary skills - to understand data and extract value from it - are highly valuable.&nbsp; By contrast, attention is scarce on the internet.&nbsp; &quot;The ability to take data&mdash;to be able to understand it, to process it, to extract value from it, to visualize it, to communicate it&mdash;that&rsquo;s going to be a hugely important skill in the next decades&quot;.</p>
+
+
+<p>You can read the full text of the article, or listen to a podcast at <a href="http://www.mckinseyquarterly.com/Hal_Varian_on_how_the_Web_challenges_managers_2286">The McKinsey Quarterly</a>.</p>
+
+
+<p>We agree with Prof Varian.&nbsp; We believe that our capacity for converting data into information makes Infonomics an attractive prospect for our clients.&nbsp; We&#8217;ll leave the reader to decide whether or not this plays a role in the physical attractiveness of our consultants - after all <a href="http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/">correlation doesn&#8217;t always imply correlation</a>!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The public has spoken - exploring e-petitions]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions/"/>
+    <updated>2009-04-24T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions</id>
+    <content type="html"><![CDATA[<h2>Petitions for Action - Verbs used in e-petitions</h2>
+
+
+<p><img src="http://infonomics.ltd.uk/blog/images/post_images/p-verbs-manyeyes.preview.png" title="&#34;Petitions for action - verbs used in e-petitions&#34;" alt="&#34;Petitions for action - verbs used in e-petitions&#34;"></p>
+
+<!--more-->
+
+
+<h3>E-Petitions as an alternative to consultation</h3>
+
+
+<p>The <a href="http://petitions.number10.gov.uk/">e-petitions on Number10.gov</a> are fascinating.&nbsp; As we&#8217;ve come to expect from <a target="_blank" href="http://www.mysociety.org/projects/">mySociety projects</a>, &quot;the e-petition system has been designed to be transparent and trustworthy&quot;.&nbsp; The petitions provide an unbiased perspective on the view of the UK public and a <strong>valuable evidence base</strong> for policy makers.</p>
+
+
+<p>Although the feedback is free from the constraints of normal consultation (where the questions may be&nbsp; framed unintentionally) it is unstructured and this makes it difficult for policy makers to use.&nbsp; Hope is not lost however, help is at hand in the form of <strong>semantic analysis</strong>.</p>
+
+
+<h3>Extract information from e-petition data with semantic analysis</h3>
+
+
+<p>The image above was constructed by annotating the text in the titles of the petitions.&nbsp; We searched for verbs and extracted the pruned form of those verbs (e.g. &quot;increasing&quot; becomes &quot;increase&quot;) along with the number of signatures to the petition where the verbs were found.&nbsp; The words are weighted according to the total number of signatures.&nbsp; The visualisation was prepared using IBM&#8217;s <a href="http://manyeyes.alphaworks.ibm.com/manyeyes/" target="_blank" rel="nofollow">Many Eyes</a> (note that data submitted to Many Eyes can be viewed by anyone on the internet).</p>
+
+
+<p>Annotation can also be used to find organisations and places.&nbsp; The results of those analyses are presented in the lists below.</p>
+
+
+<table cellspacing="1" cellpadding="1" border="0">
+    <tbody>
+        <tr>
+            <td>
+            <h3>Top 10 Organisations in UK&nbsp;petitions</h3>
+            </td>
+            <td>
+            <h3>Top 10 Places in UK petitions</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <ol>
+                <li>United Nations (17323)</li>
+                <li>Service of Her Majesty (15648)</li>
+                <li>Royal Bank of Scotland (3131)</li>
+                <li>Government (3668)</li>
+                <li>National Health Service (2274)</li>
+                <li>Royal Infirmary (2084)</li>
+                <li>Yorkshire Television (1668)</li>
+                <li>UK Emergency Services (1601)</li>
+                <li>European Union (1716)</li>
+                <li>GCHQ (980)</li>
+            </ol>
+            </td>
+            <td>
+            <ol>
+                <li>England (23171)</li>
+                <li>Bletchley Park (20197)</li>
+                <li>London (17084)</li>
+                <li>Cherry Lane (12450)</li>
+                <li>UK (17808)</li>
+                <li>Northern Ireland (5188)</li>
+                <li>Richmond (3454)</li>
+                <li>Memorial Wall (3372)</li>
+                <li>Scotland (2187)</li>
+                <li>Leeds (1668)</li>
+            </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Beware of junk data</h3>
+
+
+<p>Although the openness of e-petitions is a virtue, it does mean that there is a lot of junk to sift through.&nbsp; Only 1.3% of open petitions have enough signatures (at least 200) to qualify for consideration by Government.&nbsp; Clearly the other petitions have some value even though they may be minority concerns.&nbsp; Indeed the number of signatures is not a perfect measure of quality or relevance.</p>
+
+
+<h3>Using the evidence in policy development</h3>
+
+
+<ul>
+    <li><strong>Keep track of petitions that are made regarding your organisation or place</strong>.&nbsp; We were able to identify 352 references to organisations, 36 of which were Councils.&nbsp; <a href="http://infonomics.ltd.uk/contact">Get in touch</a> for some tips on monitoring the web for references to your organisation.</li>
+    <li><strong>Identify issues that are relevant to your objectives</strong>.&nbsp; We recently employed <a href="http://infonomics.ltd.uk/portfolio_project/4">semantic analysis that helped Investor Developers at the East Midlands Development Agency forecast demand for support by extracting information from visit reports</a>.&nbsp; Petitions provide evidence of needs (or at least demands) and issues (learn from others mistakes).</li>
+    <li><strong>Gauge public opinions on existing policy</strong>.&nbsp; Congestion-charging, War, Bank-bailouts - they&#8217;re all subjects of petitions.&nbsp; While many of the petitions express peoples&#8217; feelings on these issues there are others that contain concrete suggestions for policy improvements.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[People Managed Places]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2009/02/13/people-managed-places/"/>
+    <updated>2009-02-13T00:00:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2009/02/13/people-managed-places</id>
+    <content type="html"><![CDATA[<p><a href="http://www.emeraldinsight.com/Insight/viewContentItem.do?contentType=Article&amp;contentId=1748140">People-managed Place</a> is an idea introduced by Robin Gower in an article published by the Journal of Place Management and Development.</p>
+
+
+<p>The &quot;place management problem&quot; arises because:</p>
+
+
+<ul>
+    <li><strong>Together we are stronger (or, that cooperative outcomes often beat competitive ones)</strong>: the tragedy of the commons and existence of social externalities in our environment;</li>
+    <li><strong>Diverse communities don&#8217;t tend to share places very well</strong>: non-cooperative game theory suggests that we won&#8217;t share spontaneously;</li>
+    <li><strong>Active place management is inherently difficult</strong>: because of the complexity involved Planners are at risk of becoming part of the problem!</li>
+</ul>
+
+
+<!--more-->
+
+
+<p>The article warns that if opt to &quot;do-nothing&quot; then we face the <strong>risk of inaction &ndash; standardised places</strong> where developers and national retail chains unwittingly reduce our metropolitan areas to a network of <a href="http://www.neweconomics.org/gen/clonetownbritainnewsthefightback200306.aspx">clone-towns</a>.&nbsp; The proposed range of solutions are <strong>bottom-up rather than top-down</strong> and focus on <strong>users not functions</strong>:</p>
+
+
+<ul>
+    <li><strong>Inter-dependence through trade</strong> (the butcher needs the baker and vice versa)</li>
+    <li><strong>Agglomeration Economies &amp; Business Clusters</strong> (industrial communities)</li>
+    <li>the <strong>Sidewalk Ballet</strong> (the eyes of fellow pedestrians make streets safer than CCTV cameras)</li>
+</ul>
+
+
+<p>Each of these examples demonstrates that place management ought not attempt to zone and plan but to empower individuals and let places evolve organically.&nbsp;  Place managers can deal with the complex socio-economic problems of place by facilitating and regulating a stronger civil society.&nbsp;  The article refers to the similar advice suggested by other authors (such as the <a href="http://www.ceu-ectp.org/e/athens/">New Athens Charter</a>, the <a href="http://en.wikipedia.org/wiki/Principles_of_Intelligent_Urbanism">principles of intelligent urbanism</a> and Camilo Sitte&#8217;s belief that plazas and squares are civic rooms that ought to be left open) and provides a brief summary of the relevant UK legislation. &nbsp; The analysis leads me to make the following recommendations:</p>
+
+
+<ul>
+    <li><strong>Start with current place users</strong>: i.e. not place functions</li>
+    <li><strong>Consider potential place users</strong>: to ensure dynamic sustainability</li>
+    <li><strong>Define place-based rights &amp; responsibilities</strong>: to protect place uses (e.g. <a href="http://www.direct.gov.uk/en/CrimeJusticeAndTheLaw/CrimePrevention/DG_4001652">Anti-Social Behaviour Orders</a> or <a href="http://en.wikipedia.org/wiki/Emissions_trading">tradeable pollution permits</a>)</li>
+    <li><strong>Encourage collaboration</strong>: through, for example, <a href="http://en.wikipedia.org/wiki/Business_improvement_district">Business Improvement Districts</a></li>
+    <li><strong>Cross boundaries and work with your neighbours</strong>: zero-sum games are the bane of place-management policy - use partnerships to communicate and negotiate</li>
+    <li><strong>Place Making/ Leadership - internalise externalities</strong>: place-manager must make place-users aware of the social costs and benefits (publicise planning gains and declare what supplementary business rates are spent on).</li>
+</ul>
+
+
+<p class="rteleft">Michael Heller has coined a phrase that describes the problem of multiple and complex claims on a common resource: The Tragedy of the Anti-Commons.&nbsp;  In the video below Professor Heller discusses his book, <a href="http://www.gridlockeconomy.com/">The Gridlock Economy</a>.</p>
+
+
+<p class="rtecenter"><object width="425" height="344">
+<param value="http://www.youtube.com/v/9n89Ec3DFtk&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fs=1" name="movie" />
+<param value="true" name="allowFullScreen" /><embed width="425" height="344" allowfullscreen="true" type="application/x-shockwave-flash" src="http://www.youtube.com/v/9n89Ec3DFtk&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fs=1"></embed></object></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lies, Damn Lies, and your Evidence Base]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/"/>
+    <updated>2008-12-19T00:00:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base</id>
+    <content type="html"><![CDATA[<blockquote><p>People can come up with statistics to prove anything, Kent.  40% of all people know that</p><footer><strong>Homer</strong> <cite>The Simpsons</cite></footer></blockquote>
+
+
+<p>Statistics are confusing.  Any science that spawns phrase like &quot;the presence of heteroskedasticty indicates that the disturbances are non-spherical&quot; is bound to be mis-interpreted at some stage.  Of course the same might be said of many technical disciplines but the fact that I don&#8217;t understand the ins-and-outs of neuro-science presents me with little difficulty in my daily life.  Statistics on the other hand, are everywhere!  The following tips are aimed as the non-statisticians who&#8217;s work requires them to interpret statistics.  </p>
+
+
+<!--more-->
+
+
+<p><img title="... okay, but because you said that, we're breaking up." boyfriend="" xkcd.com="" alt="" src="http://imgs.xkcd.com/comics/boyfriend.png" /></p>
+
+<p>I&#8217;m particularly thinking of policy makers who are faced with the task of gathering an evidence base to guide their strategies and actions.  These warnings encourage a healthy degree of scepticism and give you a better idea of what questions to ask of your research.  Before we begin, it&#8217;s worth <strong>defining the word <em>statistic</em></strong>.  When we&#8217;re describing something quantitatively we refer to parameters about the population; for example: &quot;there are 10 cars on my street&quot;.  When we don&#8217;t know about the whole population (e.g. my neighbourhood), we have to look at a sample (e.g. my street).  We can estimate the population parameter from the sample (e.g. there are 10 cars on my street, and 10 streets in my neighbourhood, therefore I estimate that there are 100 cars in my neighbourhood).  The sample statistic (cars in street) used to estimate the population parameter (cars in neighbourhood).
+</p>
+
+
+<ol><img class="right" src="http://infonomics.ltd.uk/blog/images/post_images/confused-smaller.jpg">
+    <li><strong>Statistics never prove anything!</strong>  Let&#8217;s be up-front about this.  Statistics are not the truth but they can tell you about lies.  Statistical inference is a process of elimination.  I don&#8217;t prove my theory, I just disprove everything else!  Or as Sherlock Holmes would have it: &quot;when you have eliminated the impossible, whatever remains, however improbable, must be the truth&quot;.  In reality, it&#8217;s impractical to eliminate <i>all</i> impossibilities.  Our first health warning then, is not to take anything as given: question everything!</li>
+    <li><strong>What&#8217;s the point in statistics?</strong>  Because statistics are estimates that draw on a limited view of reality there is a risk that they&#8217;ll give the wrong answer.  This is known as sampling error.  When you see a statistic presented you&#8217;re typically looking at what&#8217;s called a point estimate.  This is the most probable value that we think the underlying population parameter will take - our best guess.  Good statisticians provide confidence intervals along with their point estimates.  These intervals give the range of values we expect the parameter could actually take.  In order to really understand a statistic you ought to know range of possibilities.  Technically the full range is infinite, but statisticians tend to allow some margin of error - such as a 5% tolerance for inaccuracy - giving them interval that contains the actual value 95% of the time.</li>
+    <li><strong>Expect the unexpected!</strong>  A corollary of the second point is that statistics will be wrong 5% of the time.  If your evidence base quotes 20 statistics then you can expect one of them to be wrong.  This further illustrates the importance of the first point.  The question is how rare is rare?  Statisticians call the tolerance for inaccuracy (e.g. 5%) a type one error (excessive trust) - it is the likelihood that they&#8217;ll erroneously reject the truth.  The alternative is to ask &quot;how much inaccuracy must I tolerate to accept this statistic?&quot; which leads to the second type of error: failing to reject a falsehood (excessive scepticism).  Health warning: You can&#8217;t expect to be right all the time, but it helps to know how often, on balance, you&#8217;ll be wrong.</li>
+    <li><strong>Bigger populations do not always need bigger samples!</strong>  This is a common, and understandable, misconception.  Population size alone cannot tell you how big a sample you&#8217;ll need to consider (e.g. when planning a survey).  It&#8217;s also important to ask: &quot;how variable is the population?&quot;.  Suppose I want to know the most common car colour.  If everyone drives the same colour car then, no matter how many cars there are, I&#8217;ll only need to ask 1 driver.  Of course you won&#8217;t typically know the population variance (a measure of variety - the dispersal around the mean) in advance of your fieldwork.  A practical approach is to look for secondary data which you can use to estimate the population variance.  For modestly-sized research projects, a useful rule of thumb is that diminishing returns tend to set-in as the sample size increases above 30.  You ought to have at least 30 results for each sub-group or segment you wish to analyse or contrast (bear in mind that once you&#8217;ve cut out the &quot;don&#8217;t know&quot;&#8217;s you&#8217;ll probably need more than 30 respondents to achieve 30 responses).  Obviously for larger investigation - especially in novel topic areas where the secondary evidence is missing - there is rationale for larger sample sizes.</li>
+</ol>
+
+
+<p>For further information I recommend <a href="www.bbc.co.uk/moreorless">BBC Radio 4&#8217;s More or Less</a> programme on which Tim Harford (the Undercover Economist) provides a sanity-check to the barrage of statistics quoted by the media: <quote>&quot;More or Less is devoted to the powerful, sometimes beautiful, often abused but ever ubiquitous world of numbers&quot;.</quote></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Information Markets as a Tool for Forecasting and Policy Development]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets/"/>
+    <updated>2008-08-04T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets</id>
+    <content type="html"><![CDATA[<h2>Introducing information markets</h2>
+
+
+<p><img class="left" src="http://infonomics.ltd.uk/blog/images/post_images/cards_smaller.jpg" title="Prediction Markets: a safe bet for forecasters" >This article explains how information markets can assist policy developers by estimating predictions and making decisions.  Economists have long been convinced by the power of markets to allocate resources efficiently.  Markets are, so the <a href="http://en.wikipedia.org/wiki/Efficient_market_hypothesis">theory</a> goes, able to <strong>condense all available information about a particular product into one measure</strong>: the price.  But what if the commodity you&#8217;re trading is itself information?  Information markets are designed to put the power of trade to work on information: predictions, decisions and estimates more generally. </p>
+
+
+<!--more-->
+
+
+<p>The markets operate like a betting shop.  Gamblers bid on the expected outcomes of an event - the 2008, 4th Quarter Employment rate for example - and the bookmaker pays out to those who judged the value successfully.  Justin Wolfers&#8217; <em>Political Prediction Markets: a Webcast for the Uninitiated</em> provides an inspiring introduction to the topic.  You can find a link to the webcast over at the <a href="http://freakonomics.blogs.nytimes.com/2008/07/01/political-prediction-markets-webcast-for-the-uninitiated/">Freakonomics blog</a>.&nbsp;   To summarise, information markets can:</p>
+
+
+<ul>
+    <li>summarise all available information</li>
+    <li>make accurate predictions</li>
+    <li>respond rapidly to news</li>
+    <li>provide an incentive for information discovery</li>
+    <li>encourage truth revelation</li>
+</ul>
+
+
+<p>Information markets are even robust to manipulation attempts because traders can profit from betting against the lies espoused by manipulators.</p>
+
+
+<h2>Potential application of information markets for government</h2>
+
+
+<p>Information markets could be used to provide answers to the questions of policy development. Information markets can provide predictions for policy research and make decisions to guide strategy and implementation.</p>
+
+
+<h3>Prediction Markets as a Research Intelligence tool</h3>
+
+
+<p>Forecasting is an obvious application.  Information markets can <strong>summarise the implications of an evidence base in a meaningful way</strong>: indeed the only limit to the practical applicability of the results is the designer&#8217;s imagination.  With a large enough body of traders, the market can provide a <strong>continuously updated and accurate reflection of all available intelligence</strong>.  A dynamically adjusted indication of labour market indicators for example.  With the appropriate incentives, <strong>the market will induce traders to gather new evidence on the designer&#8217;s behalf</strong>.  Experts may be sufficiently motivated by the credibility that their company can earn from accurate prediction.  Kudos points translate in contract awards.  Ask five economists the same question, you will get six different answers, but if you ask them to bet on their answers you can only get one response.  In fact, as Justin Wolfers explains above, the results from <strong>information markets are more accurate than expert surveys</strong>.</p>
+
+
+<h3>Decision Markets as a Policy Choice tool</h3>
+
+
+<p>What if we apply decision markets to the questions of policy development?  In 2000, Robin Hanson wrote a <a href="http://hanson.gmu.edu/futarchy.html">manifesto describing a new form of government</a>. <quote>In &quot;futarchy,&quot; we would vote on values, but bet on beliefs. Elected representatives would formally define and manage an after-the-fact measurement of national welfare, while market speculators would say which policies they expect to raise national welfare.  The basic rule of government would be: <strong>When a betting market clearly estimates that a proposed policy would increase expected national welfare, that proposal becomes law. </strong></quote>  Futarky is a strong governance model because of two attributes.  Follow the links to understand why these attributes are so desirable:</p>
+
+
+<ul>
+    <li>Pursuit of welfare that includes both productivity and happiness - Nowadays the first is a given.  If you aren&#8217;t convinced that well-being is important, then you obviously haven&#8217;t heard the evidence from <a href="http://cep.lse.ac.uk/layard/">Richard Layard</a>&#8217;s study into this &quot;new science &quot;.  As he points out: <quote>So here we are as a society: no happier than fifty years ago.  Yet every group in society is richer, and most are healthier&#8230;  Through science, absolute material scarcity has been conquered in the West, and we need to think hard about what would now constitute progress.</quote></li>
+    <li>Checks and balances - Watch the video below to see Paul Collier explain why this is such an important aspect of modern social democracy.  Source:  Paul Collier - 4 ways to improve the lives of the &quot;bottom billion&quot;, <a href="http://www.ted.com">TED Talks</a>.<object height="326" width="446">
+    <param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" />
+    <param name="allowFullScreen" value="true" />
+    <param name="wmode" value="transparent" />
+    <param name="bgColor" value="#ffffff" />
+    <param name="flashvars" value="vu=http://video.ted.com/talks/embed/PaulCollier_2008-embed_high.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/PaulCollier-2008.embed_thumbnail.jpg&amp;vw=432&amp;vh=240&amp;ap=0&amp;ti=270" /><embed height="326" width="446" src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgcolor="#ffffff" allowfullscreen="true" flashvars="vu=http://video.ted.com/talks/embed/PaulCollier_2008-embed_high.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/PaulCollier-2008.embed_thumbnail.jpg&amp;vw=432&amp;vh=240&amp;ap=0&amp;ti=270"></embed></object></li>
+</ul>
+
+
+<h2>A health warning</h2>
+
+
+<p>While it is tempting to launch straight into information markets, the pragmatic policy-maker ought to first consider some of the caveats.  Like any other market, information markets are subject to market failures.  They <strong>will fail if there are too few participants</strong> - like a traditional commodity the market fails in the presence of monopoly power.  Information markets must be designed carefully (particularly where a market-maker is used) so that the rules of trade do not bestow an unfair disadvantage that distorts the incentives for trade.  Just as information markets can be distorted by robotic market-makers, human experts may have <strong>unfair access to relevant knowledge</strong>.  Information asymmetries make it difficult for traders to judge the qualities of the different options facing them and may, in extreme cases, cause the markets to collapse completely.  This is a critical issue when choosing who will participate and how they are engaged.  Furthermore, information markets <strong>fail if nobody has any useful information</strong>!  They can be used to illicit information from people who wouldn&#8217;t ordinarily share their models or data.    For more information on how to design and employ information markets to solve your policy development problems, please get in <a href="http://infonomics.ltd.uk/contact">contact</a>.</p>
+
+]]></content>
+  </entry>
   
 </feed>
