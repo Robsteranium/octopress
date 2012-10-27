@@ -26,7 +26,7 @@ _Network externalities_ are a form of external benefit. Within a network the val
 
 Network externalities occur in the case of open data because data is only informative when it is interpreted. The value of each datum increases with the volume of other data that it may be connected with as the context and range of analysis that are possible increases. Thus, data operates as a network. In deciding whether or not to open their data, **private organisations will not consider the indirect benefits that their data will have to improve the quality of every other dataset** and so will release less data than is socially optimal.
 
-Data Is A Public Good
+Data As A Public Good
 ---------------------
 A _public good_ is one which is non-excludable (impossible to prevent people from using it) and non-rival (one person's use doesn't not reduce availability to another). The problem with these goods is that consumers can take advantage without contributing sufficiently to their creation. If too many people decide to _free-ride_ then the private revenues won't meet the private costs and the incentive to provide the good through the market will disappear.
 
