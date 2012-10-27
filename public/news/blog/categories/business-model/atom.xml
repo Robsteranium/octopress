@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: business model | Infonomics Blog]]></title>
+  <link href="http://infonomics.ltd.uk/blog/blog/categories/business-model/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/blog/"/>
+  <updated>2012-10-27T15:46:33+01:00</updated>
+  <id>http://infonomics.ltd.uk/blog/</id>
+  <author>
+    <name><![CDATA[Robin Gower]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Economics of Open Data]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data/"/>
+    <updated>2012-10-25T15:35:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data</id>
+    <content type="html"><![CDATA[<p>Data doesn't make for a very good tradable commodity. Technological changes that allow us to connect and share data more easily are disrupting established business models. Therefore the public sector has a critical role to intervene in the data market and the private sector must adapt to ensure long-term sustainability.</p>
+
+<!--more-->
+
+
+<h2>The Market Isn't Always Perfect</h2>
+
+<p>Economists use this term to describe situations where the allocation of goods and services by the free market is inefficient (i.e. someone can be made better off without making another worse off). <strong>In some extreme cases the good or service would not be available without intervention by government</strong>. The market is only effective if the good or service:</p>
+
+<ul>
+<li>has a price which reflects all costs and benefits</li>
+<li>can be withheld from people at reasonable expense</li>
+<li>cannot be used by more than one person at the same time</li>
+</ul>
+
+
+<p>These characteristics don't apply in the case of open data...</p>
+
+<h2>Open Data: The Gift That Keeps On Giving</h2>
+
+<p>An externality, or spillover effect, is a cost or benefit that is incurred by someone who is not involved in the trade. The price will not reflect these indirect social impacts. Pollution is an example of how external costs can lead to excessive production.</p>
+
+<p><em>Network externalities</em> are a form of external benefit. Within a network the value of an adding an extra node or edge (e.g. person or friendship) is felt by every other part of the network. The Metrolink extension, for example, is not only of benefit to people in the new areas that can now use trams, but also to people in the existing areas that can now access new areas.</p>
+
+<p>Network externalities occur in the case of open data because data is only informative when it is interpreted. The value of each datum increases with the volume of other data that it may be connected with as the context and range of analysis that are possible increases. Thus, data operates as a network. In deciding whether or not to open their data, <strong>private organisations will not consider the indirect benefits that their data will have to improve the quality of every other dataset</strong> and so will release less data than is socially optimal.</p>
+
+<h2>Data Is A Public Good</h2>
+
+<p>A <em>public good</em> is one which is non-excludable (impossible to prevent people from using it) and non-rival (one person's use doesn't not reduce availability to another). The problem with these goods is that consumers can take advantage without contributing sufficiently to their creation. If too many people decide to <em>free-ride</em> then the private revenues won't meet the private costs and the incentive to provide the good through the market will disappear.</p>
+
+<p>Data is typically non-excludable. Although legislation may prohibit the buyer from sharing data it is, in many cases, practically unenforcable (as is apparent with music sharing, for example). Data is also non-rival. Your reading of this post does not prevent another person from reading it - indeed I don't loose the ideas when I write them down - we can all enjoy them at the same time. <strong>Where data may be characterised as a public good, subject to the free-rider problem, there won't be sufficient private incentives for production and distribution</strong>.</p>
+
+<h2>Implications For Business &amp; Government</h2>
+
+<p>So what does this economic analysis tell us?</p>
+
+<ol>
+<li>Technological change (particularly the increasing capacity for connecting and sharing data) will disrupt certain markets by undermining established closed-data business models;</li>
+<li>Businesses that attempt to defend outdated business models by keeping data closed won't be able to compete with an open alternatives (alternatives that they are encouraging by keeping their data closed);</li>
+<li>It's probably better for such businesses to open their data before a competitor does - they shouldn't waste their current position of dominance;</li>
+<li>In some cases, where the market fails completely, public intervention to fund the creation or provision of information will help to improve economic growth and social welfare;</li>
+<li>In other cases there will be considerable opportunities for private firms to innovate and capture the benefits of open data... but that's another story...</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
