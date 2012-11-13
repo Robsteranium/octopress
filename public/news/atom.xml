@@ -4,7 +4,7 @@
   <title><![CDATA[Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/blog/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-11-02T13:23:43+00:00</updated>
+  <updated>2012-11-13T16:55:00+00:00</updated>
   <id>http://infonomics.ltd.uk/blog/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,517 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Open For Business]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business/"/>
+    <updated>2012-11-13T13:28:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business</id>
+    <content type="html"><![CDATA[<p>This post outlines some business considerations for open source. It follows <a href="http://infonomics.ltd.uk/blog/../portfolio_project/14">advice Infonomics provided to the World Wildlife Fund</a> in collaboration with <a href="http://www.ribble-consultants.co.uk">Ribble Consultants</a>.</p>
+
+<!--more-->
+
+
+<h2>Open Source Definitions</h2>
+
+<p>The term <em>open source</em> denotes software for which the original source code is made available and may be redistributed with or without modification. In practice this is typically coupled with a peer-production development model although code can be open-sourced without providing any means of re-integrated changes back into the code base.
+Note that:</p>
+
+<ul>
+<li><strong>Free software is not necessarily open-source (closed-source software may be free)</strong>.  <a href="http://www.gnu.org/philosophy/selling.html">Here ‘free’ refers to the freedom (to run, modify, and redistribute) not the price</a>.</li>
+<li><strong>Open-source software is not necessarily free of charge</strong>.  There are a variety of business models for generating revenue from an open-source project including: ‘freemium’ (premium features must be paid for), consulting (selling services related to the product), support (paid-for training), subscriptions (original is free, updates require a fee), proprietary add-ons (fees for implementing/ developing bespoke features), and dual licenses (whereby only those earning money from the tool must pay).</li>
+<li><strong>Open-sourcing does not necessarily involve any loss of control over the quality or integrity of the product</strong> (or intellectual property); multiple versions (internal and external) may exist concurrently.  Typically derivatives and modifications are made upon ‘forked’ copies (or branches).  The lead maintainer (person managing the code) takes responsibility for the core (trunk) version.  Changes contributed by the community (in branches) may be applied (used to patch) the original (trunk) or they may be pursued independently.  Moreover forks may pursue entirely different objectives without ever being integrated (e.g. a version is developed for a different software platform or only small portions of the code taken for use elsewhere).  See below for some real-world examples.</li>
+</ul>
+
+
+<h2>Advantages and Disadvantages</h2>
+
+<p>The advantages of open source include:</p>
+
+<ul>
+<li><strong>Bug/ defect correction</strong>: with more people exploring and testing the code there is a greater chance that problems will be identified and solved (improving stability and reliability);</li>
+<li><strong>Improvements/ new feature</strong>: there are more people to contribute ideas and code to enhance the product and integrate it with other developments;</li>
+<li><strong>Credibility</strong>: greater transparency lends credibility (‘auditability’) and the product’s sustainability depends less on the original developer.
+The disadvantages include:</li>
+<li><strong>Price ceiling</strong>: the original developer may not be able to charge as much for software licenses.  We might expect that the fee could be no greater than is the cost of deploying/ implementing/ maintaining the code that is provided.</li>
+<li><strong>Intellectual property</strong>: other developers may be able to implement competing versions (this is typically dealt with via licensing restrictions).</li>
+</ul>
+
+
+<h2>Open Source Business Models</h2>
+
+<p>The table below describes how some of the larger businesses make money while releasing open-source versions of their software.
+Typically there is:</p>
+
+<ul>
+<li>a distinction between a limited-spec version which is released open-source and a fully-featured version which is sold commercially; and/ or</li>
+<li>a fundamental division of functionality along the lines of free to use, pay to develop/ sell;</li>
+<li>a set of complementary services that are provided at a fee (training, support, consultancy).</li>
+</ul>
+
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th> Company          </th>
+<th> Open Source                                                                              </th>
+<th> Commercial                                                                 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> Adobe            </td>
+<td> Flex platform for rich internet applications                                             </td>
+<td> Flash Builder integrated development environment</td>
+</tr>
+<tr>
+<td></td>
+<td> Apple            </td>
+<td> Darwin: core unix compatible operating system released under Apple Public Source License </td>
+<td> Mac OSX, Apple TV, iOS (iPhone/ iPad/ iPod platform)</td>
+</tr>
+<tr>
+<td></td>
+<td> Canonical        </td>
+<td> Ubuntu: linux operating system                                                           </td>
+<td> Technical support contracts </td>
+</tr>
+<tr>
+<td></td>
+<td> Mozilla          </td>
+<td> Firefox: web browser                                                                     </td>
+<td> Partnership with google and others for including search engines in Firefox</td>
+</tr>
+<tr>
+<td></td>
+<td> MySQL            </td>
+<td> Database: community edition                                                              </td>
+<td> Enterprise/ Cluster editions, training and consultancy</td>
+</tr>
+<tr>
+<td></td>
+<td> Sun Microsystems </td>
+<td> Open Office: office productivity suite                                                   </td>
+<td> Star Office</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>What to consider before going Open Source</h2>
+
+<ul>
+<li><strong>Release the code</strong>: the source will be made available online (i.e. the code not necessarily the data)</li>
+<li><strong>Release data</strong>: some example data may be provided</li>
+<li><strong>Provide facility for commits</strong>: developers may ‘commit’ changes or ‘fork’ new versions of the software (otherwise developers are responsible for maintain their own – external – versions)</li>
+<li><strong>Allow derivative works</strong>: software developed from the tool can be sold commercially (there may be dual licenses – i.e. one for users and another for re-sellers)</li>
+<li><strong>Modifications must distribute source</strong>: Licensee must include the source with any modifications (i.e. cannot create a closed-source derivative)</li>
+<li><strong>Derivatives subject to same license (copy-left)</strong>: require that the same rights be preserved in modified versions</li>
+<li><strong>Provide user support</strong>: for example, via training courses/ email/ telephone/ issue tracking/ webchat to end-users</li>
+<li><strong>Provide development support</strong>: as above but for developers</li>
+<li><strong>Facility for community discussions</strong>: a popular alternative to one-to-one support, this allows users to guide one-another (typically moderated by trust users or employees)</li>
+<li><strong>What aspects are free of charge?</strong></li>
+<li><strong>What aspects require a fee?</strong></li>
+</ul>
+
+
+<h2>Comparison of Open Source Licenses</h2>
+
+<p>The decicions you reach on the above considerations will help to determine which license is most suitable.</p>
+
+<table>
+ <tr>
+  <td>
+  <p align="center"><span>License</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Attribution</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Non-Commercial</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Registration</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Distribution</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Combinations</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Transformation</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Linking</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Copyleft</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p align="center"><span>&nbsp;</span></p>
+  </td>
+  <td>
+  <p align="center"><span>&nbsp;</span></p>
+  </td>
+  <td>
+  <p align="center"><span>&nbsp;</span></p>
+  </td>
+  <td>
+  <p align="center"><span>&nbsp;</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Licensee must include the source with any
+  modifications</span></p>
+  </td>
+  <td>
+  <p align="center"><span>with other code</span></p>
+  </td>
+  <td>
+  <p align="center"><span>edit/ rewrite</span></p>
+  </td>
+  <td>
+  <p align="center"><span>with code under different license</span></p>
+  </td>
+  <td>
+  <p align="center"><span>Derivates subject to same license</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <p><span>All-rights-reserved</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+  <td nowrap>
+  <p align="center"><span>n/a</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <p><span>Public-domain</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="http://three.org/openart/license/"><p><span>Open-art</span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="www.gnu.org/licenses/gpl.html"><p><span><acronym title="General Public License">GPL</acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="www.gnu.org/copyleft/lesser.html"><p><span><acronym title="Lesser General Public License">LGPL</acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="http://www.apache.org/licenses/LICENSE-2.0.html"><p><span>Apache 2.0</span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="http://www.linfo.org/bsdlicense.html"><p><span><acronym title="Berkley Software Distribution">BSD</acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="mit-license.org"><p><span><acronym title="Massachusetts Institute of Technology">MIT<acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="creativecommons.org/licenses/by/3.0"><p><span><acronym title="Creative Commons Attribution">CC by</acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Allowed</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="creativecommons.org/licenses/by-sa/3.0"><p><span><acronym title="Creative Commons Attribution ShareAlike">CC by-sa</acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #FFFFBF">
+  <p align="center"><span>Share alike</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td nowrap valign="bottom">
+  <a href="creativecommons.org/licenses/by-nc-nd/3.0"><p><span><acronym title="Creative Commons Attribution Non-Commerical No-Derivatives">CC by-nc-nd</acronym></span></p></a>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+  <td nowrap style="background: #91CF60">
+  <p align="center"><span>Yes</span></p>
+  </td>
+  <td nowrap style="background: #FC8D59">
+  <p align="center"><span>No</span></p>
+  </td>
+ </tr>
+</table>
+
+
+<p>The GPL and LGPL Version 3 prohibits DRM, locked-down firmware, and patent lawsuits.</p>
+
+<p>The BSD license prohibits the use of copyright holder&#8217;s name for promotion.</p>
+
+<p>The Apache license requires that every file must contain all information about changes, copyrights and patent protection.</p>
+
+<p>The <a href="http://osrc.blackducksoftware.com/data/licenses/#top20">Black Duck Knowledge Base</a> suggests that GPL2 is the most popular choice.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Economics of Open Data]]></title>
@@ -94,7 +605,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Introducting the AutoReporter]]></title>
+    <title type="html"><![CDATA[Introducing the AutoReporter]]></title>
     <link href="http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter/"/>
     <updated>2010-08-18T00:00:00+01:00</updated>
     <id>http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter</id>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducting the AutoReporter
+title: Introducing the AutoReporter
 created: 1282140486
 ---
 <p>
