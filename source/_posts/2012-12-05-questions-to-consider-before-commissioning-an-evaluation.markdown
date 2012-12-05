@@ -6,6 +6,7 @@ comments: true
 categories: [ evaluation, commissioning, impact ] 
 ---
 Planning is fundamental to successful evaluation. Considering these questions will help you to understand what you need to discuss with a contractor so that they can design an evaluation effectively.
+<!-- more -->
 
 ## What is the objective?
 This ought to be defined in terms of the key questions that the evaluation ought to answer. The choice of question will determine which methods are used and what data is gathered.
