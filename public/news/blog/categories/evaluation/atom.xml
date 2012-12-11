@@ -4,7 +4,7 @@
   <title><![CDATA[Category: evaluation | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/blog/blog/categories/evaluation/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-06T21:52:34+00:00</updated>
+  <updated>2012-12-11T18:01:14+00:00</updated>
   <id>http://infonomics.ltd.uk/blog/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
+    <link href="http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
+    <updated>2012-12-11T16:04:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
+    <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
+
+<!-- more -->
+
+
+<p>The <strong>burden of proof</strong> is said to lie with the party making a claim. In order to convince someone of some truth, you are obliged to support your claim with evidence. The audience hearing your claim will make a judgement by scrutinising the evidence you present in support.</p>
+
+<p>This obligation should not be treated lightly. In some cases, it isn't possible to marshall evidence to support our intuitions. Indeed we can't always know what we don't know and so we shouldn't act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn't mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
+
+<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It's better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
+
+<p>Our ability to do this will, of course, depend upon the circumstance but examples of how this might work in practice include:</p>
+
+<ul>
+<li>establishing the minimum level of evidence required to demonstrate that benefits are at least equal to costs (rather than straining evidence to calculate the maximum plausible ratio of benefits to costs),</li>
+<li>comparing projects on the basis of the credibility of the evidence required to demonstrate that break-even position,</li>
+<li>deriving relative rather than absolute measures (so that we be certain that the comparisons are fair and reasonable,)</li>
+<li>using confidence-intervals rather than point-estimates to make inferences, and</li>
+<li>using evaluation to guide research (to identify otherwise implicit assumptions that need to be validated).</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[5 Questions to Consider Before Commissioning an Evaluation]]></title>
