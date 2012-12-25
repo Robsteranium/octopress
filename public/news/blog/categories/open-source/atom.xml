@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: open source | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/blog/categories/open-source/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/open-source/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Open For Business]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business/"/>
     <updated>2012-11-13T13:28:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business</id>
     <content type="html"><![CDATA[<p>This post outlines some business considerations for open source. It follows <a href="/../portfolio_project/14">advice Infonomics provided to the World Wildlife Fund</a> in collaboration with <a href="http://www.ribble-consultants.co.uk">Ribble Consultants</a>.</p>
 
 <!--more-->

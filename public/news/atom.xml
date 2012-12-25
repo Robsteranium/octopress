@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -14,10 +14,60 @@
 
   
   <entry>
+    <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
+    <updated>2012-12-19T16:43:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
+    <content type="html"><![CDATA[<p>I&#8217;m often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
+
+<ul>
+<li>Reduction in Costs of Treatment</li>
+<li>Cost per Quality Adjusted Life Years (QALY)</li>
+<li>Incremental Cost Effectiveness Ratio (ICER)</li>
+</ul>
+
+
+<!--more-->
+
+
+<p>As should be obvious from the titles, cost plays a significance role in health economics analysis. The first measure considers cost directly. The second measures also incorporate utility or benefit. The final measure should be used for interpretation.</p>
+
+<p>In practice, it&#8217;s advisable to consider using more than one method to account for the limitations of individual measures. It&#8217;s also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
+
+<h2>Reduction in costs of treatment</h2>
+
+<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention&#8217;s impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
+
+<p>The difficulty with this sort of measure is that the impact is stated in terms of money that would otherwise have had to be spent and, as such, is quite intangigble.</p>
+
+<h2>Cost per QALY</h2>
+
+<p>A quality adjusted-life year, or QALY, represents <strong>the number of years of life that would be added by an intervention, taking into account the quality of those years</strong>. If the extra years would not be lived in full health they are given a value less than 1. Clearly the method of adjustment for quality is critical to this metric.
+A commonly adopted measure is the <a href="http://www.euroqol.org/">EQ-5D</a> scale which seeks to categorise health states according to 5 dimensions: mobility, self-care, usual activities, pain/ discomfort and anxiety/ depression. This is combined with a quantiative measure of the patients self-assessment of their health on a <em>vertical analogue scale</em>.
+Other approaches include the <em>time trade-off</em>, where respondents are asked to choose between remaining in an ill state or being restored to perfect health with a shorter life expectancy, and <em>standard gamble</em> where the alternative could restore them to perfect health or kill them.
+This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of &#8220;perfect health&#8221; and &#8220;disease burden&#8221;.</p>
+
+<h2>Incremental Cost-Effectiveness Ratio</h2>
+
+<p>This ratio is used for comparing intervention options on a like for like basis. The Incremental Cost Effectiveness Ratio (ICER) is a <strong>comparison of the relative cost per QALY of the intervention and a reference case</strong> as follows (where QALY refers to a Quality Adjusted Life Year):
+$$
+ICER = \frac{ \text{£ Cost of intervention} - \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
+$$
+The ICER assumes a multiplicative model for QALYs (i.e. a change in scale will change the ICER ratio even though original figures remain the same).
+Benchmarking against other interventions provides valuable contextual information. The <a href="https://research.tufts-nemc.org/cear4/default.aspx">Tufts Cost-Effectiveness Analysis Registry</a> is a valuable resource in this regard.</p>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
     <updated>2012-12-11T16:04:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
     <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
 
 <!-- more -->
@@ -44,9 +94,9 @@
   
   <entry>
     <title type="html"><![CDATA[What is Infonomics?]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/12/06/what-is-infonomics/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics/"/>
     <updated>2012-12-06T12:45:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/12/06/what-is-infonomics</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics</id>
     <content type="html"><![CDATA[<p>When I started my <a href="http://infonomics.ltd.uk">economic consultancy and information analysis business</a> back in 2007 I was searching for a name that would describe my work in economics and information analysis and that was unique enough to appear early on in the search enginge result pages without too much trouble. At that time is was still cool to use a portmanteau (this was before dropping out a vowel caught-on) so I was certain that I was on to a winner.</p>
 
 <!--more-->
@@ -64,9 +114,9 @@
   
   <entry>
     <title type="html"><![CDATA[5 Questions to Consider Before Commissioning an Evaluation]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
     <updated>2012-12-05T10:50:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
     <content type="html"><![CDATA[<p>Planning is fundamental to successful evaluation. Considering these questions will help you to understand what you need to discuss with a contractor so that they can design an evaluation effectively.</p>
 
 <!-- more -->
@@ -158,10 +208,10 @@ Typical objectives include wanting to:</p>
   
   <entry>
     <title type="html"><![CDATA[Open For Business]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business/"/>
     <updated>2012-11-13T13:28:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business</id>
-    <content type="html"><![CDATA[<p>This post outlines some business considerations for open source. It follows <a href="http://infonomics.ltd.uk/blog/../portfolio_project/14">advice Infonomics provided to the World Wildlife Fund</a> in collaboration with <a href="http://www.ribble-consultants.co.uk">Ribble Consultants</a>.</p>
+    <id>http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business</id>
+    <content type="html"><![CDATA[<p>This post outlines some business considerations for open source. It follows <a href="http://infonomics.ltd.uk/news/../portfolio_project/14">advice Infonomics provided to the World Wildlife Fund</a> in collaboration with <a href="http://www.ribble-consultants.co.uk">Ribble Consultants</a>.</p>
 
 <!--more-->
 
@@ -669,9 +719,9 @@ Typically there is:</p>
   
   <entry>
     <title type="html"><![CDATA[The Economics of Open Data]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data/"/>
     <updated>2012-10-25T15:35:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data</id>
     <content type="html"><![CDATA[<p>Data doesn&#8217;t make for a very good tradable commodity. Technological changes that allow us to connect and share data more easily are disrupting established business models. Therefore the public sector has a critical role to intervene in the data market and the private sector must adapt to ensure long-term sustainability.</p>
 
 <!--more-->
@@ -721,9 +771,9 @@ Typically there is:</p>
   
   <entry>
     <title type="html"><![CDATA[Winning Public Sector Contracts]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2011/11/30/winning-public-sector-contracts/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts/"/>
     <updated>2011-11-30T13:11:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2011/11/30/winning-public-sector-contracts</id>
+    <id>http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts</id>
     <content type="html"><![CDATA[<p>I was invited to provide some training at the <a href="http://www.socialsolutionsacademy.co.uk/"><acronym title="Social Solutions Academy">SSA</acronym></a>&#8217;s <a href="http://www.socialsolutionsacademy.co.uk/past-events/">Social Enterprise Action Day</a>.</p>
 
 <p>One of the participants was kind enough to say:</p>
@@ -742,9 +792,9 @@ Typically there is:</p>
   
   <entry>
     <title type="html"><![CDATA[An Introduction to GNU-R]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/"/>
     <updated>2010-09-23T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk</id>
+    <id>http://infonomics.ltd.uk/news/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk</id>
     <content type="html"><![CDATA[<p>The Manchester Free Software group has invited me to give a talk on&nbsp;<a target="_blank" href="http://www.r-project.org/">GNU-R</a>.</p>
 
 
@@ -770,11 +820,11 @@ Typically there is:</p>
   
   <entry>
     <title type="html"><![CDATA[Introducing the AutoReporter]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2010/08/18/introducing-the-autoreporter/"/>
     <updated>2010-08-18T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter</id>
+    <id>http://infonomics.ltd.uk/news/blog/2010/08/18/introducing-the-autoreporter</id>
     <content type="html"><![CDATA[<p>
-<img class="left" src="http://infonomics.ltd.uk/blog/images/post_images/robot3.png" title="AutoReporter" >
+<img class="left" src="http://infonomics.ltd.uk/news/images/post_images/robot3.png" title="AutoReporter" >
 We&#8217;ve been busy developing some new products.&nbsp; We&#8217;re proud to announce the launch of the <a href="http://reports.infonomics.ltd.uk/">Auto-Reporter</a>.</p>
 
 
@@ -818,9 +868,9 @@ We&#8217;ve been busy developing some new products.&nbsp; We&#8217;re proud to a
   
   <entry>
     <title type="html"><![CDATA[Impact Evaluation Methods]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2010/04/27/impact-evaluation-methods/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2010/04/27/impact-evaluation-methods/"/>
     <updated>2010-04-27T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2010/04/27/impact-evaluation-methods</id>
+    <id>http://infonomics.ltd.uk/news/blog/2010/04/27/impact-evaluation-methods</id>
     <content type="html"><![CDATA[<p>This is a brief review of impact evaluation methods.&nbsp; We consider the: <a href="http://www.berr.gov.uk/files/file21900.pdf ">Impact Evaluation Framework</a> for Regional Development Agencies, the <a href="http://www.offpat.info/Publication.aspx?ID=2536">English Partnerships Additionality Guide</a>, and the <a href="http://www.sroi-uk.org/component/option,com_docman/task,cat_view/gid,29/Itemid,38/">Social Return on Investment</a> method.<br />
 <br />
 We will demonstrate that:</p>
@@ -903,9 +953,9 @@ The discussion of factors of additionality demonstrates that counting gross outp
   
   <entry>
     <title type="html"><![CDATA[Statisticians are sexy!]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2009/09/14/statisticians-are-sexy/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2009/09/14/statisticians-are-sexy/"/>
     <updated>2009-09-14T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2009/09/14/statisticians-are-sexy</id>
+    <id>http://infonomics.ltd.uk/news/blog/2009/09/14/statisticians-are-sexy</id>
     <content type="html"><![CDATA[<p>Plain-speaking Economics professor-cum-googler <a href="http://people.ischool.berkeley.edu/~hal/">Hal R. Varian</a> believes that the &quot;sexy job in the next ten years will be statisticians&quot;.</p>
 
 
@@ -918,20 +968,20 @@ The discussion of factors of additionality demonstrates that counting gross outp
 <p>You can read the full text of the article, or listen to a podcast at <a href="http://www.mckinseyquarterly.com/Hal_Varian_on_how_the_Web_challenges_managers_2286">The McKinsey Quarterly</a>.</p>
 
 
-<p>We agree with Prof Varian.&nbsp; We believe that our capacity for converting data into information makes Infonomics an attractive prospect for our clients.&nbsp; We&#8217;ll leave the reader to decide whether or not this plays a role in the physical attractiveness of our consultants - after all <a href="http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/">correlation doesn&#8217;t always imply correlation</a>!</p>
+<p>We agree with Prof Varian.&nbsp; We believe that our capacity for converting data into information makes Infonomics an attractive prospect for our clients.&nbsp; We&#8217;ll leave the reader to decide whether or not this plays a role in the physical attractiveness of our consultants - after all <a href="http://infonomics.ltd.uk/news/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/">correlation doesn&#8217;t always imply correlation</a>!</p>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[The public has spoken - exploring e-petitions]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions/"/>
     <updated>2009-04-24T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions</id>
+    <id>http://infonomics.ltd.uk/news/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions</id>
     <content type="html"><![CDATA[<h2>Petitions for Action - Verbs used in e-petitions</h2>
 
 
-<p><img src="http://infonomics.ltd.uk/blog/images/post_images/p-verbs-manyeyes.preview.png" title="&#34;Petitions for action - verbs used in e-petitions&#34;" alt="&#34;Petitions for action - verbs used in e-petitions&#34;"></p>
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/p-verbs-manyeyes.preview.png" title="&#34;Petitions for action - verbs used in e-petitions&#34;" alt="&#34;Petitions for action - verbs used in e-petitions&#34;"></p>
 
 <!--more-->
 
@@ -1018,9 +1068,9 @@ The discussion of factors of additionality demonstrates that counting gross outp
   
   <entry>
     <title type="html"><![CDATA[People Managed Places]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2009/02/13/people-managed-places/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2009/02/13/people-managed-places/"/>
     <updated>2009-02-13T00:00:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2009/02/13/people-managed-places</id>
+    <id>http://infonomics.ltd.uk/news/blog/2009/02/13/people-managed-places</id>
     <content type="html"><![CDATA[<p><a href="http://www.emeraldinsight.com/Insight/viewContentItem.do?contentType=Article&amp;contentId=1748140">People-managed Place</a> is an idea introduced by Robin Gower in an article published by the Journal of Place Management and Development.</p>
 
 
@@ -1072,9 +1122,9 @@ The discussion of factors of additionality demonstrates that counting gross outp
   
   <entry>
     <title type="html"><![CDATA[Lies, Damn Lies, and your Evidence Base]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/"/>
     <updated>2008-12-19T00:00:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base</id>
+    <id>http://infonomics.ltd.uk/news/blog/2008/12/19/lies-damn-lies-and-your-evidence-base</id>
     <content type="html"><![CDATA[<blockquote><p>People can come up with statistics to prove anything, Kent.  40% of all people know that</p><footer><strong>Homer</strong> <cite>The Simpsons</cite></footer></blockquote>
 
 
@@ -1090,7 +1140,7 @@ The discussion of factors of additionality demonstrates that counting gross outp
 </p>
 
 
-<ol><img class="right" src="http://infonomics.ltd.uk/blog/images/post_images/confused-smaller.jpg">
+<ol><img class="right" src="http://infonomics.ltd.uk/news/images/post_images/confused-smaller.jpg">
     <li><strong>Statistics never prove anything!</strong>  Let&#8217;s be up-front about this.  Statistics are not the truth but they can tell you about lies.  Statistical inference is a process of elimination.  I don&#8217;t prove my theory, I just disprove everything else!  Or as Sherlock Holmes would have it: &quot;when you have eliminated the impossible, whatever remains, however improbable, must be the truth&quot;.  In reality, it&#8217;s impractical to eliminate <i>all</i> impossibilities.  Our first health warning then, is not to take anything as given: question everything!</li>
     <li><strong>What&#8217;s the point in statistics?</strong>  Because statistics are estimates that draw on a limited view of reality there is a risk that they&#8217;ll give the wrong answer.  This is known as sampling error.  When you see a statistic presented you&#8217;re typically looking at what&#8217;s called a point estimate.  This is the most probable value that we think the underlying population parameter will take - our best guess.  Good statisticians provide confidence intervals along with their point estimates.  These intervals give the range of values we expect the parameter could actually take.  In order to really understand a statistic you ought to know range of possibilities.  Technically the full range is infinite, but statisticians tend to allow some margin of error - such as a 5% tolerance for inaccuracy - giving them interval that contains the actual value 95% of the time.</li>
     <li><strong>Expect the unexpected!</strong>  A corollary of the second point is that statistics will be wrong 5% of the time.  If your evidence base quotes 20 statistics then you can expect one of them to be wrong.  This further illustrates the importance of the first point.  The question is how rare is rare?  Statisticians call the tolerance for inaccuracy (e.g. 5%) a type one error (excessive trust) - it is the likelihood that they&#8217;ll erroneously reject the truth.  The alternative is to ask &quot;how much inaccuracy must I tolerate to accept this statistic?&quot; which leads to the second type of error: failing to reject a falsehood (excessive scepticism).  Health warning: You can&#8217;t expect to be right all the time, but it helps to know how often, on balance, you&#8217;ll be wrong.</li>
@@ -1105,13 +1155,13 @@ The discussion of factors of additionality demonstrates that counting gross outp
   
   <entry>
     <title type="html"><![CDATA[Information Markets as a Tool for Forecasting and Policy Development]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets/"/>
     <updated>2008-08-04T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets</id>
+    <id>http://infonomics.ltd.uk/news/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets</id>
     <content type="html"><![CDATA[<h2>Introducing information markets</h2>
 
 
-<p><img class="left" src="http://infonomics.ltd.uk/blog/images/post_images/cards_smaller.jpg" title="Prediction Markets: a safe bet for forecasters" >This article explains how information markets can assist policy developers by estimating predictions and making decisions.  Economists have long been convinced by the power of markets to allocate resources efficiently.  Markets are, so the <a href="http://en.wikipedia.org/wiki/Efficient_market_hypothesis">theory</a> goes, able to <strong>condense all available information about a particular product into one measure</strong>: the price.  But what if the commodity you&#8217;re trading is itself information?  Information markets are designed to put the power of trade to work on information: predictions, decisions and estimates more generally. </p>
+<p><img class="left" src="http://infonomics.ltd.uk/news/images/post_images/cards_smaller.jpg" title="Prediction Markets: a safe bet for forecasters" >This article explains how information markets can assist policy developers by estimating predictions and making decisions.  Economists have long been convinced by the power of markets to allocate resources efficiently.  Markets are, so the <a href="http://en.wikipedia.org/wiki/Efficient_market_hypothesis">theory</a> goes, able to <strong>condense all available information about a particular product into one measure</strong>: the price.  But what if the commodity you&#8217;re trading is itself information?  Information markets are designed to put the power of trade to work on information: predictions, decisions and estimates more generally. </p>
 
 
 <!--more-->

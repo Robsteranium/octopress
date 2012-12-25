@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: commissioning | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/blog/categories/commissioning/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/commissioning/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[5 Questions to Consider Before Commissioning an Evaluation]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
     <updated>2012-12-05T10:50:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
     <content type="html"><![CDATA[<p>Planning is fundamental to successful evaluation. Considering these questions will help you to understand what you need to discuss with a contractor so that they can design an evaluation effectively.</p>
 
 <!-- more -->

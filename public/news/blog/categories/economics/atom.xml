@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: economics | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/blog/categories/economics/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/economics/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -14,10 +14,60 @@
 
   
   <entry>
+    <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
+    <updated>2012-12-19T16:43:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
+    <content type="html"><![CDATA[<p>I'm often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
+
+<ul>
+<li>Reduction in Costs of Treatment</li>
+<li>Cost per Quality Adjusted Life Years (QALY)</li>
+<li>Incremental Cost Effectiveness Ratio (ICER)</li>
+</ul>
+
+
+<!--more-->
+
+
+<p>As should be obvious from the titles, cost plays a significance role in health economics analysis. The first measure considers cost directly. The second measures also incorporate utility or benefit. The final measure should be used for interpretation.</p>
+
+<p>In practice, it's advisable to consider using more than one method to account for the limitations of individual measures. It's also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
+
+<h2>Reduction in costs of treatment</h2>
+
+<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention's impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
+
+<p>The difficulty with this sort of measure is that the impact is stated in terms of money that would otherwise have had to be spent and, as such, is quite intangigble.</p>
+
+<h2>Cost per QALY</h2>
+
+<p>A quality adjusted-life year, or QALY, represents <strong>the number of years of life that would be added by an intervention, taking into account the quality of those years</strong>. If the extra years would not be lived in full health they are given a value less than 1. Clearly the method of adjustment for quality is critical to this metric.
+A commonly adopted measure is the <a href="http://www.euroqol.org/">EQ-5D</a> scale which seeks to categorise health states according to 5 dimensions: mobility, self-care, usual activities, pain/ discomfort and anxiety/ depression. This is combined with a quantiative measure of the patients self-assessment of their health on a <em>vertical analogue scale</em>.
+Other approaches include the <em>time trade-off</em>, where respondents are asked to choose between remaining in an ill state or being restored to perfect health with a shorter life expectancy, and <em>standard gamble</em> where the alternative could restore them to perfect health or kill them.
+This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of "perfect health" and "disease burden".</p>
+
+<h2>Incremental Cost-Effectiveness Ratio</h2>
+
+<p>This ratio is used for comparing intervention options on a like for like basis. The Incremental Cost Effectiveness Ratio (ICER) is a <strong>comparison of the relative cost per QALY of the intervention and a reference case</strong> as follows (where QALY refers to a Quality Adjusted Life Year):
+$$
+ICER = \frac{ \text{£ Cost of intervention} - \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
+$$
+The ICER assumes a multiplicative model for QALYs (i.e. a change in scale will change the ICER ratio even though original figures remain the same).
+Benchmarking against other interventions provides valuable contextual information. The <a href="https://research.tufts-nemc.org/cear4/default.aspx">Tufts Cost-Effectiveness Analysis Registry</a> is a valuable resource in this regard.</p>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[The Economics of Open Data]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data/"/>
     <updated>2012-10-25T15:35:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data</id>
     <content type="html"><![CDATA[<p>Data doesn't make for a very good tradable commodity. Technological changes that allow us to connect and share data more easily are disrupting established business models. Therefore the public sector has a critical role to intervene in the data market and the private sector must adapt to ensure long-term sustainability.</p>
 
 <!--more-->

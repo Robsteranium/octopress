@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tendering | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/blog/categories/tendering/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/tendering/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Winning Public Sector Contracts]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2011/11/30/winning-public-sector-contracts/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts/"/>
     <updated>2011-11-30T13:11:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2011/11/30/winning-public-sector-contracts</id>
+    <id>http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts</id>
     <content type="html"><![CDATA[<p>I was invited to provide some training at the <a href="http://www.socialsolutionsacademy.co.uk/"><acronym title="Social Solutions Academy">SSA</acronym></a>'s <a href="http://www.socialsolutionsacademy.co.uk/past-events/">Social Enterprise Action Day</a>.</p>
 
 <p>One of the participants was kind enough to say:</p>

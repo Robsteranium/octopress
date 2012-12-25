@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: evidence | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/blog/categories/evidence/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/evidence/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
     <updated>2012-12-11T16:04:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
     <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
 
 <!-- more -->

@@ -2,78 +2,84 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://infonomics.ltd.uk/blog/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets/
+            http://infonomics.ltd.uk/news/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets/
         </loc>
         <lastmod>2012-10-23T13:10:47+01:00</lastmod>
     </url>
     <url>
         <loc>
-            http://infonomics.ltd.uk/blog/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/
+            http://infonomics.ltd.uk/news/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/
         </loc>
         <lastmod>2012-10-23T13:10:32+01:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2009/02/13/people-managed-places/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2009/02/13/people-managed-places/</loc>
         <lastmod>2012-10-23T13:11:49+01:00</lastmod>
     </url>
     <url>
         <loc>
-            http://infonomics.ltd.uk/blog/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions/
+            http://infonomics.ltd.uk/news/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions/
         </loc>
         <lastmod>2012-10-23T13:23:57+01:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2009/09/14/statisticians-are-sexy/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2009/09/14/statisticians-are-sexy/</loc>
         <lastmod>2012-10-23T13:27:33+01:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2010/04/27/impact-evaluation-methods/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2010/04/27/impact-evaluation-methods/</loc>
         <lastmod>2012-10-23T13:29:37+01:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2010/08/18/introducing-the-autoreporter/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2010/08/18/introducing-the-autoreporter/</loc>
         <lastmod>2012-11-13T16:54:49+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://infonomics.ltd.uk/blog/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/
+            http://infonomics.ltd.uk/news/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/
         </loc>
         <lastmod>2012-10-23T13:45:11+01:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2011/11/30/winning-public-sector-contracts/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts/</loc>
         <lastmod>2012-11-16T13:33:50+00:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data/</loc>
         <lastmod>2012-10-27T16:11:42+01:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business/</loc>
         <lastmod>2012-11-13T15:48:36+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://infonomics.ltd.uk/blog/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/
+            http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/
         </loc>
         <lastmod>2012-12-05T16:27:29+00:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/2012/12/06/what-is-infonomics/</loc>
+        <loc>http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics/</loc>
         <lastmod>2012-12-06T21:52:33+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://infonomics.ltd.uk/blog/blog/2012/12/11/evaluation-and-the-burden-of-proof/
+            http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/
         </loc>
         <lastmod>2012-12-11T18:01:13+00:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/blog/archives/</loc>
-        <lastmod>2012-12-11T18:01:13+00:00</lastmod>
+        <loc>
+            http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/
+        </loc>
+        <lastmod>2012-12-19T18:02:11+00:00</lastmod>
     </url>
     <url>
-        <loc>http://infonomics.ltd.uk/blog/</loc>
-        <lastmod>2012-12-11T18:01:13+00:00</lastmod>
+        <loc>http://infonomics.ltd.uk/news/blog/archives/</loc>
+        <lastmod>2012-12-19T18:02:11+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://infonomics.ltd.uk/news/</loc>
+        <lastmod>2012-12-19T18:02:11+00:00</lastmod>
     </url>
 </urlset>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: business model | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/blog/blog/categories/business-model/atom.xml" rel="self"/>
-  <link href="http://infonomics.ltd.uk/blog/"/>
-  <updated>2012-12-11T18:01:14+00:00</updated>
-  <id>http://infonomics.ltd.uk/blog/</id>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/business-model/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2012-12-19T21:26:29+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Open For Business]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business/"/>
     <updated>2012-11-13T13:28:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/11/13/open-for-business</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business</id>
     <content type="html"><![CDATA[<p>This post outlines some business considerations for open source. It follows <a href="/../portfolio_project/14">advice Infonomics provided to the World Wildlife Fund</a> in collaboration with <a href="http://www.ribble-consultants.co.uk">Ribble Consultants</a>.</p>
 
 <!--more-->
@@ -526,9 +526,9 @@ Typically there is:</p>
   
   <entry>
     <title type="html"><![CDATA[The Economics of Open Data]]></title>
-    <link href="http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data/"/>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data/"/>
     <updated>2012-10-25T15:35:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/blog/blog/2012/10/25/the-economics-of-open-data</id>
+    <id>http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data</id>
     <content type="html"><![CDATA[<p>Data doesn't make for a very good tradable commodity. Technological changes that allow us to connect and share data more easily are disrupting established business models. Therefore the public sector has a critical role to intervene in the data market and the private sector must adapt to ensure long-term sustainability.</p>
 
 <!--more-->
