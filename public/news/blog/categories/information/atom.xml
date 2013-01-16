@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: information | Infonomics Blog]]></title>
+  <title><![CDATA[Category: Information | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/information/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2012-12-19T21:26:29+00:00</updated>
+  <updated>2013-01-16T15:09:11+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,101 +14,22 @@
 
   
   <entry>
-    <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
-    <updated>2012-12-19T16:43:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
-    <content type="html"><![CDATA[<p>I'm often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
+    <title type="html"><![CDATA[Information Failure is not a Business Case]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case/"/>
+    <updated>2013-01-16T14:39:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case</id>
+    <content type="html"><![CDATA[<p>Ignorance is no excuse.</p>
 
-<ul>
-<li>Reduction in Costs of Treatment</li>
-<li>Cost per Quality Adjusted Life Years (QALY)</li>
-<li>Incremental Cost Effectiveness Ratio (ICER)</li>
-</ul>
-
+<p>Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be a valid business model for adding value in the private sector (link to open data economics post).</p>
 
 <!--more-->
 
 
-<p>As should be obvious from the titles, cost plays a significance role in health economics analysis. The first measure considers cost directly. The second measures also incorporate utility or benefit. The final measure should be used for interpretation.</p>
+<p>It's all too common to see ignorance being used as a rationale for a public project - "if only more people knew about X then society/ the economy would be improved". If there are gains to trade available through better knowlege, then there are (rational) incentives for private individuals to learn. If X is a public sector project then this is actually marketing - justifiable on strategic grounds but not on the basis on market failure. If X is an intrinsically or publicly desirable course of action (e.g. not smoking) then the relevant market failure is actually the <strong>merit good</strong> case which is based on people having accurate information but choosing to ignore it - here again, information provision is actually a type of marketing.</p>
 
-<p>In practice, it's advisable to consider using more than one method to account for the limitations of individual measures. It's also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
+<p>The business case for information-based interventions should actually be based upon a different type of market failure: <strong>assymetric information</strong>. This occurs when either the buyer or seller knows more about the trade than the other. This can take the form of hidden information (you don't know the used-car salesman is selling you a lemon) or hidden action (your insurance company doesn't know whether you lock your door/ set the alarm every time you go out).  This imbalances leads to <strong>adverse selection</strong> (in the case of hidden information) or <strong>moral hazard</strong> (in the case of hidden action). Either way, the good quality products or services cannot be distinguished from the bad quality ones on the basis of price (the mechanism through which all markets operate).</p>
 
-<h2>Reduction in costs of treatment</h2>
-
-<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention's impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
-
-<p>The difficulty with this sort of measure is that the impact is stated in terms of money that would otherwise have had to be spent and, as such, is quite intangigble.</p>
-
-<h2>Cost per QALY</h2>
-
-<p>A quality adjusted-life year, or QALY, represents <strong>the number of years of life that would be added by an intervention, taking into account the quality of those years</strong>. If the extra years would not be lived in full health they are given a value less than 1. Clearly the method of adjustment for quality is critical to this metric.
-A commonly adopted measure is the <a href="http://www.euroqol.org/">EQ-5D</a> scale which seeks to categorise health states according to 5 dimensions: mobility, self-care, usual activities, pain/ discomfort and anxiety/ depression. This is combined with a quantiative measure of the patients self-assessment of their health on a <em>vertical analogue scale</em>.
-Other approaches include the <em>time trade-off</em>, where respondents are asked to choose between remaining in an ill state or being restored to perfect health with a shorter life expectancy, and <em>standard gamble</em> where the alternative could restore them to perfect health or kill them.
-This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of "perfect health" and "disease burden".</p>
-
-<h2>Incremental Cost-Effectiveness Ratio</h2>
-
-<p>This ratio is used for comparing intervention options on a like for like basis. The Incremental Cost Effectiveness Ratio (ICER) is a <strong>comparison of the relative cost per QALY of the intervention and a reference case</strong> as follows (where QALY refers to a Quality Adjusted Life Year):
-$$
-ICER = \frac{ \text{£ Cost of intervention} - \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
-$$
-The ICER assumes a multiplicative model for QALYs (i.e. a change in scale will change the ICER ratio even though original figures remain the same).
-Benchmarking against other interventions provides valuable contextual information. The <a href="https://research.tufts-nemc.org/cear4/default.aspx">Tufts Cost-Effectiveness Analysis Registry</a> is a valuable resource in this regard.</p>
-
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
-    <updated>2012-12-11T16:04:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
-    <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
-
-<!-- more -->
-
-
-<p>The <strong>burden of proof</strong> is said to lie with the party making a claim. In order to convince someone of some truth, you are obliged to support your claim with evidence. The audience hearing your claim will make a judgement by scrutinising the evidence you present in support.</p>
-
-<p>This obligation should not be treated lightly. In some cases, it isn't possible to marshall evidence to support our intuitions. Indeed we can't always know what we don't know and so we shouldn't act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn't mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
-
-<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It's better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
-
-<p>Our ability to do this will, of course, depend upon the circumstance but examples of how this might work in practice include:</p>
-
-<ul>
-<li>establishing the minimum level of evidence required to demonstrate that benefits are at least equal to costs (rather than straining evidence to calculate the maximum plausible ratio of benefits to costs),</li>
-<li>comparing projects on the basis of the credibility of the evidence required to demonstrate that break-even position,</li>
-<li>deriving relative rather than absolute measures (so that we be certain that the comparisons are fair and reasonable,)</li>
-<li>using confidence-intervals rather than point-estimates to make inferences, and</li>
-<li>using evaluation to guide research (to identify otherwise implicit assumptions that need to be validated).</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What is Infonomics?]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics/"/>
-    <updated>2012-12-06T12:45:00+00:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics</id>
-    <content type="html"><![CDATA[<p>When I started my <a href="http://infonomics.ltd.uk">economic consultancy and information analysis business</a> back in 2007 I was searching for a name that would describe my work in economics and information analysis and that was unique enough to appear early on in the search enginge result pages without too much trouble. At that time is was still cool to use a portmanteau (this was before dropping out a vowel caught-on) so I was certain that I was on to a winner.</p>
-
-<!--more-->
-
-
-<p>I didn't realise for some time that the term had already been coined by Doug Laney, then at META Group, to describe the practice of treating information as an asset. As an intangible asset information is given a price, appears on financial accounts, and is managed accordingly.</p>
-
-<p>Since this definition now seems to dominate the <a href="http://en.wikipedia.org/w/index.php?title=Infonomics">wikipedia page</a> on the subject, I think it's about time I added my voice to the debate.</p>
-
-<p>In my mind, at least, <strong>Infonomics is about information-based on economics, not economics-based on information</strong>. Whereas econometrics refers to economic statistics (and, let's be honest, principally regression analysis), I imagined Infonomics as a super-set including elements of computer science (such as information theory, algorithmic design, artificial intelligence, and data visualisation).</p>
-
-<p>Of course there's rarely a single, unambigious definition of a neologism. But at least we can all agree that <a href="http://en.wikipedia.org/w/index.php?title=Infonomics&amp;diff=prev&amp;oldid=471082260">wikipedia should no longer say</a> "nobody has as yet referred to himself/herself as an infonomist".</p>
+<p>Assymetric information is not simply solved by information provision. This market failure creates a business case for redressing the imbalance in information. It might include the creation of accreditation schemes or quality standards that, if credible, will buyers or sellers signal their quality or screen the quality of their trading partners.</p>
 ]]></content>
   </entry>
   
