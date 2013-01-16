@@ -3,12 +3,12 @@ layout: post
 title: "Information Failure is not a Business Case"
 date: 2013-01-16 14:39
 comments: true
-categories: [ Business Case, Market Failure, Information, Appraisal, Commissioning ] 
+categories: [ business case, market failure, information, appraisal, commissioning ] 
 ---
 
 Ignorance is no excuse.
 
-Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be a valid business model for adding value in the private sector (link to open data economics post).
+Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be [a valid business model for adding value in the private sector](/news/blog/2012/11/13/open-for-business/).
 <!--more-->
 It's all too common to see ignorance being used as a rationale for a public project - "if only more people knew about X then society/ the economy would be improved". If there are gains to trade available through better knowlege, then there are (rational) incentives for private individuals to learn. If X is a public sector project then this is actually marketing - justifiable on strategic grounds but not on the basis on market failure. If X is an intrinsically or publicly desirable course of action (e.g. not smoking) then the relevant market failure is actually the **merit good** case which is based on people having accurate information but choosing to ignore it - here again, information provision is actually a type of marketing.
 
