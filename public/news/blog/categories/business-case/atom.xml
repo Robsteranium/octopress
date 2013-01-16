@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Business Case | Infonomics Blog]]></title>
+  <title><![CDATA[Category: business case | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/business-case/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-01-16T15:09:11+00:00</updated>
+  <updated>2013-01-16T15:17:39+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -20,7 +20,7 @@
     <id>http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case</id>
     <content type="html"><![CDATA[<p>Ignorance is no excuse.</p>
 
-<p>Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be a valid business model for adding value in the private sector (link to open data economics post).</p>
+<p>Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be <a href="/news/blog/2012/11/13/open-for-business/">a valid business model for adding value in the private sector</a>.</p>
 
 <!--more-->
 

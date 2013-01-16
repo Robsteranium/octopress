@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Commissioning | Infonomics Blog]]></title>
+  <title><![CDATA[Category: commissioning | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/commissioning/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-01-16T15:09:11+00:00</updated>
+  <updated>2013-01-16T15:17:39+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -20,7 +20,7 @@
     <id>http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case</id>
     <content type="html"><![CDATA[<p>Ignorance is no excuse.</p>
 
-<p>Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be a valid business model for adding value in the private sector (link to open data economics post).</p>
+<p>Here I'm referring to a public sector business case - i.e. a rationale for intervention in the economy based upon market failure. Not a business model. Information failure may indeed be <a href="/news/blog/2012/11/13/open-for-business/">a valid business model for adding value in the private sector</a>.</p>
 
 <!--more-->
 
@@ -30,6 +30,134 @@
 <p>The business case for information-based interventions should actually be based upon a different type of market failure: <strong>assymetric information</strong>. This occurs when either the buyer or seller knows more about the trade than the other. This can take the form of hidden information (you don't know the used-car salesman is selling you a lemon) or hidden action (your insurance company doesn't know whether you lock your door/ set the alarm every time you go out).  This imbalances leads to <strong>adverse selection</strong> (in the case of hidden information) or <strong>moral hazard</strong> (in the case of hidden action). Either way, the good quality products or services cannot be distinguished from the bad quality ones on the basis of price (the mechanism through which all markets operate).</p>
 
 <p>Assymetric information is not simply solved by information provision. This market failure creates a business case for redressing the imbalance in information. It might include the creation of accreditation schemes or quality standards that, if credible, will buyers or sellers signal their quality or screen the quality of their trading partners.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pay for outcomes not activity]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/pay-for-outcomes-not-activity/"/>
+    <updated>2012-12-19T20:37:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/19/pay-for-outcomes-not-activity</id>
+    <content type="html"><![CDATA[<p>Commission outcomes not activity.</p>
+
+<p>As part of my contribution to <a href="http://thecreativeexchange.org/">The Creative Exchange</a> I attended a workshop on Public Service Innovation and Democracy. Through the course of discussion we soon discovered that several attendees working in creative and service sectors experience a common problem with tendering - that the organisation running the procurement often has very fixed ideas about what they want to buy. There was general agreement that this tendency to be very specific didn't leave much room for imagniation and innovation.</p>
+
+<p>The outcome of our discussion was a proposal to explore a new approach to commissioning digital and creative services.</p>
+
+<!--more-->
+
+
+<p>Here's a quote from the terms of reference:</p>
+
+<blockquote><p>The standard tendering model is not effective in the contemporary cultural and creative sector:</p>
+
+<ul>
+<li><strong>Premature-specification</strong>: The traditional model, with a specification of how or what should be delivered, is appropriate to homogenous services or goods where tenders must meet requirements that can be determined before the competitive procedure. Creative services, by contrast, are constrained if the method is defined in advance. Instead the commissioner should focus on explaining their aims and objectives and allow the competing suppliers to imagine and suggest what and how these should be delivered.</li>
+<li><strong>Speculative work</strong>: procurement of creative services can involve requests for ideas, examples, or other forms of speculative work like open competitions. This involves considerable upfront investment from suppliers, the intellectual property rights for which cannot be protected. Indeed the award of a contract is not guaranteed overall (let alone to any given supplier). Suppliers are at a significant disadvantage in this commissioning model and the incentives for participation are weak.</li>
+<li><strong>Risk-aversion</strong>: The priority in procurement is often to minimise risk rather than maximise value-for-money. This can lead to a bias towards larger established firms at the expense of SMEs and of innovation.</li>
+<li><strong>Administrative-burden</strong>: public tenders often involve lengthy pre-qualification processes and masses of paperwork (often owing to risk aversion as above). This burden weighs disproportionately heavily on SMEs who may not have the resources to respond or for whom such requirements may be irrelevant (i.e. a freelance designer working from her kitchen probably doesn’t need ISO compliant Health and Safety policy).</li>
+</ul>
+
+
+<p><cite>Alpha Procurement Proposal</cite></p></blockquote>
+
+<p>The project is at a very early stage but I'll provide an update once we're underway.</p>
+
+<p>If you've any thoughts by all means let us know in the comments...</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[5 Questions to Consider Before Commissioning an Evaluation]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
+    <updated>2012-12-05T10:50:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
+    <content type="html"><![CDATA[<p>Planning is fundamental to successful evaluation. Considering these questions will help you to understand what you need to discuss with a contractor so that they can design an evaluation effectively.</p>
+
+<!-- more -->
+
+
+<h2>What is the objective?</h2>
+
+<p>This ought to be defined in terms of the key questions that the evaluation ought to answer. The choice of question will determine which methods are used and what data is gathered.
+Typical objectives include wanting to:</p>
+
+<ul>
+<li>have evidence to attract funding or investment</li>
+<li>identify what has worked and what hasn't to make improvements</li>
+<li>share lessons learned with partners</li>
+<li>build plan for future activity</li>
+</ul>
+
+
+<p>Clearly a different approach to evaluation would be required to answer each of these questions.</p>
+
+<p>In order to define the key evaluation question(s) it might be useful to consider:</p>
+
+<ul>
+<li>Who is the audience is for the evaluation (your board of directors, external funders, or participants)?</li>
+<li>What will you do with the evaluation once it's complete?</li>
+<li>What decisions will the evaluation help you make?</li>
+</ul>
+
+
+<h2>Who are your stakeholders or beneficiaries?</h2>
+
+<p>Different people will value your work for different reasons. Those reasons won't always overlap and may even conflict. The evaluation might reach a different conclusion based upon the perspective you take. Answering this question will help you to determine scope and focus - indeed it's sometimes useful to think about the maximum possible range of beneficiaries just so that you can determine those whom won't be considered.</p>
+
+<p>Thinking about stakeholders will also help with the preceding question. Often the stakeholder may also be a funder. It's important in these cases to have the relevant people involved in the evaluation from the outset. This means discussing the objectives and proposed methods with them. Not only will this give your conclusions greater credibility with the target audience, but it will also help to ensure relevance. Further, they might be able to offer insight or resources from other work they've seen.</p>
+
+<h2>What can we do internally, where do we need support?</h2>
+
+<p>You can expect good evaluation to cost at least 10% of the operating costs of the service being evaluated. It not necessary to outsource all of the evaluation work. Even where you are contractually obliged to appoint an independent consultant it is still possible for you to be involved.</p>
+
+<p>External support will typically be need for technical aspects such as:</p>
+
+<ul>
+<li>establish a research methodology or epsitemological framework for answering your key evaluation questions</li>
+<li>designing primary research (sampling, questionnaires, or topic guides)</li>
+<li>devising and analysing statistical models to establish behavioural change, causal effects or to financial proxies for non-traded costs and benefits</li>
+</ul>
+
+
+<p>Whereas internal work might focus on activities like collecting monitoring data.</p>
+
+<p>As discussed above, it is vital that internal staff are involved in the conversations with stakeholders if the evaluation is going to be useful in future.</p>
+
+<h2>Do we understand the evaluation design?</h2>
+
+<p>In order to interpret the results of the evaluation it will be vital for you to understand how those results were reached. This doesn't necessarily mean, for example, that you need to know how to calculate a "two-stage Heckit regression". You do at least need to know why this method was used (i.e. in response to selection bias) so that you know that the findings do account for the fact that sample of people consulted was biased. This is important for forming your own judgements about the results and for dealing with criticisms from others.</p>
+
+<p>A empirically flawless method is useless if none of your audience can make sense of the results. That's not to say that you should avoid technical research methods; indeed this question might be better phrased as: what do we need to learn to understand the evaluation design?</p>
+
+<h2>What data do we already have?</h2>
+
+<p>Having data available may help to save on the costs of data collection. Data can come from obvious sources such as:</p>
+
+<ul>
+<li>the monitoring data your contractually obliged to collect,</li>
+<li>management information you use to direct your work, or</li>
+<li>feedback forms you've used to ongoing service development.</li>
+</ul>
+
+
+<p>Data can also come from unexpected places like:</p>
+
+<ul>
+<li>administrative databases,</li>
+<li>server access records or log files, and</li>
+<li>email address books or messages.</li>
+</ul>
+
+
+<p>You should also expect to provide evaluators with:</p>
+
+<ul>
+<li>contact information for consultees - at the strategic and beneficiary level,</li>
+<li>background information (particularly any work done to scope, appraise, design or commission your service), and</li>
+<li>contractual and financial records.</li>
+</ul>
+
 ]]></content>
   </entry>
   
