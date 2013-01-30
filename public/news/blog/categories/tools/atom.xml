@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: open-source | Infonomics Blog]]></title>
-  <link href="http://infonomics.ltd.uk/news/blog/categories/open-source/atom.xml" rel="self"/>
+  <title><![CDATA[Category: tools | Infonomics Blog]]></title>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
   <updated>2013-01-30T12:26:26+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>

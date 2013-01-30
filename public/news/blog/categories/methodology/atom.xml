@@ -4,7 +4,7 @@
   <title><![CDATA[Category: methodology | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/methodology/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-01-16T15:17:39+00:00</updated>
+  <updated>2013-01-30T12:26:26+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,149 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[9 Tools Every Information Analyst Should Have]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/01/30/9-tools-every-information-analyst-should-have/"/>
+    <updated>2013-01-30T12:15:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/01/30/9-tools-every-information-analyst-should-have</id>
+    <content type="html"><![CDATA[<p>I was interested to read Rebecca Murphey's <a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/">Baseline for Front End Developers</a>  in which the author realizes that she has begun to take for granted a basic set of tools of the trade. She presents "a few things that [she] wants to start expecting people to be familiar with, along with some resources you can use if you feel like you need to get up to speed". I'd like to pay homage to that article and revise it in light of <em>the tools I believe are essential for an Information Analyst</em>. There is considerable overlap in the tools suggested although the application will differ.</p>
+
+<!--more -->
+
+
+<p><img src="http://imgs.xkcd.com/comics/regular_expressions.png" title="Wait, forgot to escape a space.  Wheeeeee[taptaptap]eeeeee." alt="XKCD Regular Expressions Comic"></p>
+
+<h2>GNU/ UNIX Command Line Tools</h2>
+
+<p>These tools are especially powerful because they don't require you to load the entire file into memory. This makes it possible to work with very large files efficiently.</p>
+
+<ul>
+<li><code>head</code>, <code>tail</code>, <code>less</code>, <code>cat</code> etc for looking at files</li>
+<li><code>awk</code>, <code>sed</code>, and <code>tr</code> for processing and altering files</li>
+<li><code>cut</code>, <code>paste</code>, and <code>join</code> again for editing and combining text files</li>
+<li><code>sort</code> and <code>uniq</code></li>
+<li><code>wc</code> for counting lines/ words/ characters</li>
+<li><code>iconv</code> for converting between different encodings</li>
+</ul>
+
+
+<p>Some useful resources include:</p>
+
+<ul>
+<li><a href="http://blog.sanctum.geek.nz/series/unix-as-ide/">Unix as an IDE</a></li>
+<li><a href="http://www.ibm.com/developerworks/linux/library/l-textutils/index.html">Simplify data extraction using Linux text utilities</a></li>
+<li><a href="http://tldp.org/LDP/abs/html/textproc.html">Text Processing Commands in the Advanced Bash-Scripting Guide</a></li>
+<li><a href="http://funarg.nfshost.com/r2/notes/sed-return-comma.html">Replacing returns with commas in Sed</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">Oh my zsh</a> - zshell a replacement for bash</li>
+</ul>
+
+
+<h2>Regular Expressions</h2>
+
+<p>Regexs are extremely powerful, if sometimes counter-intuitive. They are vital for defining patterns and replacements in text processing. Although some <a href="http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454">debate</a> exists a to whether they should be used to parse structured formats like XHTML, they are certainly a vital tool.</p>
+
+<p>Having said which, I find this quote pretty amusing!
+<blockquote><p>Some people, when confronted with a problem, think “I know, I'll use regular expressions.” Now they have two problems.</p><footer><strong>Jamie Zawinski</strong> <cite><a href='http://regex.info/blog/2006-09-15/247'>Jeffrey Friedl's Blog</a></cite></footer></blockquote></p>
+
+<ul>
+<li><a href="http://gskinner.com/RegExr/">RegExr</a> - Regex building and testing tool</li>
+<li><a href="http://www.regexper.com/">Regexper</a> - visualisation tool</li>
+<li><a href="http://www.regular-expressions.info/">Reference Docs</a></li>
+<li>An example for <a href="http://www.softwareprojects.com/resources/programming/t-validate-a-credit-card-1682.html">validating credit card numbers</a> or <a href="http://stackoverflow.com/a/164994/187009">validating UK Postcodes</a></li>
+</ul>
+
+
+<h2>A Programming/ Scripting Language</h2>
+
+<p>If nothing else, these provide the glue to connect different sections of your data pipeline. The incredible range of libraries avavailable to most scripting languages will make quick work of many common information processing tasks: parsing, spidering, <abbr title="Extraction, Translation, and Loading">ETL</abbr> etc. The choice of language is down to personal preference or compatibility with the team.
+It should suffice to say that knowledge of a scripting language is necessary and I don't feel the need to recommend a particular language. Having said which, I can't resist saying that I prefer <code>ruby</code> but have dabbled in <code>perl</code> and <code>python</code>. I find the following ruby gems indispensible: <code>mechanize</code>, <code>nokogiri</code>, <code>fastercsv</code> (now <code>CSV</code> in the 1.9 standard library), and <code>json</code>. I've also been using <code>javascript</code> and node for scripting outside of the browser as asynchronous processing has proved to be very quick (if a little peculiar to code at first).</p>
+
+<ul>
+<li><a href="http://mislav.uniqpath.com/poignant-guide/book/chapter-1.html">Why The Lucky Stiff's (poignant) Guide to Ruby</a></li>
+<li><a href="http://www.rubyist.net/~slagell/ruby/">A guide written by Matz (the original author of Ruby)</a></li>
+<li><a href="https://github.com/styleguide/ruby">Github's Ruby Style Guide</a></li>
+<li><a href="https://www.ruby-toolbox.com/">Ruby Toolbox</a> - for finding and selecting gems</li>
+<li>John Ressig's <a href="http://ejohn.org/apps/learn/">Learning Advanced Javascript</a></li>
+</ul>
+
+
+<h2>Text data files</h2>
+
+<p>Probably the most basic technology used in information analysis, the flat file is the lowest common denominator. You can almost guarantee that everyone will be able to cope with <code>csv</code> files (even if they need to be translated before loading into another tool). The expressiveness and rigour of <code>XML</code> makes it another vital tool although it's rapidly being superceded in bandwidth-conscious realm of http by the less verbose <code>json</code>.
+Information analysts ought to be able to handle (read, understand, parse and translate) files in these all of formats even if they immediately convert them to a prefered type.</p>
+
+<ul>
+<li><a href="http://www.delicious.com/redirect?url=http%3A//andrewjwelch.com/code/xslt/csv/csv-to-xml_v2.html">XSLT for CSV 2 XML</a></li>
+<li><a href="http://www.w3schools.com/xpath/xpath_syntax.asp">XPath Syntax</a></li>
+<li><a href="http://www.evagoras.com/2011/02/10/improving-an-xml-feed-display-through-css-and-xslt/">Improving an XML feed through CSS and XSLT</a></li>
+<li><a href="http://www.json.org/">JSON reference with links to parsers</a></li>
+</ul>
+
+
+<h2>Relational Databases, SQL, and NoSQL</h2>
+
+<p>This shouldn't really come as a surprise to anyone. If you're going to analyse information, you're going to need to deal with databases. An analyst ought to be able to write <abbr title="Structured Query Language">SQL</abbr>, understand normalisation/ denormalisation, and possibly also have some knowledge of <abbr title="Object-Relational Mapping">ORM</abbr>. NoSQL databases are also useful when the data structure is better represented by document, graph or key:value structures (and where tables would be very sparse).</p>
+
+<ul>
+<li><a href="http://dev.mysql.com/">MySQL</a></li>
+<li><a href="http://www.nparikh.org/unix/mysql.php">MySQL Cheat Sheet</a></li>
+<li><a href="http://www.sqlite.org/">SQLite</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Database_normalization">database normalisation</a> and <a href="http://www.codinghorror.com/blog/2008/07/maybe-normalizing-isnt-normal.html">denormalisation</a></li>
+<li><a href="http://nosql-database.org/">NoSQL Guide</a></li>
+<li><a href="http://www.mongodb.org/">Mongodb</a> - document database</li>
+<li><a href="http://www.neo4j.org/">Neo4j</a> - graph database</li>
+<li><a href="http://couchdb.apache.org/">CouchDB</a> - json + map reduce + http</li>
+</ul>
+
+
+<h2>Statistical Library</h2>
+
+<p>Unless you really want to code algorithms for every statistical process from scratch, you're going to want to adopt and familiarise yourself with a statistical library. I would strongly recommend <code>GNU-R</code> although other options include <code>Stata</code>, <code>SPSS</code>, and <code>Matlab</code> etc. Of course there is probably a library available for your prefered programming language. <code>scipy</code> and <code>numpy</code> are very popular choices for <code>python</code>.</p>
+
+<ul>
+<li><a href="http://www.r-project.org/">The R Project</a></li>
+<li><a href="http://rseek.org">R Seek</a> - R-specific search engine</li>
+<li><a href="http://stackoverflow.com/tags/r">R tag on Stackoverflow</a> (bonus: <a href="http://stats.stackexchange.com/">Cross Validated</a> - the stats-specific Stack Exchange Q&amp;A site)</li>
+<li><a href="http://blog.revolutionanalytics.com/">Revolution Analytics Blog</a></li>
+<li><a href="http://docs.ggplot2.org/current/">ggplot2</a></li>
+<li><a href="gretl.sourceforge.net">gretl</a> - Gnu Regression, Econometrics and Time-series Library</li>
+</ul>
+
+
+<h2>Visualisation Framework</h2>
+
+<p>Similarly you'll probably want to use some sort of framework for generating visualisations. I've tried many and have found myself coming back to a few:</p>
+
+<ul>
+<li><a href="http://d3js.org">d3 data driven documents</a> - A JavaScript library for manipulating documents based on data using HTML, SVG and CSS</li>
+<li><a href="http://docs.ggplot2.org/current/">ggplot2</a> - the tool that usually attracts people to R; excellent for quickly sketching out data graphics</li>
+<li><a href="http://processing.org">processing</a> - Processing is an electronic sketchbook for developing ideas - in Java and now Javascript too.</li>
+</ul>
+
+
+<h2>Report Templating</h2>
+
+<p>Usually you're going to want to place your analysis in context with some commentary. If you're going to be repeating a given report - either in part or in full - they you stand to benefit greatly from using some form of template. Again this will depend upon your prefered programming languages. My favoured tools are listed below.</p>
+
+<ul>
+<li><a href="http://www.stat.uni-muenchen.de/~leisch/Sweave/">Sweave</a> - R + Latex and <a href="http://rss.acs.unt.edu/Rdoc/library/odfWeave/html/odfWeave.html">Open Document Format</a>. I've not tried it yet but <a href="http://yihui.name/knitr/">Knitr</a> looks like it could be a useful package).</li>
+<li><a href="http://haml.info/">HAML - HTML abstraction markup language</a> - very clear markup with indentation (so you don't have to write out every tag twice), you're able to use ruby inline.</li>
+<li><a href="http://sass-lang.com">Sass - Syntactically Awesome Stylesheets</a> - an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more.</li>
+<li><a href="http://garann.github.com/template-chooser/">Javascript Template Engine Chooser</a></li>
+<li><a href="http://d3js.org">d3 data driven documents</a> - for programmatically creating html from data</li>
+</ul>
+
+
+<h2>Version Management</h2>
+
+<p>Version management is vital for tracking progress, making experimental branches in your work, and coordinating across teams. The clear leader in this regard is <a href="http://git-scm.com">git</a> and the amazing project hosting environment <a href="https://github.com/">github</a>. I've got in the habit of versioning everything - not just my code - but my home file configurations too.</p>
+
+<h2>And the rest...</h2>
+
+<p>This is just a quick list I wrote off the top of my head. What have I missed? What else do you use?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
