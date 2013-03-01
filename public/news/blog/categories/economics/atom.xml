@@ -4,7 +4,7 @@
   <title><![CDATA[Category: economics | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/economics/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-01-30T12:26:26+00:00</updated>
+  <updated>2013-03-01T19:30:53+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,169 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Open Data Business Models]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/"/>
+    <updated>2013-03-01T19:16:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models</id>
+    <content type="html"><![CDATA[<p>Data doesn't make for a good tradable commodity, as discussed in a previous post on the <a href="/blog/2012/10/25/the-economics-of-open-data">Economics of Open Data</a>. Because of these market failures, there's a strong business case for the public sector to open data.
+But what about commercial business models for open data? This post explains why it's not just the private sector who ought to pay attention to this opportunity.
+The post is split into three topics: opening data that you own (why data assets are more valuable to you open), using open data (how to exploit your or someone else's open data) and commercial models (how to get paid in the process).</p>
+
+<!--more-->
+
+
+<h2>Opening your data</h2>
+
+<p>Why should you open your data? Here are a few reasons:</p>
+
+<ul>
+<li>Network effects</li>
+<li>Risk mitigation</li>
+<li>Reputation</li>
+<li>Attention</li>
+</ul>
+
+
+<h3>Network effects - Open is more exploitable</h3>
+
+<p>There is a much greater potential for exploting data where more people have access. As a result your data will have greater value when it is open (to see how see below). Although you may have to share some of the pie with others, the overall pie (and so potentially your slice too) will be bigger.
+This is particularly obvious for businesses who have ambitions for their data that are beyond their reach. It's clear that small businesses may not be able to afford a dedicated resource for data manipulation or scientific analysis. It's also true of larger organisations where the analysis is particularly complex and requires the skills of a specialist.
+The notion of a network-effect actually goes a step further to argue that it's impossible for any individual business to realise the full potential of their data internally. The data has value for each person that uses it, and in turn each use increases the value of the data. This is because data doesn't hold a value <em>per se</em> - it's value is only realised when data is interpreted with context as information (i.e. when a datum is combined with another datum). If the openness is reciprocal (share-alike) then your data will increase in value as it is shared and linked with other sources. You may even reasonably expect to have your data corrected, cleaned, and maintained (reducing the cost of ownership). There is also the possiblity of other businesses being able to extract value with niche customisations that you don't have the interest (let alone the capacity or knowledge) to consider.
+It should be apparent that this benefit is not guaranteed in all situations. If the pie doesn't get any bigger then there may be little to gain from sharing it. The likelihood is that you it may be very hard to predict all possible means of exploiting your data. Further it's not certain, therefore that keeping data closed a precaution is prudent - it may turn out to be short-sighted...</p>
+
+<h3>Risk mitigation - Open it or else</h3>
+
+<p>If you don't open it, your competitors will.
+The value of information depends upon it revealing something novel. Since there are usually a variety of ways of answering a given question it's likely that your data is not entirely unique (i.e. for every purpose, and every user). As a result you stand to be undermined by a competitor who is willing to offer alternative (although not necessarily completely substitutable) data at a lower price. Economic theory suggests that, in competitive markets, the price will equal the marginal cost of supply. Since the marginal cost of supplying data is effectively 0 (or at least very low), you may well find yourself undercut by an open data provider. You are only insulated from this risk to the extent that alternative sources are not perfect substitutes for your data from the perspective of your customers and markets.
+Again, this risk is not certain. If you have the sole provider of a data source for which there are no direct substitutes then the probability of being undercut is lower. By exploiting this monopolistic position, however, you leave tremendous incentives for others to find imaginative alternatives to your offering. It may turn out that you're not as unique as you'd assumed. Indeed there's no guarantee that you'll sustain the position of sole provider. Changing technology means that markets that were once protected by barriers to entry are now open to competition. If you are to operate an open data business model, however, and focus on a complementary service, then you are much more likely to cement your position as the default provider and retain your standing in the market...</p>
+
+<h3>Reputation - Open is credible</h3>
+
+<p>Opening data is a powerful means of being transparent. That transparency will make your propositions credibile by sending the signal that you have nothing to hide.
+As has been particularly obvious in the food industry of late (for historians reading this blog in the next millenium we're in the middle of a crisis about eating horse meat that was advertised as beef), the complexity of global supply chains bring risks because provenance is hard to establish. Open data presents a solution to this problem.
+This has to be genuine. Releasing data under the pretense of openness and at the same time making it difficult for anyone to interpret the data will be recognised as a cynical gesture.</p>
+
+<h3>Attention - Open is attractive</h3>
+
+<p>Where data is opened in an easily accessible format with some guarantee that the openness will be sustained, it will gather a lot of attention. A captive audience is certainly a valuable asset. The traffic it generates may be more valuable than the data itself. The technical implementation must be thought through carefully if the attention is going to be captured/ channeled through this approach.</p>
+
+<h2>Using Open Data</h2>
+
+<p>There are a variety of ways to profit from open data. The line-between this categories is blurred. The general sequence is from data source to final use. Applications may include one or more steps.</p>
+
+<ul>
+<li>Enabling Infrastructural</li>
+<li>Information Enrichment</li>
+<li>Analysis and Consultancy</li>
+<li>Application Development</li>
+</ul>
+
+
+<h3>Enabling Infrastructure</h3>
+
+<p>Although open data ought to be free to access it may not be free to enable that access. There is a cost (and therefore a profit) associated with opening data. A business or a government agency who wishes to open their a data are customers in this regard. Thus there is a business opportunity in supplying services such as:</p>
+
+<ul>
+<li>Information architecture design - planning out the schema, ontology, or technical implementation details for open data (either as a service or as creation of an open meta-data asset);</li>
+<li>Database provision - the technology stack that will hold the data;</li>
+<li>Web hosting - the technology that will make it open;</li>
+<li>Service/ Application layer - the technology that will make it (re)usable: Linked-open data, indexing services, user interfaces, APIs, integration gateways, data loaders etc (note that I'm thinking particularly of just the 'openning' bit here, not applications of open data - that comes next!);</li>
+<li>Advice on Licensing - the legal framework; and</li>
+<li>Business Advice on Strategy - as per this post!</li>
+</ul>
+
+
+<h3>Information Enrichment</h3>
+
+<p>As we have seen, data is valuable when presented in context as information. There is a value then, in enriching data by adding more data or context. Some ideas for what this might look like are shared below. The general distinction about enrichment I've made is that it stops short of being analysis (i.e. the output of enrichment is more open data, not conclusions or decisions - see the following section for that).
+Enrichment services might include:</p>
+
+<ul>
+<li>Linking-open data sources (tying a dataset into the semantic web)</li>
+<li>Quality assurance - providing an independent certification or compliance service (must be careful to consider who pays/ scrutinises for the sake of credibility)</li>
+<li>Text analysis - information extraction (entity recognition, annotation)</li>
+<li>Cleaning data - e.g. reconciling duplicates, ensuring consistency, identifying junk data, processing data so that it conforms with an objective standard)</li>
+<li>Reformating - i.e. tranforming data so that it's provided in a more useful (typically machine readable) format e.g. translating pdfs into csv, wrapping a database in an API</li>
+</ul>
+
+
+<h3>Analysis and Consultancy</h3>
+
+<p>Open data can be a vital input into services designed to provide advice and support to decision makers. Beyond the simple fact that the information is free, there is a value in using a resource that is open because it is verifiable. That is to say, your analysis may be reproduced and checked. Notice that this doesn't actually need to have happened for this to be of benefit, indeed the very possibility may be credible enough.
+For the sake of completeness here are some examples of analytical services that might benefit from using open data sources:</p>
+
+<ul>
+<li>Consultancy/ Advice/ Decision support/ Insight</li>
+<li>Policy Development/ Advocacy/ Lobbying</li>
+<li>Statistical analysis and modelling</li>
+<li>Presentation (data graphics/ visualisation, sonification, and interaction)</li>
+<li>Scientific, Technical or Operational research (and product or process development)</li>
+</ul>
+
+
+<h3>Application Development</h3>
+
+<p>Finally open data can be integrated into applications that provide value to consumers, businesses, government, or indeed other developers. Here open data is interpreted in a particular domain of interest to provide a service.</p>
+
+<h2>Commercial models for Open Data</h2>
+
+<p>So we've seen the value of openning data, and of using open data, but how can this value be translated into profit? Here I'll present a few models:</p>
+
+<ul>
+<li>normal pricing</li>
+<li>cross-subsidy</li>
+<li>freemium</li>
+<li>advertising</li>
+<li>sponsorship</li>
+<li>affiliation</li>
+</ul>
+
+
+<h3>Normal pricing</h3>
+
+<p>The most obvious model is 'normal' pricing. This bears stating as it's not always apparent from listening to open data advocates! Just because the data is provided for free, it doesn't mean that the services that apply this data must be provided for free. Your ability to charge for something will depend upon how costly it would be for another person (or business) to reproduce the application you've created.
+Traditional pricing models are also part of...</p>
+
+<h3>Cross-subsidy</h3>
+
+<p>The idea here is that an open data proposition enhances the value of complementary services to the extent that those other services make enough extra profit to pay for the costs of openning the data. Clearly this is easiest where the organisation that decides to open the data is also the one generating profit from the service although it may be possible to design commercial arrangements for a payment between two organisations.
+The inherent difficulty with this model is problem of quantifying the contribution of the open data to the complementary service. Since open data is untraded and thus there's no price signal of value. While it may be possible to calculate the total value of network effects captured by a given organisation, it is particularly difficult to put a price on the risk avoidance or reputational benefits.</p>
+
+<h3>Freemium</h3>
+
+<p>Where the service is the provision of data itself it's not possible to follow either of the first two models. As such an alternative is to segment the market - providing a basic level of 'free' service and a premium level of 'paid' service (essentially a cross-subsidy from the latter to the former). This can operate like a loss-leader. Typically the market is segmented according to the level of access provided (number or range of requests permitted or the speed of response). As the premium services begin to differ systematically from the core open data offering (e.g. training or consultancy) this pricing model begins to ressemble the cross-subsidy archetype.</p>
+
+<h3>Advertising</h3>
+
+<p>This is the most generally-applicable of the pricing models. Where a cross-subsidy cannot be established (perhaps because the difficulty agreeing a contract between the data opener and service vendor) it may be possible to pay for open data via advertising.</p>
+
+<h3>Sponsorship</h3>
+
+<p>If your data generates enough attention, people may be willing to pay you to include their content. Naturally this isn't an obvious option for a start-up or un-tested service and it may be inappropriate for some data sets. For example: sponsored links on Twitter, Google Search and Reddit.</p>
+
+<h3>Affiliation</h3>
+
+<p>This is the reverse side of sponsorship where affiliates receive open data for free which they then process and redistribute in order to send attention back up the chain. For example: Amazon.</p>
+
+<h2>Further information...</h2>
+
+<p>If you want to find out more then you might like to check out these links:</p>
+
+<ul>
+<li><a href="http://www.slideshare.net/OpeningUp/open-data-conference-john-sheridan-open-data-as-an-operating-model">Open Data as an Operating Model</a> - John Sheridan explains how a linked-open-data approach enabled a mutually beneficial ecosystem around legislation.gov.uk. Check out slides 17, 24, and 33 in particular - they should you how the pieces fit together.</li>
+<li><a href="http://chiefmartec.com/2010/01/7-business-models-for-linked-data/">7 Business Models for Linked Data</a> - Scott Brinker provides some far more catchy labels for these ideas than I have! <em>Data-layer ads</em>?!</li>
+<li><a href="http://blog.ldodds.com/2010/01/10/thoughts-on-linked-data-business-models/">Thoughts on Linked Data Business Models</a> - Leigh Dodds provides some insights into how Scott's ideas might be implemented and also comments on a motive I've overlooked here - philanthropy!</li>
+<li><a href="http://www.scribd.com/doc/124951288/The-business-of-Open-Data-where-s-the-benefit">The Business of Open Data - Where's the Benefit</a> and <a href="https://soundcloud.com/theodi/odi-fridays-the-business-of">the accompanying audio track</a> - Jeni Tenison provides a contrast of a few models (including the closed data case) with the help of Osterwalder's Business Model Canvas.</li>
+</ul>
+
+
+<p>If that's not enough then you might be interested in attending a workshop on the <a href="http://futureeverything.org/summit/conference/business-of-open-data-workshop/">Business of Open Data</a> that's taking place as part of this year's <a href="http://futureeverything.org/">Future Everything Summit of Ideas &amp; Digtial Invention</a>.</p>
+
+<p>Indeed if you're in Manchester why not pop along to the next <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a>?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
@@ -109,7 +272,7 @@ Benchmarking against other interventions provides valuable contextual informatio
 <li>Businesses that attempt to defend outdated business models by keeping data closed won't be able to compete with an open alternatives (alternatives that they are encouraging by keeping their data closed);</li>
 <li>It's probably better for such businesses to open their data before a competitor does - they shouldn't waste their current position of dominance;</li>
 <li>In some cases, where the market fails completely, public intervention to fund the creation or provision of information will help to improve economic growth and social welfare;</li>
-<li>In other cases there will be considerable opportunities for private firms to innovate and capture the benefits of open data... but that's another story...</li>
+<li>In other cases there will be considerable <a href="/blog/2013/03/01/open-data-business-models">opportunities for private firms to innovate and capture the benefits of open data</a>.</li>
 </ol>
 
 ]]></content>
