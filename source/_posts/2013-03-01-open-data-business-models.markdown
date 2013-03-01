@@ -7,7 +7,7 @@ categories: [open data, economics, business model, linked data, text analysis ]
 ---
 
 Data doesn't make for a good tradable commodity, as discussed in a previous post on the [Economics of Open Data](/blog/2012/10/25/the-economics-of-open-data). Because of these market failures, there's a strong business case for the public sector to open data.
-But what about commercial business models for open data? This post explains why it's not just the private sector who ought to pay attention to this opportunity.
+But what about commercial business models for open data? This post explains why it's not just the public sector who ought to pay attention to this opportunity.
 The post is split into three topics: opening data that you own (why data assets are more valuable to you open), using open data (how to exploit your or someone else's open data) and commercial models (how to get paid in the process).
 <!--more-->
 ## Opening your data
