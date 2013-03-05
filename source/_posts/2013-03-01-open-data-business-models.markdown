@@ -23,7 +23,7 @@ Why should you open your data? Here are a few reasons:
 There is a much greater potential for exploting data where more people have access. As a result your data will have greater value when it is open (to see how see below). Although you may have to share some of the pie with others, the overall pie (and so potentially your slice too) will be bigger.
 This is particularly obvious for businesses who have ambitions for their data that are beyond their reach. It's clear that small businesses may not be able to afford a dedicated resource for data manipulation or scientific analysis. It's also true of larger organisations where the analysis is particularly complex and requires the skills of a specialist.
 The notion of a network-effect actually goes a step further to argue that it's impossible for any individual business to realise the full potential of their data internally. The data has value for each person that uses it, and in turn each use increases the value of the data. This is because data doesn't hold a value *per se* - it's value is only realised when data is interpreted with context as information (i.e. when a datum is combined with another datum). If the openness is reciprocal (share-alike) then your data will increase in value as it is shared and linked with other sources. You may even reasonably expect to have your data corrected, cleaned, and maintained (reducing the cost of ownership). There is also the possiblity of other businesses being able to extract value with niche customisations that you don't have the interest (let alone the capacity or knowledge) to consider.
-It should be apparent that this benefit is not guaranteed in all situations. If the pie doesn't get any bigger then there may be little to gain from sharing it. The likelihood is that you it may be very hard to predict all possible means of exploiting your data. Further it's not certain, therefore that keeping data closed a precaution is prudent - it may turn out to be short-sighted...
+It should be apparent that this benefit is not guaranteed in all situations. If the pie doesn't get any bigger then there may be little to gain from sharing it. The likelihood is that it may be very hard to predict all possible avenues for exploiting your data. Further it's not certain, therefore that keeping data closed a precaution is prudent - it may turn out to be short-sighted...
 
 ### Risk mitigation - Open it or else
 
@@ -53,9 +53,9 @@ There are a variety of ways to profit from open data. The line-between this cate
 Although open data ought to be free to access it may not be free to enable that access. There is a cost (and therefore a profit) associated with opening data. A business or a government agency who wishes to open their a data are customers in this regard. Thus there is a business opportunity in supplying services such as:
 
 - Information architecture design - planning out the schema, ontology, or technical implementation details for open data (either as a service or as creation of an open meta-data asset);
-- Database provision - the technology stack that will hold the data;
-- Web hosting - the technology that will make it open;
-- Service/ Application layer - the technology that will make it (re)usable: Linked-open data, indexing services, user interfaces, APIs, integration gateways, data loaders etc (note that I'm thinking particularly of just the 'openning' bit here, not applications of open data - that comes next!);
+- Database - the technology that will hold the data;
+- Web hosting - the technology that will open-up access to the data;
+- Service/ Application layer - the technology that will make it (re)usable: Linked-open data, indexing services, user interfaces, APIs, integration gateways, data loaders etc (note that I'm thinking particularly of just the server-side 'openning' bit here, not client-side applications of open data - that comes next!);
 - Advice on Licensing - the legal framework; and
 - Business Advice on Strategy - as per this post!
 
