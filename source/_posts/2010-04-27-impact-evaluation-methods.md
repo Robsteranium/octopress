@@ -3,7 +3,7 @@ layout: post
 title: Impact Evaluation Methods
 created: 1272362829
 ---
-<p>This is a brief review of impact evaluation methods.&nbsp; We consider the: <a href="http://www.berr.gov.uk/files/file21900.pdf ">Impact Evaluation Framework</a> for Regional Development Agencies, the <a href="http://www.offpat.info/Publication.aspx?ID=2536">English Partnerships Additionality Guide</a>, and the <a href="http://www.sroi-uk.org/component/option,com_docman/task,cat_view/gid,29/Itemid,38/">Social Return on Investment</a> method.<br />
+<p>This is a brief review of impact evaluation methods.&nbsp; We consider the: <a href="http://www.berr.gov.uk/files/file21900.pdf">Impact Evaluation Framework</a> for Regional Development Agencies, the <a href="http://www.offpat.info/Publication.aspx?ID=2536">English Partnerships Additionality Guide</a>, and the <a href="http://www.sroi-uk.org/component/option,com_docman/task,cat_view/gid,29/Itemid,38/">Social Return on Investment</a> method.<br />
 <br />
 We will demonstrate that:</p>
 <ul>

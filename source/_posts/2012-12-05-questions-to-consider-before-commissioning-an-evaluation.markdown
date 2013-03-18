@@ -51,7 +51,7 @@ A empirically flawless method is useless if none of your audience can make sense
 ## What data do we already have?
 Having data available may help to save on the costs of data collection. Data can come from obvious sources such as:
 
-- the monitoring data your contractually obliged to collect,
+- the monitoring data you're contractually obliged to collect,
 - management information you use to direct your work, or
 - feedback forms you've used to ongoing service development.
 

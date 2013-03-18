@@ -20,6 +20,7 @@
   
   <link rel="canonical" href="http://infonomics.ltd.uk/news/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/">
   <link href="/news/favicon.png" rel="icon">
+  <link href="/news/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="/news/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/news/javascripts/modernizr-2.0.js"></script>
   <script src="/news/javascripts/ender.js"></script>
@@ -46,15 +47,10 @@
 </head>
 
 <body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/news/">Infonomics Blog</a></h1>
-  
-    <h2>Analysis of Value</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <!-- header role="banner">
+</header -->
+  <header>
+    <nav role="navigation"><!--<ul class="subscription" data-subscription="rss email">
   <li><a href="/news/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
     <li><a href="http://feedburner.google.com/fb/a/mailverify?uri=InfonomicsBlog&amp;loc=en_UK" rel="subscribe-email" title="subscribe via email">Email</a></li>
@@ -67,17 +63,34 @@
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
-  
-<ul class="main-navigation">
-  <li><a href="/news/">Blog</a></li>
-  <li><a href="/news/blog/archives/index.html">Archives</a></li>
-  <li><a href="/">Main Infonomics Site</a></li>
-</ul>
+   -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">Infonomics</a>
+      <ul class="nav">
+        <li><a href="/services">Services</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li class="active"><a href="/news">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <p class="pull-right navbar-text">
+        0791 255 3187
+      </p>
+    </div>
+  </div>
+</div>
+
+<li><a href="/news/blog/archives/index.html">Archives</a></li>
+
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
+  </header>
+  <section id="contentcontainer" class="container">
+    <div id="main">
+      <div id="content">
+        <div>
 <article class="hentry" role="article">
   
   <header>
@@ -213,14 +226,17 @@
 </aside>
 
 
+      </div>
     </div>
-  </div>
-  <footer role="contentinfo"><p>
+  </section>
+<div id="page-footer">
+  <footer role="contentinfo" class="container"><p>
   Copyright &copy; 2013 - Robin Gower - Infonomics -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
 </footer>
+</div>
   
 
 <script type="text/javascript">
