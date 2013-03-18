@@ -1,0 +1,40 @@
+/* colour scheme - dark to light */
+$color1 : #111163;
+$color2 : #333399;
+$color3 : #6666CC;
+$color4 : #8181CC;
+$color5 : #aeaee7;
+$bluegrey : #393973;
+$yellow : #DBB02F;
+
+/* monochrome for testing */
+$mono1 : #747474;
+$mono2 : #9A9A9A;
+$mono3 : #CDCDCD;
+$mono4 : #EEEEEE;
+
+$color_ptext: $mono1;
+$color_foreground: $mono1; //$color3; // darker
+$color_background: white;//#FBFBFB; //$mono4; // lighter
+$tile_background: #fff;
+$color_title: $color_background;
+$color_header: #a4a4e1;//$color_foreground;//#a69ee0;//
+
+$c_nav_normal : $color_background;
+$c_nav_background : #0E0E1E; //#444466; //#FFFFFF;
+$c_nav_current : $c_nav_background;//#FFFFFF; //#000000;
+$c_nav_shadow : $c_nav_background;//#444466; //#aeaee7;
+
+$c_section_border : $mono2;
+$c_section_about : #FBFBFB;
+$c_section_about_border : $mono4;
+$c_section_benefit: $mono4;
+$c_section_border: #FFFFFF;//#444466; //#403F3F;
+$c_section_border_text: #000;
+$c_section_services_ring: $mono4;
+$c_section_services_border: $mono3;
+
+/* complementary greens */
+$green1 : #629951;
+$green2 : #577F4A;
+

@@ -59,7 +59,8 @@ aside.sidebar {
 @media only screen and (min-width: 768px) {
   .toggle-sidebar {
     outline: none;
-    position: absolute; right: -10px; top: 0; bottom: 0;
+//    position: absolute; right: -10px; top: 0; bottom: 0;
+    position: absolute; top: 0; bottom: 0;
     display: inline-block;
     text-decoration: none;
     color: mix($text-color-light, $sidebar-bg);

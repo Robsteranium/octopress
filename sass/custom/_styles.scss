@@ -1,7 +1,14 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+@import "custom/infon";
+
 body > header {
-  background-image: url(/news/images/infon_banner.png);
-  background-size: 1200px 167px;
-  background-repeat: no-repeat;
+//font-size: $header-font-size;
+  padding: 0px 0px 0px 0px;
 }
+/*
+*   background-image: url(/news/images/infon_banner.png);
+*   background-size: 1200px 167px;
+*   background-repeat: no-repeat;
+* }
+*/

@@ -1,0 +1,136 @@
+@import "custom/colours";
+//@import url(http://fonts.googleapis.com/css?family=Lato:300); //,400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);//,400);
+//@import url(http://fonts.googleapis.com/css?family=Dosis:300);//,400);
+
+body {
+  //font-family: 'Raleway-Thin', cursive;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  //font-family: 'Source Sans Pro', sans-serif;
+  //font-family: Dosis, sans-serif;
+  //font-weight: 400;
+  background: $color_background;
+  color: $color_ptext;
+}
+
+h1, h2, h3, h4, h5, .btn {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: $color2;
+  text-decoration: none;
+  &:hover {
+    color: $color_foreground;
+    text-decoration: underline; }
+}
+
+p.navbar-text {
+  font-size: 20px;
+}
+
+.logomaster {
+  background-image: image-url('buddabrot.png');
+  background-position: 0px -100px;
+  color: white;
+  h1 {
+    font-size: 80px;
+  }
+  p {
+    font-size: 28px;
+  }
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#contentcontainer {
+  padding-top: 114px;
+  background: $color_background;
+}
+
+
+section {
+  #actions {
+    text-align: center;
+    a {
+      margin: 4em;
+    }
+  }
+  #benefits {
+    color: $c_section_border_text;
+    .span1 {
+      text-align: center;
+    }
+    i {
+      font-size: 60px;
+      line-height: 100px;
+    }
+  }
+}
+
+
+#bordercontainer {
+  h1 {
+    padding: 0em;
+    margin: 0em;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+    //background: $c_section_border;
+    color: $c_section_border_text;
+  }
+}
+
+
+
+#project_line {
+  #project_name {
+    line-height: 50px;
+  }
+}
+#client_lines {
+  .row-fluid {
+    //position: relative;
+    #client_name {
+      height: 50px;
+      top: -50%;
+    }
+  }
+  //min-height: 50px;
+  //vertical-align: middle;
+}
+
+
+
+#top-threes {
+  p, h3 {
+    //text-align: center;    
+  }
+}
+
+input, textarea {
+  -moz-box-shadow: inset 0 0.1em 0.2em rgba(0,0,0, 0.3);
+  -webkit-box-shadow: inset 0 0.1em 0.2em rgba(0,0,0, 0.3);
+  box-shadow: inset 0 0.1em 0.2em rgba(0,0,0, 0.3);
+}
+
+#stretcher {
+  height: 300px;
+}
+
+div#page-footer {
+  padding: 100px 0px;
+  margin-top: 100px;
+  border-top: 1px solid #E5E5E5;
+  background-color: whiteSmoke;
+}
+
+#blog-archives h2 {
+  margin-top: 0px;
+}
