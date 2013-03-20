@@ -4,7 +4,7 @@
   <title><![CDATA[Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-03-18T13:46:27+00:00</updated>
+  <updated>2013-03-20T18:23:12+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,143 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Open Data Sources - Beyond the Public Sector]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/"/>
+    <updated>2013-03-20T09:40:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector</id>
+    <content type="html"><![CDATA[<p>This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at <a href="http://infonomics.ltd.uk/news/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">where to go for open government data</a>.</p>
+
+<p>This post was prepared as part of my contribution to the <a href="http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/">Business of Open Data Workshop</a>. This workshop is the first in a series organised by <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a> and <a href="http://futureeverything.org">Future Everything</a>.</p>
+
+<!-- more -->
+
+
+<h2>The Social Web</h2>
+
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/circles-bird.png"></p>
+
+<p>As you might expect, there&#8217;s a tremendous amount of data being generated across social networking platforms. These businesses thrive on having porous walls (from a data perspective at least). It&#8217;s little surprise then that they all come with a suite of developer tools to help you build functionality into their offering. This approach wouldn&#8217;t be considered by all to constitute openness (and indeed some are <a href="http://www.fsf.org/facebook">completely resistant to the prospect of Facebook owning their identity</a>) but it is worth mentioning as these resources contain a wealth of information. Typically permission must be given by a user for you to access their perspective on the social network using protocols such as open auth</p>
+
+<ul>
+<li><a href="https://dev.twitter.com/">Twitter&#8217;s Developer APIs</a> provide programmatic access to what they call &#8216;platform objects&#8217;: Tweets, Users, Entities (#hashtags, media, urls, and @mentions), and Places.</li>
+<li><a href="https://developers.facebook.com">Facebook for Developers</a> includes the Graph API for reading from and writing to Facebook platform: Users, Pages, Groups, Photos, Videos, and the actions between objects. They&#8217;ve even got their <a href="https://developers.facebook.com/docs/technical-guides/fql/">own query language</a>!</li>
+<li><a href="https://developer.linkedin.com/">Linked-in APIs</a> for People, Groups, Companies, and Jobs.</li>
+<li><a href="https://developers.google.com/+/">The Google+ Platform</a> for People, Activities, Comments and Moments</li>
+</ul>
+
+
+<h2>Open Corporates</h2>
+
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/mapping-tesco.png"></p>
+
+<p><a href="http://opencorporates.com/">OpenCorporates</a> has a straightforward (though big) ambition: to have a URL for every company in the world. The project combines data collected from official registries (such as Companies House in the UK) with crowd-sourced data (e.g. from unparseable filings etc). The <a href="http://blog.opencorporates.com/">blog</a> reveals some of the fascinating analyses that are possible (such as <a href="http://blog.opencorporates.com/2012/12/17/guest-post-data-sketching-with-the-opencorporates-api/">this network graph of directors and companies</a>) and issues that exist in this area (<a href="http://blog.opencorporates.com/2012/07/24/are-duns-numbers-the-crack-cocaine-of-id-systems-and-is-the-uk-the-latest-addict/">are DUNS numbers the crack cocaine of business identification?</a>).</p>
+
+<h2>Princeton Wordnet</h2>
+
+<p>The <a href="http://wordnet.princeton.edu/">Princeton WordNet</a> is a lexical database of English - a catalogue of words.</p>
+
+<blockquote><p>Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet&#8217;s structure makes it a useful tool for computational linguistics and natural language processing.</p></blockquote>
+
+
+<p>If you&#8217;re interested in text analysis then I highly recommend that you check out <a href="http://gate.ac.uk/">Gate</a> which of course has a Wordnet plugin.</p>
+
+<h2>OPTA MCFC-Analytics</h2>
+
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/Opta.png"></p>
+
+<p>Opta - a sports data company - has released data as part of the MCFC-Analytics project. There are two datasets:
+- The &#8220;Lite&#8221; Dataset which has an entry for every player&#8217;s appearance in each match (10,370 in total) from the 2011-12 Premier League Season. The 185 fields cover a handful of contextual details (name of player and team etc) and counts for all of the &#8220;on ball&#8221; events in some detail (e.g. &#8220;Total Successful Passes Excl Crosses Corners&#8221;). The data is provided in csv.
+- The &#8220;Advanced&#8221; data provides a time and space (x, y, and z!) coded feed of events, codified by type. The initial set of open data covers only Manchester City players although more is promised if you can demonstrate some interesting developments&#8230;</p>
+
+<h2>DBpedia</h2>
+
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/dbpedia_logo.png"></p>
+
+<p><a href="http://dbpedia.org/">DBpedia</a>&#8230;</p>
+
+<blockquote><p>&#8230;is a crowd-sourced community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to make sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking, and improving the encyclopedia itself.</p></blockquote>
+
+
+<h2>Freebase</h2>
+
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/freebase-logo.png"></p>
+
+<p><a href="http://freebase.org/">Freebase</a> is a free, open knowledge graph covering 37 million topics, 2000 types, and 30,000 properties. Topics (e.g. <a href="http://www.freebase.com/m/04lg6">Leonardo da Vinci</a>) can have types (e.g. Visual Artists) and types contain properties (e.g. his <a href="http://www.freebase.com/query?autorun=1&amp;q=%5B%7B%22id%22:%22/m/04lg6%22,%22name%22:null,%22/visual_art/visual_artist/artworks%22:%5B%5D%7D%5D">artworks</a>).</p>
+
+<p>Hopefully that gives you a flavour of what is out there. I&#8217;d welcome any additional suggestions in the comments&#8230;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Public Sector Information: what's available and where you can find it]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
+    <updated>2013-03-18T15:43:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
+    <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="http://infonomics.ltd.uk/news/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
+
+<p>This post was prepared as part of my contribution to the <a href="http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/">Business of Open Data Workshop</a>. This workshop is the first in a series organised by <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a> and <a href="http://futureeverything.org">Future Everything</a>.</p>
+
+<p>To understand why public sector information is the main source of open data you may wish to read about the <a href="http://infonomics.ltd.uk/news/news/blog/2012/10/25/the-economics-of-open-data">economics of open data</a>.</p>
+
+<!-- more -->
+
+
+<h2>Who is publishing Public Sector Information - Where can I find it?</h2>
+
+<h3>data.gov.uk</h3>
+
+<p><img class="left" src="http://infonomics.ltd.uk/news/images/post_images/dgu-header.png">
+In 2009 <a href="http://data.gov.uk">data.gov.uk</a> was established to provide a central catalogue of public sector information, covering over 9,000 sources (as I write this). It provides meta data, that is, it acts an index of other data rather than a respository itself. The site is built on the <a href="http://okfn.org">Open Knowledge Foundation&#8217;s</a> <a href="http://ckan.org/">CKAN</a> platform. It provides a <a href="http://data.gov.uk/sparql">SPARQL endpoint</a> for a <a href="http://data.gov.uk/linked-data/who-is-doing-what">variety of Linked Open Data resources</a>.
+In theory, this site should cover most of what is available from Government. Although in the past, the coverage has been patchy in parts and duplicated in others, this has largely been resolved over the past few years. The main problem with data.gov.uk is that it&#8217;s sometimes best to go direct to the horses&#8217; mouth particularly when what you&#8217;re interested in is a delivery API, not metadata discovery. As such I&#8217;ll go into a little more detail about the places you&#8217;ll usually find yourself after you&#8217;ve explored data.gov.uk.</p>
+
+<h3>The Office of National Statistics</h3>
+
+<p><img class="right" src="http://infonomics.ltd.uk/news/images/post_images/s300_NS_logo.jpg"></p>
+
+<p>The Office for National Statistics is the executive office of the UK Statistics Authority. The authority is a dedicated non-ministerial government department with responsibility for assessing <em>Official statistics</em> (i.e. &#8220;those produced by a government department or persons acting on behalf of the crown&#8221;) against it&#8217;s <a href="http://www.statisticsauthority.gov.uk/assessment/code-of-practice/">Code of Practice</a> to ensure that only compliant publications are designated <em>National Statistics</em>.</p>
+
+<p>The <a href="http://www.ons.gov.uk">ONS</a> has long been providing data as both <a href="http://www.ons.gov.uk/ons/datasets-and-tables/index.html">datasets</a> and <a href="http://www.ons.gov.uk/ons/publications/index.html">published reports</a> (books, articles, bulletins) that include some narrative and interpretation. The most recent incarnation of the ONS site has convenient filters for discovering what available by theme, release date (including <a href="http://www.ons.gov.uk/ons/release-calendar/index.html">forthcoming releases</a>), and geographic scope and precision (i.e. where is covers and with what breakdowns). While it&#8217;s naturally tempting to rush to the raw data you should also bear in mind that the <a href="http://www.ons.gov.uk/ons/guide-method/index.html">methodological guidance</a> is very important - there&#8217;s many a time this has either saved me making a mistake in interpretation (fixed-capital investment figures used to be apportioned by jobs and so were no more informative for making regional comparisons) or suggested an alternate &#8216;experimental&#8217; dataset that offered new insights (e.g. multiple approaches to measuring Gross Value Added).</p>
+
+<p>Of particular note are:</p>
+
+<ul>
+<li>the ONS&#8217;s site for labour market statistics - <a href="http://www.nomisweb.co.uk">nomis</a> - they have a <a href="http://www.nomisweb.co.uk/api/v01/help">RESTful API</a> which is compliant with the Statistical Data and Metadata eXchange (SMDX) ISO standard. The API offers both discovery and delivery services, URI resolution, and HTML, XML, json, and csv response formats.</li>
+<li>the <a href="http://www.neighbourhood.statistics.gov.uk/">Neighbourhood Statistics Exchange (NeSS)</a> - with their <a href="http://www.neighbourhood.statistics.gov.uk/dissemination/Info.do?page=nde.htm">Neighbourhood Data Exchange (NDE) API</a>, version 2 of which is now RESTful (I&#8217;ve got some ruby bindings knocking around somewhere if you really want to use the SOAP interface instead).</li>
+<li>the <a href="http://www.ons.gov.uk/ons/about-ons/what-we-do/programmes---projects/enhancing-access-to-ons-data/ons-api/index.html">forthcoming ONS API</a> which will operate under a similar principle and is designed with data from the 2011 Census in mind.</li>
+</ul>
+
+
+<h3>Central Government Departments</h3>
+
+<p><img class="left" src="http://infonomics.ltd.uk/news/images/post_images/govuk-crest.png">
+As part of their daily work and obligations for reporting, <a href="https://www.gov.uk/government/organisations">Central Government Departments</a> produce great volumes of data that is publically available. This departments have gradually be brought out from a heterogenous collection of sites operating under a department.gov.uk sub domain to a consistent www.gov.uk/department arrangement. This has made it much easier to search across Government for <a href="https://www.gov.uk/government/publications?publication_filter_option=statistics">statistics</a> or <a href="https://www.gov.uk/government/publications?publication_filter_option=research-and-analysis">research and analysis</a>. Indeed a convenient <a href="https://www.gov.uk/government/statistical-data-sets">index of statistical data sets</a> is provided.</p>
+
+<h3>data.gov.*</h3>
+
+<p><img class="right" src="http://infonomics.ltd.uk/news/images/post_images/datagm-beta.png">
+There is also a plethora of other PSI datastores from <a href="http://www.datagm.org.uk/">Manchester</a> to <a href="http://data.gov.md/">Moldova</a> and, indeed, <a href="http://datacatalogs.org">all over the world</a>.</p>
+
+<h2>What&#8217;s available? The Big Names in PSI</h2>
+
+<p><img src="http://infonomics.ltd.uk/news/images/post_images/oslogo.png"></p>
+
+<ul>
+<li>For transport, the main data sets are the <a href="">National Public Transport Access Nodes (NapTAN)</a>, which unique identifies public transport access points, and the <a href="http://data.gov.uk/dataset/nptdr">National Public Transport Data Repository</a>, which provides a snapshot of every GB journey in ATCO-CIF and TransXChange formats. Historically, the NPTDR has been taken annually in October but it is now being provided weekly as the <a href="http://traveline.info/tnds.html">Traveline National Dataset</a> (requires registration for FTP access).</li>
+<li>The <a href="http://data.gov.uk/dataset/index-of-multiple-deprivation">Indicies of Multiple Deprivation</a> - which ranks English neighbourhoods (or Lower-layer Super Output Areas - LSOAs) according to seven dimensions of deprivation. The IMD is often used as a means of allocating resources by need. NB: the publication is irregularly timed and has (historically at least) been subject to methodological changes between years making it difficult to use this dataset for trend analysis. It does, however, provide an incredible level of geographic precision.</li>
+<li>The <a href="http://data.gov.uk/dataset/coins">Combined Online Information System (COINS)</a> - which is basically the governments central accounts, all 4.3Gb of them!</li>
+<li>The <a href="http://www.ons.gov.uk/ons/guide-method/geography/products/postcode-directories/-nspp-/index.html">ONS Postcode Directory and National Statistics Postcode Lookup</a> - which provides a lookup for transforming postcodes into other geographic terms including statistical areas (e.g. LSOAs) and geocodes (i.e. Latitude-Longitude/ Northings-Eastings).</li>
+<li><a href="http://www.ordnancesurvey.co.uk/oswebsite/products/os-opendata.html">Ordnance Survey Open Data</a> including the &#8216;tiles&#8217; of the map (raster), government administrative boundaries (vector ESRI shapefiles), code-points (a csv of postcode coordinates etc), and gazetteers of place and road names.</li>
+<li><a href="http://legislation.gov.uk">Legislation.gov.uk</a> publishes all UK legislation in both the original enacted form and with revisions that are made over time. The platform is managed by the <a href="http://www.nationalarchives.gov.uk/">The National Archives</a> and provides Linked Data access (try adding /data.xml to the end of a URI).</li>
+</ul>
+
+
+<p>If you&#8217;re interested in more of the top datasets you might like to peruse <a href="http://data.gov.uk/data/site-usage/dataset">data.gov.uk&#8217;s own list of popular datasets</a> or read on to <a href="http://infonomics.ltd.uk/news/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">find out about what&#8217;s available outside of the public sector</a>.</p>
+
+<p>Have I missed some major sources or data sets? Let me know in the comments&#8230;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Open Data Business Models]]></title>
@@ -1511,72 +1648,6 @@ The discussion of factors of additionality demonstrates that counting gross outp
 
 
 <p>For further information I recommend <a href="www.bbc.co.uk/moreorless">BBC Radio 4&#8217;s More or Less</a> programme on which Tim Harford (the Undercover Economist) provides a sanity-check to the barrage of statistics quoted by the media: <quote>&quot;More or Less is devoted to the powerful, sometimes beautiful, often abused but ever ubiquitous world of numbers&quot;.</quote></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Information Markets as a Tool for Forecasting and Policy Development]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets/"/>
-    <updated>2008-08-04T00:00:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2008/08/04/why-should-government-policy-makers-know-about-information-markets</id>
-    <content type="html"><![CDATA[<h2>Introducing information markets</h2>
-
-
-<p><img class="left" src="http://infonomics.ltd.uk/news/images/post_images/cards_smaller.jpg" title="Prediction Markets: a safe bet for forecasters" >This article explains how information markets can assist policy developers by estimating predictions and making decisions.  Economists have long been convinced by the power of markets to allocate resources efficiently.  Markets are, so the <a href="http://en.wikipedia.org/wiki/Efficient_market_hypothesis">theory</a> goes, able to <strong>condense all available information about a particular product into one measure</strong>: the price.  But what if the commodity you&#8217;re trading is itself information?  Information markets are designed to put the power of trade to work on information: predictions, decisions and estimates more generally. </p>
-
-
-<!--more-->
-
-
-<p>The markets operate like a betting shop.  Gamblers bid on the expected outcomes of an event - the 2008, 4th Quarter Employment rate for example - and the bookmaker pays out to those who judged the value successfully.  Justin Wolfers&#8217; <em>Political Prediction Markets: a Webcast for the Uninitiated</em> provides an inspiring introduction to the topic.  You can find a link to the webcast over at the <a href="http://freakonomics.blogs.nytimes.com/2008/07/01/political-prediction-markets-webcast-for-the-uninitiated/">Freakonomics blog</a>.&nbsp;   To summarise, information markets can:</p>
-
-
-<ul>
-    <li>summarise all available information</li>
-    <li>make accurate predictions</li>
-    <li>respond rapidly to news</li>
-    <li>provide an incentive for information discovery</li>
-    <li>encourage truth revelation</li>
-</ul>
-
-
-<p>Information markets are even robust to manipulation attempts because traders can profit from betting against the lies espoused by manipulators.</p>
-
-
-<h2>Potential application of information markets for government</h2>
-
-
-<p>Information markets could be used to provide answers to the questions of policy development. Information markets can provide predictions for policy research and make decisions to guide strategy and implementation.</p>
-
-
-<h3>Prediction Markets as a Research Intelligence tool</h3>
-
-
-<p>Forecasting is an obvious application.  Information markets can <strong>summarise the implications of an evidence base in a meaningful way</strong>: indeed the only limit to the practical applicability of the results is the designer&#8217;s imagination.  With a large enough body of traders, the market can provide a <strong>continuously updated and accurate reflection of all available intelligence</strong>.  A dynamically adjusted indication of labour market indicators for example.  With the appropriate incentives, <strong>the market will induce traders to gather new evidence on the designer&#8217;s behalf</strong>.  Experts may be sufficiently motivated by the credibility that their company can earn from accurate prediction.  Kudos points translate in contract awards.  Ask five economists the same question, you will get six different answers, but if you ask them to bet on their answers you can only get one response.  In fact, as Justin Wolfers explains above, the results from <strong>information markets are more accurate than expert surveys</strong>.</p>
-
-
-<h3>Decision Markets as a Policy Choice tool</h3>
-
-
-<p>What if we apply decision markets to the questions of policy development?  In 2000, Robin Hanson wrote a <a href="http://hanson.gmu.edu/futarchy.html">manifesto describing a new form of government</a>. <quote>In &quot;futarchy,&quot; we would vote on values, but bet on beliefs. Elected representatives would formally define and manage an after-the-fact measurement of national welfare, while market speculators would say which policies they expect to raise national welfare.  The basic rule of government would be: <strong>When a betting market clearly estimates that a proposed policy would increase expected national welfare, that proposal becomes law. </strong></quote>  Futarky is a strong governance model because of two attributes.  Follow the links to understand why these attributes are so desirable:</p>
-
-
-<ul>
-    <li>Pursuit of welfare that includes both productivity and happiness - Nowadays the first is a given.  If you aren&#8217;t convinced that well-being is important, then you obviously haven&#8217;t heard the evidence from <a href="http://cep.lse.ac.uk/layard/">Richard Layard</a>&#8217;s study into this &quot;new science &quot;.  As he points out: <quote>So here we are as a society: no happier than fifty years ago.  Yet every group in society is richer, and most are healthier&#8230;  Through science, absolute material scarcity has been conquered in the West, and we need to think hard about what would now constitute progress.</quote></li>
-    <li>Checks and balances - Watch the video below to see Paul Collier explain why this is such an important aspect of modern social democracy.  Source:  Paul Collier - 4 ways to improve the lives of the &quot;bottom billion&quot;, <a href="http://www.ted.com">TED Talks</a>.<object height="326" width="446">
-    <param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" />
-    <param name="allowFullScreen" value="true" />
-    <param name="wmode" value="transparent" />
-    <param name="bgColor" value="#ffffff" />
-    <param name="flashvars" value="vu=http://video.ted.com/talks/embed/PaulCollier_2008-embed_high.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/PaulCollier-2008.embed_thumbnail.jpg&amp;vw=432&amp;vh=240&amp;ap=0&amp;ti=270" /><embed height="326" width="446" src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgcolor="#ffffff" allowfullscreen="true" flashvars="vu=http://video.ted.com/talks/embed/PaulCollier_2008-embed_high.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/PaulCollier-2008.embed_thumbnail.jpg&amp;vw=432&amp;vh=240&amp;ap=0&amp;ti=270"></embed></object></li>
-</ul>
-
-
-<h2>A health warning</h2>
-
-
-<p>While it is tempting to launch straight into information markets, the pragmatic policy-maker ought to first consider some of the caveats.  Like any other market, information markets are subject to market failures.  They <strong>will fail if there are too few participants</strong> - like a traditional commodity the market fails in the presence of monopoly power.  Information markets must be designed carefully (particularly where a market-maker is used) so that the rules of trade do not bestow an unfair disadvantage that distorts the incentives for trade.  Just as information markets can be distorted by robotic market-makers, human experts may have <strong>unfair access to relevant knowledge</strong>.  Information asymmetries make it difficult for traders to judge the qualities of the different options facing them and may, in extreme cases, cause the markets to collapse completely.  This is a critical issue when choosing who will participate and how they are engaged.  Furthermore, information markets <strong>fail if nobody has any useful information</strong>!  They can be used to illicit information from people who wouldn&#8217;t ordinarily share their models or data.    For more information on how to design and employ information markets to solve your policy development problems, please get in <a href="http://infonomics.ltd.uk/contact">contact</a>.</p>
 
 ]]></content>
   </entry>

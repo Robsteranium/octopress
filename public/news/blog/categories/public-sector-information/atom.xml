@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: public sector information | Infonomics Blog]]></title>
+  <link href="http://infonomics.ltd.uk/news/blog/categories/public-sector-information/atom.xml" rel="self"/>
+  <link href="http://infonomics.ltd.uk/news/"/>
+  <updated>2013-03-20T18:23:12+00:00</updated>
+  <id>http://infonomics.ltd.uk/news/</id>
+  <author>
+    <name><![CDATA[Robin Gower]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Public Sector Information: what's available and where you can find it]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
+    <updated>2013-03-18T15:43:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
+    <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
+
+<p>This post was prepared as part of my contribution to the <a href="http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/">Business of Open Data Workshop</a>. This workshop is the first in a series organised by <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a> and <a href="http://futureeverything.org">Future Everything</a>.</p>
+
+<p>To understand why public sector information is the main source of open data you may wish to read about the <a href="/news/blog/2012/10/25/the-economics-of-open-data">economics of open data</a>.</p>
+
+<!-- more -->
+
+
+<h2>Who is publishing Public Sector Information - Where can I find it?</h2>
+
+<h3>data.gov.uk</h3>
+
+<p><img class="left" src="/images/post_images/dgu-header.png">
+In 2009 <a href="http://data.gov.uk">data.gov.uk</a> was established to provide a central catalogue of public sector information, covering over 9,000 sources (as I write this). It provides meta data, that is, it acts an index of other data rather than a respository itself. The site is built on the <a href="http://okfn.org">Open Knowledge Foundation's</a> <a href="http://ckan.org/">CKAN</a> platform. It provides a <a href="http://data.gov.uk/sparql">SPARQL endpoint</a> for a <a href="http://data.gov.uk/linked-data/who-is-doing-what">variety of Linked Open Data resources</a>.
+In theory, this site should cover most of what is available from Government. Although in the past, the coverage has been patchy in parts and duplicated in others, this has largely been resolved over the past few years. The main problem with data.gov.uk is that it's sometimes best to go direct to the horses' mouth particularly when what you're interested in is a delivery API, not metadata discovery. As such I'll go into a little more detail about the places you'll usually find yourself after you've explored data.gov.uk.</p>
+
+<h3>The Office of National Statistics</h3>
+
+<p><img class="right" src="/images/post_images/s300_NS_logo.jpg"></p>
+
+<p>The Office for National Statistics is the executive office of the UK Statistics Authority. The authority is a dedicated non-ministerial government department with responsibility for assessing <em>Official statistics</em> (i.e. "those produced by a government department or persons acting on behalf of the crown") against it's <a href="http://www.statisticsauthority.gov.uk/assessment/code-of-practice/">Code of Practice</a> to ensure that only compliant publications are designated <em>National Statistics</em>.</p>
+
+<p>The <a href="http://www.ons.gov.uk">ONS</a> has long been providing data as both <a href="http://www.ons.gov.uk/ons/datasets-and-tables/index.html">datasets</a> and <a href="http://www.ons.gov.uk/ons/publications/index.html">published reports</a> (books, articles, bulletins) that include some narrative and interpretation. The most recent incarnation of the ONS site has convenient filters for discovering what available by theme, release date (including <a href="http://www.ons.gov.uk/ons/release-calendar/index.html">forthcoming releases</a>), and geographic scope and precision (i.e. where is covers and with what breakdowns). While it's naturally tempting to rush to the raw data you should also bear in mind that the <a href="http://www.ons.gov.uk/ons/guide-method/index.html">methodological guidance</a> is very important - there's many a time this has either saved me making a mistake in interpretation (fixed-capital investment figures used to be apportioned by jobs and so were no more informative for making regional comparisons) or suggested an alternate 'experimental' dataset that offered new insights (e.g. multiple approaches to measuring Gross Value Added).</p>
+
+<p>Of particular note are:</p>
+
+<ul>
+<li>the ONS's site for labour market statistics - <a href="http://www.nomisweb.co.uk">nomis</a> - they have a <a href="http://www.nomisweb.co.uk/api/v01/help">RESTful API</a> which is compliant with the Statistical Data and Metadata eXchange (SMDX) ISO standard. The API offers both discovery and delivery services, URI resolution, and HTML, XML, json, and csv response formats.</li>
+<li>the <a href="http://www.neighbourhood.statistics.gov.uk/">Neighbourhood Statistics Exchange (NeSS)</a> - with their <a href="http://www.neighbourhood.statistics.gov.uk/dissemination/Info.do?page=nde.htm">Neighbourhood Data Exchange (NDE) API</a>, version 2 of which is now RESTful (I've got some ruby bindings knocking around somewhere if you really want to use the SOAP interface instead).</li>
+<li>the <a href="http://www.ons.gov.uk/ons/about-ons/what-we-do/programmes---projects/enhancing-access-to-ons-data/ons-api/index.html">forthcoming ONS API</a> which will operate under a similar principle and is designed with data from the 2011 Census in mind.</li>
+</ul>
+
+
+<h3>Central Government Departments</h3>
+
+<p><img class="left" src="/images/post_images/govuk-crest.png">
+As part of their daily work and obligations for reporting, <a href="https://www.gov.uk/government/organisations">Central Government Departments</a> produce great volumes of data that is publically available. This departments have gradually be brought out from a heterogenous collection of sites operating under a department.gov.uk sub domain to a consistent www.gov.uk/department arrangement. This has made it much easier to search across Government for <a href="https://www.gov.uk/government/publications?publication_filter_option=statistics">statistics</a> or <a href="https://www.gov.uk/government/publications?publication_filter_option=research-and-analysis">research and analysis</a>. Indeed a convenient <a href="https://www.gov.uk/government/statistical-data-sets">index of statistical data sets</a> is provided.</p>
+
+<h3>data.gov.*</h3>
+
+<p><img class="right" src="/images/post_images/datagm-beta.png">
+There is also a plethora of other PSI datastores from <a href="http://www.datagm.org.uk/">Manchester</a> to <a href="http://data.gov.md/">Moldova</a> and, indeed, <a href="http://datacatalogs.org">all over the world</a>.</p>
+
+<h2>What's available? The Big Names in PSI</h2>
+
+<p><img src="/images/post_images/oslogo.png"></p>
+
+<ul>
+<li>For transport, the main data sets are the <a href="">National Public Transport Access Nodes (NapTAN)</a>, which unique identifies public transport access points, and the <a href="http://data.gov.uk/dataset/nptdr">National Public Transport Data Repository</a>, which provides a snapshot of every GB journey in ATCO-CIF and TransXChange formats. Historically, the NPTDR has been taken annually in October but it is now being provided weekly as the <a href="http://traveline.info/tnds.html">Traveline National Dataset</a> (requires registration for FTP access).</li>
+<li>The <a href="http://data.gov.uk/dataset/index-of-multiple-deprivation">Indicies of Multiple Deprivation</a> - which ranks English neighbourhoods (or Lower-layer Super Output Areas - LSOAs) according to seven dimensions of deprivation. The IMD is often used as a means of allocating resources by need. NB: the publication is irregularly timed and has (historically at least) been subject to methodological changes between years making it difficult to use this dataset for trend analysis. It does, however, provide an incredible level of geographic precision.</li>
+<li>The <a href="http://data.gov.uk/dataset/coins">Combined Online Information System (COINS)</a> - which is basically the governments central accounts, all 4.3Gb of them!</li>
+<li>The <a href="http://www.ons.gov.uk/ons/guide-method/geography/products/postcode-directories/-nspp-/index.html">ONS Postcode Directory and National Statistics Postcode Lookup</a> - which provides a lookup for transforming postcodes into other geographic terms including statistical areas (e.g. LSOAs) and geocodes (i.e. Latitude-Longitude/ Northings-Eastings).</li>
+<li><a href="http://www.ordnancesurvey.co.uk/oswebsite/products/os-opendata.html">Ordnance Survey Open Data</a> including the 'tiles' of the map (raster), government administrative boundaries (vector ESRI shapefiles), code-points (a csv of postcode coordinates etc), and gazetteers of place and road names.</li>
+<li><a href="http://legislation.gov.uk">Legislation.gov.uk</a> publishes all UK legislation in both the original enacted form and with revisions that are made over time. The platform is managed by the <a href="http://www.nationalarchives.gov.uk/">The National Archives</a> and provides Linked Data access (try adding /data.xml to the end of a URI).</li>
+</ul>
+
+
+<p>If you're interested in more of the top datasets you might like to peruse <a href="http://data.gov.uk/data/site-usage/dataset">data.gov.uk's own list of popular datasets</a> or read on to <a href="/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">find out about what's available outside of the public sector</a>.</p>
+
+<p>Have I missed some major sources or data sets? Let me know in the comments...</p>
+]]></content>
+  </entry>
+  
+</feed>
