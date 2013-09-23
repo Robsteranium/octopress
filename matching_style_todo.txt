@@ -1,0 +1,14 @@
+# fix blog styles
+- h1, h2 to have underline
+
+-- grab stuff from base/ partials
+-- base/typography and base/layout
+--
+- read on link to look better
+- more separation of posts in index
+- biggger font, more paragraph separation?
+X recent posts on side 
+- archive page?
+
+- twitter/ subscribe links?
+- fade-in colouring
