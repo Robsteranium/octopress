@@ -18,14 +18,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/">
+  <link rel="canonical" href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">
   <link href="/news/favicon.png" rel="icon">
   <link href="/news/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="/news/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/news/javascripts/modernizr-2.0.js"></script>
-  <script src="/news/javascripts/ender.js"></script>
-  <script src="/news/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/news/atom.xml" rel="alternate" title="Infonomics Blog" type="application/atom+xml">
+  <script src="/news/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/news/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -50,21 +51,7 @@
   <!-- header role="banner">
 </header -->
   <header>
-    <nav role="navigation"><!--<ul class="subscription" data-subscription="rss email">
-  <li><a href="/news/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-    <li><a href="http://feedburner.google.com/fb/a/mailverify?uri=InfonomicsBlog&amp;loc=en_UK" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:infonomics.ltd.uk/news" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-   -->
-<div class="navbar navbar-fixed-top">
+    <nav role="navigation"><div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="/">Infonomics</a>
@@ -83,7 +70,6 @@
 </div>
 
 <li><a href="/news/blog/archives/index.html">Archives</a></li>
-
 
 </nav>
   </header>
@@ -111,7 +97,7 @@
   
 
 
-<time datetime="2013-03-20T09:40:00+00:00" pubdate data-updated="true">Mar 20<span>th</span>, 2013</time>
+<time datetime="2013-03-20T09:40:00+01:00" pubdate data-updated="true">Mar 20<span>th</span>, 2013</time>
         
       </p>
     
@@ -129,11 +115,11 @@
 
 <p><img src="/news/images/post_images/circles-bird.png"></p>
 
-<p>As you might expect, there&#8217;s a tremendous amount of data being generated across social networking platforms. These businesses thrive on having porous walls (from a data perspective at least). It&#8217;s little surprise then that they all come with a suite of developer tools to help you build functionality into their offering. This approach wouldn&#8217;t be considered by all to constitute openness (and indeed some are <a href="http://www.fsf.org/facebook">completely resistant to the prospect of Facebook owning their identity</a>) but it is worth mentioning as these resources contain a wealth of information. Typically permission must be given by a user for you to access their perspective on the social network using protocols such as open auth</p>
+<p>As you might expect, there&rsquo;s a tremendous amount of data being generated across social networking platforms. These businesses thrive on having porous walls (from a data perspective at least). It&rsquo;s little surprise then that they all come with a suite of developer tools to help you build functionality into their offering. This approach wouldn&rsquo;t be considered by all to constitute openness (and indeed some are <a href="http://www.fsf.org/facebook">completely resistant to the prospect of Facebook owning their identity</a>) but it is worth mentioning as these resources contain a wealth of information. Typically permission must be given by a user for you to access their perspective on the social network using protocols such as open auth</p>
 
 <ul>
-<li><a href="https://dev.twitter.com/">Twitter&#8217;s Developer APIs</a> provide programmatic access to what they call &#8216;platform objects&#8217;: Tweets, Users, Entities (#hashtags, media, urls, and @mentions), and Places.</li>
-<li><a href="https://developers.facebook.com">Facebook for Developers</a> includes the Graph API for reading from and writing to Facebook platform: Users, Pages, Groups, Photos, Videos, and the actions between objects. They&#8217;ve even got their <a href="https://developers.facebook.com/docs/technical-guides/fql/">own query language</a>!</li>
+<li><a href="https://dev.twitter.com/">Twitter&rsquo;s Developer APIs</a> provide programmatic access to what they call &lsquo;platform objects&rsquo;: Tweets, Users, Entities (#hashtags, media, urls, and @mentions), and Places.</li>
+<li><a href="https://developers.facebook.com">Facebook for Developers</a> includes the Graph API for reading from and writing to Facebook platform: Users, Pages, Groups, Photos, Videos, and the actions between objects. They&rsquo;ve even got their <a href="https://developers.facebook.com/docs/technical-guides/fql/">own query language</a>!</li>
 <li><a href="https://developer.linkedin.com/">Linked-in APIs</a> for People, Groups, Companies, and Jobs.</li>
 <li><a href="https://developers.google.com/+/">The Google+ Platform</a> for People, Activities, Comments and Moments</li>
 </ul>
@@ -147,26 +133,26 @@
 
 <h2>Princeton Wordnet</h2>
 
-<p>The <a href="http://wordnet.princeton.edu/">Princeton WordNet</a> is a lexical database of English - a catalogue of words.</p>
+<p>The <a href="http://wordnet.princeton.edu/">Princeton WordNet</a> is a lexical database of English &ndash; a catalogue of words.</p>
 
 <blockquote><p>Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet&#8217;s structure makes it a useful tool for computational linguistics and natural language processing.</p></blockquote>
 
 
-<p>If you&#8217;re interested in text analysis then I highly recommend that you check out <a href="http://gate.ac.uk/">Gate</a> which of course has a Wordnet plugin.</p>
+<p>If you&rsquo;re interested in text analysis then I highly recommend that you check out <a href="http://gate.ac.uk/">Gate</a> which of course has a Wordnet plugin.</p>
 
 <h2>OPTA MCFC-Analytics</h2>
 
 <p><img src="/news/images/post_images/Opta.png"></p>
 
-<p>Opta - a sports data company - has released data as part of the MCFC-Analytics project. There are two datasets:
-- The &#8220;Lite&#8221; Dataset which has an entry for every player&#8217;s appearance in each match (10,370 in total) from the 2011-12 Premier League Season. The 185 fields cover a handful of contextual details (name of player and team etc) and counts for all of the &#8220;on ball&#8221; events in some detail (e.g. &#8220;Total Successful Passes Excl Crosses Corners&#8221;). The data is provided in csv.
-- The &#8220;Advanced&#8221; data provides a time and space (x, y, and z!) coded feed of events, codified by type. The initial set of open data covers only Manchester City players although more is promised if you can demonstrate some interesting developments&#8230;</p>
+<p>Opta &ndash; a sports data company &ndash; has released data as part of the MCFC-Analytics project. There are two datasets:
+&ndash; The &ldquo;Lite&rdquo; Dataset which has an entry for every player&rsquo;s appearance in each match (10,370 in total) from the 2011-12 Premier League Season. The 185 fields cover a handful of contextual details (name of player and team etc) and counts for all of the &ldquo;on ball&rdquo; events in some detail (e.g. &ldquo;Total Successful Passes Excl Crosses Corners&rdquo;). The data is provided in csv.
+&ndash; The &ldquo;Advanced&rdquo; data provides a time and space (x, y, and z!) coded feed of events, codified by type. The initial set of open data covers only Manchester City players although more is promised if you can demonstrate some interesting developments&hellip;</p>
 
 <h2>DBpedia</h2>
 
 <p><img src="/news/images/post_images/dbpedia_logo.png"></p>
 
-<p><a href="http://dbpedia.org/">DBpedia</a>&#8230;</p>
+<p><a href="http://dbpedia.org/">DBpedia</a>&hellip;</p>
 
 <blockquote><p>&#8230;is a crowd-sourced community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to make sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking, and improving the encyclopedia itself.</p></blockquote>
 
@@ -177,7 +163,7 @@
 
 <p><a href="http://freebase.org/">Freebase</a> is a free, open knowledge graph covering 37 million topics, 2000 types, and 30,000 properties. Topics (e.g. <a href="http://www.freebase.com/m/04lg6">Leonardo da Vinci</a>) can have types (e.g. Visual Artists) and types contain properties (e.g. his <a href="http://www.freebase.com/query?autorun=1&amp;q=%5B%7B%22id%22:%22/m/04lg6%22,%22name%22:null,%22/visual_art/visual_artist/artworks%22:%5B%5D%7D%5D">artworks</a>).</p>
 
-<p>Hopefully that gives you a flavour of what is out there. I&#8217;d welcome any additional suggestions in the comments&#8230;</p>
+<p>Hopefully that gives you a flavour of what is out there. I&rsquo;d welcome any additional suggestions in the comments&hellip;</p>
 </div>
 
 
@@ -200,7 +186,7 @@
   
 
 
-<time datetime="2013-03-20T09:40:00+00:00" pubdate data-updated="true">Mar 20<span>th</span>, 2013</time>
+<time datetime="2013-03-20T09:40:00+01:00" pubdate data-updated="true">Mar 20<span>th</span>, 2013</time>
       
 
 <span class="categories">
@@ -214,7 +200,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/" data-via="" data-counturl="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/" >Tweet</a>
+  <a href="/news//twitter.com/share" class="twitter-share-button" data-url="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/" data-via="" data-counturl="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/" >Tweet</a>
   
   
   
@@ -247,6 +233,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/news/blog/2013/10/18/how-to-choose-a-sample-size/">How to Choose a Sample Size</a>
+      </li>
+    
+      <li class="post">
         <a href="/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens/">Open Infrastructure - Tools for Smarter Citizens</a>
       </li>
     
@@ -255,20 +245,15 @@
       </li>
     
       <li class="post">
-        <a href="/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">Public Sector Information: what's available and where you can find it</a>
+        <a href="/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">Public Sector Information: What's Available and Where You Can Find It</a>
       </li>
     
       <li class="post">
         <a href="/news/blog/2013/03/01/open-data-business-models/">Open Data Business Models</a>
       </li>
     
-      <li class="post">
-        <a href="/news/blog/2013/01/30/9-tools-every-information-analyst-should-have/">9 Tools Every Information Analyst Should Have</a>
-      </li>
-    
   </ul>
 </section>
-
 
 
 
@@ -302,7 +287,7 @@
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
@@ -318,7 +303,7 @@
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

@@ -3,6 +3,7 @@ layout: post
 title: !binary |-
   UGVvcGxlIE1hbmFnZWQgUGxhY2Vz
 created: 1234534966
+categories: [urban, place, planning, public-sector]
 ---
 <p><a href="http://www.emeraldinsight.com/Insight/viewContentItem.do?contentType=Article&amp;contentId=1748140">People-managed Place</a> is an idea introduced by Robin Gower in an article published by the Journal of Place Management and Development.</p>
 <p>The &quot;place management problem&quot; arises because:</p>

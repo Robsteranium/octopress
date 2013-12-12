@@ -4,7 +4,7 @@
   <title><![CDATA[Category: econometrics | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/econometrics/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-10-17T17:22:10+01:00</updated>
+  <updated>2013-12-12T13:21:35+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,11 +14,62 @@
 
   
   <entry>
+    <title type="html"><![CDATA[How to choose a Sample Size]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/10/18/how-to-choose-a-sample-size/"/>
+    <updated>2013-10-18T09:26:00+02:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/10/18/how-to-choose-a-sample-size</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked to provide advice on this question. The short answer is usually &ldquo;it depends&rdquo;. This is the longer answer that explains what it depends on!</p>
+
+<p>The size of a sample doesn&rsquo;t need to be as large people usually think. The sample size doesn&rsquo;t actually depend upon the population size (i.e. the things &ndash; individuals, organisations, or projects &ndash; that the sample is supposed to represent). Indeed National opinion polls usually include no more than 1,000 responses (although they do require an <a href="http://en.wikipedia.org/wiki/Sampling_bias#Historical_examples">unbiased sample</a>).</p>
+
+<p>So what does sample size depend upon..?</p>
+
+<!-- more -->
+
+
+<h2>Why choosing a sample size is important</h2>
+
+<p>A sample is a subset of a population that you wish to study. A sample is typically chosen for research because it is too difficult or expensive to talk to the whole population. Fortunately statistical theory demonstrates that it is possible for responses taken from a sample to represent a wider population.</p>
+
+<p>This post explains some of things to consider when choosing a representative sample.</p>
+
+<h2>Total sample size</h2>
+
+<p>The choice of overall sample size is driven by three statistical considerations</p>
+
+<ul>
+<li>what effect size you want to capture (i.e. the expected difference between the things you&rsquo;re comparing),</li>
+<li>how willing you are to miss effects that are present, and</li>
+<li>how willing you are to mistakenly identify effects that aren&rsquo;t present.</li>
+</ul>
+
+
+<p>We can set the latter two according to statistical convention (significance level of 95%, and a statistical power of 80%). Effect size really depends upon the context.</p>
+
+<p>The main unknown here will be the standard deviation &ndash; that is to say the extent to which the things you&rsquo;re measuring vary from case-to-case. This, of course, determines the degree to which we can draw conclusions about the whole population by looking at a sample.</p>
+
+<p>We define the effect size relative to the standard deviation. The larger the effect size, the smaller the sample needed to detect it. Drawing on social research, Cohen suggests that 20%, 50%, and 80% (of the standard deviation) represent small, medium, and large effect sizes respectively.</p>
+
+<h2>Representativeness of sub-groups</h2>
+
+<p>There are a couple of issues here. First, the overall results should be representative (you don&rsquo;t want to miss-out certain groups) and unbiased (if the sample structure doesn&rsquo;t match the proportion of the overall population the results will need to be weighted). Second, you might want to compare the results of the sub-groups (e.g. treatment vs control groups, cohorts by gender/ age/ ethncitiy, or to see if results change over time/ by location).</p>
+
+<p>Bear in mind the above discussion on sample sizes. The rule of thumb value for sub-samples is to have 30 responses &ndash; is consistent with an effect size of 73%. This would, of course, be exhaustive for some of the smaller sub-groups. You may need to combine sub-groups or deal with this variability in the analysis rather than in the sample design &ndash; e.g. removing outliers after the responses have been gathered). You might aim for 30 responses among the larger groups but relax this for smaller ones.</p>
+
+<h2>Response rates</h2>
+
+<p>This depends on how and who contacts the projects. Fortunately, as a funder you&rsquo;re likely to have their attention! In my experience of contacting beneficiaries on behalf of public/ social projects, a 30% response rate is good going. Don&rsquo;t be surprised if you receive a response rate lower than 1% for an email survey (although the ease of contacting a wide range should mean this is still an effective method). I&rsquo;d aim to contact about 5 times as many people as you need responses.</p>
+
+<p>The overall decision on sample size ought to take into account the cost and difficulty of acquiring responses and the observed variability of responses. You might want to bootstrap the process by running an initial small sample that would serve to identify whether further booster samples are required (e.g. &ldquo;the overall result is satisfactory but we&rsquo;re concerned about the apparent discrepancy among very large projects so they&rsquo;ll be the subject of further research&rdquo;). Bear in mind that this is by no means a precise science and this guidance should be considered in the context of practical concerns. Perhaps the most useful contribution of statistical advice &ndash; rather than identifying a magic number &ndash; is to help you to understand the overall patterns (variability matters, diminishing returns apply, very large/ small projects might need to be considered separately).</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
-    <updated>2012-12-19T16:43:00+00:00</updated>
+    <updated>2012-12-19T16:43:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
-    <content type="html"><![CDATA[<p>I'm often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
 
 <ul>
 <li>Reduction in Costs of Treatment</li>
@@ -32,11 +83,11 @@
 
 <p>As should be obvious from the titles, cost plays a significance role in health economics analysis. The first measure considers cost directly. The second measures also incorporate utility or benefit. The final measure should be used for interpretation.</p>
 
-<p>In practice, it's advisable to consider using more than one method to account for the limitations of individual measures. It's also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
+<p>In practice, it&rsquo;s advisable to consider using more than one method to account for the limitations of individual measures. It&rsquo;s also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
 
 <h2>Reduction in costs of treatment</h2>
 
-<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention's impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
+<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention&rsquo;s impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
 
 <p>The difficulty with this sort of measure is that the impact is stated in terms of money that would otherwise have had to be spent and, as such, is quite intangigble.</p>
 
@@ -45,13 +96,13 @@
 <p>A quality adjusted-life year, or QALY, represents <strong>the number of years of life that would be added by an intervention, taking into account the quality of those years</strong>. If the extra years would not be lived in full health they are given a value less than 1. Clearly the method of adjustment for quality is critical to this metric.
 A commonly adopted measure is the <a href="http://www.euroqol.org/">EQ-5D</a> scale which seeks to categorise health states according to 5 dimensions: mobility, self-care, usual activities, pain/ discomfort and anxiety/ depression. This is combined with a quantiative measure of the patients self-assessment of their health on a <em>vertical analogue scale</em>.
 Other approaches include the <em>time trade-off</em>, where respondents are asked to choose between remaining in an ill state or being restored to perfect health with a shorter life expectancy, and <em>standard gamble</em> where the alternative could restore them to perfect health or kill them.
-This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of "perfect health" and "disease burden".</p>
+This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of &ldquo;perfect health&rdquo; and &ldquo;disease burden&rdquo;.</p>
 
 <h2>Incremental Cost-Effectiveness Ratio</h2>
 
 <p>This ratio is used for comparing intervention options on a like for like basis. The Incremental Cost Effectiveness Ratio (ICER) is a <strong>comparison of the relative cost per QALY of the intervention and a reference case</strong> as follows (where QALY refers to a Quality Adjusted Life Year):
 $$
-ICER = \frac{ \text{£ Cost of intervention} - \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
+ICER = \frac{ \text{£ Cost of intervention} &ndash; \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
 $$
 The ICER assumes a multiplicative model for QALYs (i.e. a change in scale will change the ICER ratio even though original figures remain the same).
 Benchmarking against other interventions provides valuable contextual information. The <a href="https://research.tufts-nemc.org/cear4/default.aspx">Tufts Cost-Effectiveness Analysis Registry</a> is a valuable resource in this regard.</p>
@@ -66,20 +117,20 @@ Benchmarking against other interventions provides valuable contextual informatio
   <entry>
     <title type="html"><![CDATA[What is Infonomics?]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics/"/>
-    <updated>2012-12-06T12:45:00+00:00</updated>
+    <updated>2012-12-06T12:45:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics</id>
     <content type="html"><![CDATA[<p>When I started my <a href="http://infonomics.ltd.uk">economic consultancy and information analysis business</a> back in 2007 I was searching for a name that would describe my work in economics and information analysis and that was unique enough to appear early on in the search enginge result pages without too much trouble. At that time is was still cool to use a portmanteau (this was before dropping out a vowel caught-on) so I was certain that I was on to a winner.</p>
 
 <!--more-->
 
 
-<p>I didn't realise for some time that the term had already been coined by Doug Laney, then at META Group, to describe the practice of treating information as an asset. As an intangible asset information is given a price, appears on financial accounts, and is managed accordingly.</p>
+<p>I didn&rsquo;t realise for some time that the term had already been coined by Doug Laney, then at META Group, to describe the practice of treating information as an asset. As an intangible asset information is given a price, appears on financial accounts, and is managed accordingly.</p>
 
-<p>Since this definition now seems to dominate the <a href="http://en.wikipedia.org/w/index.php?title=Infonomics">wikipedia page</a> on the subject, I think it's about time I added my voice to the debate.</p>
+<p>Since this definition now seems to dominate the <a href="http://en.wikipedia.org/w/index.php?title=Infonomics">wikipedia page</a> on the subject, I think it&rsquo;s about time I added my voice to the debate.</p>
 
-<p>In my mind, at least, <strong>Infonomics is about information-based on economics, not economics-based on information</strong>. Whereas econometrics refers to economic statistics (and, let's be honest, principally regression analysis), I imagined Infonomics as a super-set including elements of computer science (such as information theory, algorithmic design, artificial intelligence, and data visualisation).</p>
+<p>In my mind, at least, <strong>Infonomics is about information-based on economics, not economics-based on information</strong>. Whereas econometrics refers to economic statistics (and, let&rsquo;s be honest, principally regression analysis), I imagined Infonomics as a super-set including elements of computer science (such as information theory, algorithmic design, artificial intelligence, and data visualisation).</p>
 
-<p>Of course there's rarely a single, unambigious definition of a neologism. But at least we can all agree that <a href="http://en.wikipedia.org/w/index.php?title=Infonomics&amp;diff=prev&amp;oldid=471082260">wikipedia should no longer say</a> "nobody has as yet referred to himself/herself as an infonomist".</p>
+<p>Of course there&rsquo;s rarely a single, unambigious definition of a neologism. But at least we can all agree that <a href="http://en.wikipedia.org/w/index.php?title=Infonomics&amp;diff=prev&amp;oldid=471082260">wikipedia should no longer say</a> &ldquo;nobody has as yet referred to himself/herself as an infonomist&rdquo;.</p>
 ]]></content>
   </entry>
   

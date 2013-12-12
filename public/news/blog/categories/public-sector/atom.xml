@@ -4,7 +4,7 @@
   <title><![CDATA[Category: public-sector | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/public-sector/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-10-17T17:22:10+01:00</updated>
+  <updated>2013-12-12T13:21:35+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,9 +14,44 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Open Infrastructure - Tools for Smarter Citizens]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens/"/>
+    <updated>2013-10-17T17:12:00+02:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens</id>
+    <content type="html"><![CDATA[<p>This year the <a href="http://futureeverything.org/summit/summit-highlights/">Future Everything conference</a> focussed on three core themes: creative code, future cities, and the data society. In one of the final sessions (<a href="http://futureeverything.org/summit/conference/sessions/the-bespoke-smart-city/">The Bespoke Smart City</a>), keynote speaker Anthony Townsend set a challenge to the audience. He asked whether &lsquo;smart&rsquo; techniques were transferable from city to city, given that each city has it&rsquo;s own unique context. This article is a response to that question: I believe that there exists a set of processes and standards that may be replicated from place to place.</p>
+
+<!-- more -->
+
+
+<p><img src="/images/post_images/routes_to_future.jpg"></p>
+
+<p>One of the resounding messages from the conference was that smart cities are really a product of smart citizens. This is an idea close to my heart. I have written before about the need for <a href="{news/2009-02-13-people-managed-places">people-managed places</a>.</p>
+
+<p>The top-down model of the smart city being advocated by technology corporations begins with a peculiar premise: that the city can be controlled. The engineering metaphor of a <a href="http://www.siemens.com/innovation/apps/pof_microsite/_pof-spring-2011/_html_en/city-cockpit.html">&lsquo;smart city cockpit&rsquo;</a> provides an illusion of centralised power but totalitarian control doesn&rsquo;t make people smart.</p>
+
+<p>In reality cities are organic and messy. To make them smart we need to share information that citizens can use, not to capture data about people without their consent.</p>
+
+<p>There exists a standard for sharing information openly so that everyone can use it: it&rsquo;s called the internet. We do not need proprietorial technology platforms or <a href="http://www.raptorsme.com/home/default.asp?page=welcome">urban operating systems</a>.</p>
+
+<p>Here are some examples of good projects:</p>
+
+<ul>
+<li><em>Shared space</em> is a design principle which seeks to minimise the demarcations and barriers between pedestrian and vehicle traffice. The idea is that these barriers create risk compensation whereby road users act with less caution because the perceive a lower degree of risk. From a smart-citzens perspective, the urban planner has done their thinking for them. The shared space approach considers people to be intelligent and, if the possibility of danger is present, then people will be more cautious.</li>
+<li><em>Xively</em> (previously Pachube/ Cosm) is a <a href="https://xively.co">platform for connecting and sharing data to/ from the internet of things</a>. Essentially this is an infrastructure for the physical city to talk to it&rsquo;s citizens.</li>
+<li><em>Open 311</em> is a <a href="http://open311.org/">collaborative model and open standard for civic issue tracking</a>. It&rsquo;s a protocol for reporting problems to your local council. As a standard, economies of scale can be reached and the tools built around the platform may be shared from place to place.</li>
+<li><em>Open Trip Planner</em> is a <a href="http://opentripplanner.com/">open source platform for multi-modal trip and itineray planning and analysis</a>. It is based upon Open Street Map and the (open) General Transit Feed Specification. It offers route planning, real time updates of delays/ disruptions, and analysis of coverage/ travel times etc.</li>
+<li><em>The City Service Development Kit</em> is a <a href="http://www.citysdk.eu/">toolkit for the development of digital services in cities</a>. The tools build on top of Open Street Map and Open 311 to provide a Linked Open Data API.</li>
+</ul>
+
+
+<p>The common theme here is that these projects adopt open standards which allow us to learn from others and add our efforts to a common purpose. The tools themselves build around common standards and so may be customised to suit the specific context of each city (i.e. in terms of it&rsquo;s open street map layout).</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
-    <updated>2012-12-11T16:04:00+00:00</updated>
+    <updated>2012-12-11T16:04:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
     <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
 
@@ -25,9 +60,9 @@
 
 <p>The <strong>burden of proof</strong> is said to lie with the party making a claim. In order to convince someone of some truth, you are obliged to support your claim with evidence. The audience hearing your claim will make a judgement by scrutinising the evidence you present in support.</p>
 
-<p>This obligation should not be treated lightly. In some cases, it isn't possible to marshall evidence to support our intuitions. Indeed we can't always know what we don't know and so we shouldn't act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn't mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
+<p>This obligation should not be treated lightly. In some cases, it isn&rsquo;t possible to marshall evidence to support our intuitions. Indeed we can&rsquo;t always know what we don&rsquo;t know and so we shouldn&rsquo;t act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn&rsquo;t mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
 
-<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It's better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
+<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It&rsquo;s better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
 
 <p>Our ability to do this will, of course, depend upon the circumstance but examples of how this might work in practice include:</p>
 
@@ -38,6 +73,60 @@
 <li>using confidence-intervals rather than point-estimates to make inferences, and</li>
 <li>using evaluation to guide research (to identify otherwise implicit assumptions that need to be validated).</li>
 </ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[People Managed Places]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2009/02/13/people-managed-places/"/>
+    <updated>2009-02-13T00:00:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2009/02/13/people-managed-places</id>
+    <content type="html"><![CDATA[<p><a href="http://www.emeraldinsight.com/Insight/viewContentItem.do?contentType=Article&amp;contentId=1748140">People-managed Place</a> is an idea introduced by Robin Gower in an article published by the Journal of Place Management and Development.</p>
+
+
+<p>The &quot;place management problem&quot; arises because:</p>
+
+
+<ul>
+    <li><strong>Together we are stronger (or, that cooperative outcomes often beat competitive ones)</strong>: the tragedy of the commons and existence of social externalities in our environment;</li>
+    <li><strong>Diverse communities don't tend to share places very well</strong>: non-cooperative game theory suggests that we won't share spontaneously;</li>
+    <li><strong>Active place management is inherently difficult</strong>: because of the complexity involved Planners are at risk of becoming part of the problem!</li>
+</ul>
+
+
+<!--more-->
+
+
+<p>The article warns that if opt to &quot;do-nothing&quot; then we face the <strong>risk of inaction &ndash; standardised places</strong> where developers and national retail chains unwittingly reduce our metropolitan areas to a network of <a href="http://www.neweconomics.org/gen/clonetownbritainnewsthefightback200306.aspx">clone-towns</a>.&nbsp; The proposed range of solutions are <strong>bottom-up rather than top-down</strong> and focus on <strong>users not functions</strong>:</p>
+
+
+<ul>
+    <li><strong>Inter-dependence through trade</strong> (the butcher needs the baker and vice versa)</li>
+    <li><strong>Agglomeration Economies &amp; Business Clusters</strong> (industrial communities)</li>
+    <li>the <strong>Sidewalk Ballet</strong> (the eyes of fellow pedestrians make streets safer than CCTV cameras)</li>
+</ul>
+
+
+<p>Each of these examples demonstrates that place management ought not attempt to zone and plan but to empower individuals and let places evolve organically.&nbsp;  Place managers can deal with the complex socio-economic problems of place by facilitating and regulating a stronger civil society.&nbsp;  The article refers to the similar advice suggested by other authors (such as the <a href="http://www.ceu-ectp.org/e/athens/">New Athens Charter</a>, the <a href="http://en.wikipedia.org/wiki/Principles_of_Intelligent_Urbanism">principles of intelligent urbanism</a> and Camilo Sitte's belief that plazas and squares are civic rooms that ought to be left open) and provides a brief summary of the relevant UK legislation. &nbsp; The analysis leads me to make the following recommendations:</p>
+
+
+<ul>
+    <li><strong>Start with current place users</strong>: i.e. not place functions</li>
+    <li><strong>Consider potential place users</strong>: to ensure dynamic sustainability</li>
+    <li><strong>Define place-based rights &amp; responsibilities</strong>: to protect place uses (e.g. <a href="http://www.direct.gov.uk/en/CrimeJusticeAndTheLaw/CrimePrevention/DG_4001652">Anti-Social Behaviour Orders</a> or <a href="http://en.wikipedia.org/wiki/Emissions_trading">tradeable pollution permits</a>)</li>
+    <li><strong>Encourage collaboration</strong>: through, for example, <a href="http://en.wikipedia.org/wiki/Business_improvement_district">Business Improvement Districts</a></li>
+    <li><strong>Cross boundaries and work with your neighbours</strong>: zero-sum games are the bane of place-management policy - use partnerships to communicate and negotiate</li>
+    <li><strong>Place Making/ Leadership - internalise externalities</strong>: place-manager must make place-users aware of the social costs and benefits (publicise planning gains and declare what supplementary business rates are spent on).</li>
+</ul>
+
+
+<p class="rteleft">Michael Heller has coined a phrase that describes the problem of multiple and complex claims on a common resource: The Tragedy of the Anti-Commons.&nbsp;  In the video below Professor Heller discusses his book, <a href="http://www.gridlockeconomy.com/">The Gridlock Economy</a>.</p>
+
+
+<p class="rtecenter"><object width="425" height="344">
+<param value="http://www.youtube.com/v/9n89Ec3DFtk&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fs=1" name="movie" />
+<param value="true" name="allowFullScreen" /><embed width="425" height="344" allowfullscreen="true" type="application/x-shockwave-flash" src="http://www.youtube.com/v/9n89Ec3DFtk&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;fs=1"></embed></object></p>
 
 ]]></content>
   </entry>

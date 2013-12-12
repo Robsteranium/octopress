@@ -4,7 +4,7 @@
   <title><![CDATA[Category: evaluation | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/evaluation/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2013-10-17T17:22:10+01:00</updated>
+  <updated>2013-12-12T13:21:35+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -16,9 +16,9 @@
   <entry>
     <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
-    <updated>2012-12-19T16:43:00+00:00</updated>
+    <updated>2012-12-19T16:43:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
-    <content type="html"><![CDATA[<p>I'm often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
 
 <ul>
 <li>Reduction in Costs of Treatment</li>
@@ -32,11 +32,11 @@
 
 <p>As should be obvious from the titles, cost plays a significance role in health economics analysis. The first measure considers cost directly. The second measures also incorporate utility or benefit. The final measure should be used for interpretation.</p>
 
-<p>In practice, it's advisable to consider using more than one method to account for the limitations of individual measures. It's also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
+<p>In practice, it&rsquo;s advisable to consider using more than one method to account for the limitations of individual measures. It&rsquo;s also important to control for demographic and socio-economic characteristics such as age, gender, ethnicity, employment, and health condition. It will also be insightful to consider location as a proxy indicator for a range of (highly-correlated) socio-economic characteristics.</p>
 
 <h2>Reduction in costs of treatment</h2>
 
-<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention's impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
+<p>This is the most easily understandable economic impact of health interventions. If preventive steps are taken, fewer people contract disease, and less will need to be spent on treatment. The main focus of research under this measure is in <strong>quantifying the intervention&rsquo;s impact on health and the cost of treatment that is obviated</strong>. Weight loss, for example, will reduce the relative risk of diabetes and cardio-vascual disease. The relationship between intervention and disease risk might be established by reference to physiological measures (such as Body Mass Index). Cost of treatment might include the cost of prescription medicine, GP consultation, surgery and palliative care.</p>
 
 <p>The difficulty with this sort of measure is that the impact is stated in terms of money that would otherwise have had to be spent and, as such, is quite intangigble.</p>
 
@@ -45,13 +45,13 @@
 <p>A quality adjusted-life year, or QALY, represents <strong>the number of years of life that would be added by an intervention, taking into account the quality of those years</strong>. If the extra years would not be lived in full health they are given a value less than 1. Clearly the method of adjustment for quality is critical to this metric.
 A commonly adopted measure is the <a href="http://www.euroqol.org/">EQ-5D</a> scale which seeks to categorise health states according to 5 dimensions: mobility, self-care, usual activities, pain/ discomfort and anxiety/ depression. This is combined with a quantiative measure of the patients self-assessment of their health on a <em>vertical analogue scale</em>.
 Other approaches include the <em>time trade-off</em>, where respondents are asked to choose between remaining in an ill state or being restored to perfect health with a shorter life expectancy, and <em>standard gamble</em> where the alternative could restore them to perfect health or kill them.
-This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of "perfect health" and "disease burden".</p>
+This measure is criticised due to the difficulty of establishing a meaningful, objective, and comparable definition of &ldquo;perfect health&rdquo; and &ldquo;disease burden&rdquo;.</p>
 
 <h2>Incremental Cost-Effectiveness Ratio</h2>
 
 <p>This ratio is used for comparing intervention options on a like for like basis. The Incremental Cost Effectiveness Ratio (ICER) is a <strong>comparison of the relative cost per QALY of the intervention and a reference case</strong> as follows (where QALY refers to a Quality Adjusted Life Year):
 $$
-ICER = \frac{ \text{£ Cost of intervention} - \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
+ICER = \frac{ \text{£ Cost of intervention} &ndash; \text{£ Cost of reference case} } { \text{QALY Effect of intervention} –  \text{QALY Effect of reference case} }
 $$
 The ICER assumes a multiplicative model for QALYs (i.e. a change in scale will change the ICER ratio even though original figures remain the same).
 Benchmarking against other interventions provides valuable contextual information. The <a href="https://research.tufts-nemc.org/cear4/default.aspx">Tufts Cost-Effectiveness Analysis Registry</a> is a valuable resource in this regard.</p>
@@ -66,7 +66,7 @@ Benchmarking against other interventions provides valuable contextual informatio
   <entry>
     <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
-    <updated>2012-12-11T16:04:00+00:00</updated>
+    <updated>2012-12-11T16:04:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
     <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
 
@@ -75,9 +75,9 @@ Benchmarking against other interventions provides valuable contextual informatio
 
 <p>The <strong>burden of proof</strong> is said to lie with the party making a claim. In order to convince someone of some truth, you are obliged to support your claim with evidence. The audience hearing your claim will make a judgement by scrutinising the evidence you present in support.</p>
 
-<p>This obligation should not be treated lightly. In some cases, it isn't possible to marshall evidence to support our intuitions. Indeed we can't always know what we don't know and so we shouldn't act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn't mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
+<p>This obligation should not be treated lightly. In some cases, it isn&rsquo;t possible to marshall evidence to support our intuitions. Indeed we can&rsquo;t always know what we don&rsquo;t know and so we shouldn&rsquo;t act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn&rsquo;t mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
 
-<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It's better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
+<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It&rsquo;s better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
 
 <p>Our ability to do this will, of course, depend upon the circumstance but examples of how this might work in practice include:</p>
 
@@ -95,7 +95,7 @@ Benchmarking against other interventions provides valuable contextual informatio
   <entry>
     <title type="html"><![CDATA[5 Questions to Consider Before Commissioning an Evaluation]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
-    <updated>2012-12-05T10:50:00+00:00</updated>
+    <updated>2012-12-05T10:50:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
     <content type="html"><![CDATA[<p>Planning is fundamental to successful evaluation. Considering these questions will help you to understand what you need to discuss with a contractor so that they can design an evaluation effectively.</p>
 
@@ -109,7 +109,7 @@ Typical objectives include wanting to:</p>
 
 <ul>
 <li>have evidence to attract funding or investment</li>
-<li>identify what has worked and what hasn't to make improvements</li>
+<li>identify what has worked and what hasn&rsquo;t to make improvements</li>
 <li>share lessons learned with partners</li>
 <li>build plan for future activity</li>
 </ul>
@@ -121,16 +121,16 @@ Typical objectives include wanting to:</p>
 
 <ul>
 <li>Who is the audience is for the evaluation (your board of directors, external funders, or participants)?</li>
-<li>What will you do with the evaluation once it's complete?</li>
+<li>What will you do with the evaluation once it&rsquo;s complete?</li>
 <li>What decisions will the evaluation help you make?</li>
 </ul>
 
 
 <h2>Who are your stakeholders or beneficiaries?</h2>
 
-<p>Different people will value your work for different reasons. Those reasons won't always overlap and may even conflict. The evaluation might reach a different conclusion based upon the perspective you take. Answering this question will help you to determine scope and focus - indeed it's sometimes useful to think about the maximum possible range of beneficiaries just so that you can determine those whom won't be considered.</p>
+<p>Different people will value your work for different reasons. Those reasons won&rsquo;t always overlap and may even conflict. The evaluation might reach a different conclusion based upon the perspective you take. Answering this question will help you to determine scope and focus &ndash; indeed it&rsquo;s sometimes useful to think about the maximum possible range of beneficiaries just so that you can determine those whom won&rsquo;t be considered.</p>
 
-<p>Thinking about stakeholders will also help with the preceding question. Often the stakeholder may also be a funder. It's important in these cases to have the relevant people involved in the evaluation from the outset. This means discussing the objectives and proposed methods with them. Not only will this give your conclusions greater credibility with the target audience, but it will also help to ensure relevance. Further, they might be able to offer insight or resources from other work they've seen.</p>
+<p>Thinking about stakeholders will also help with the preceding question. Often the stakeholder may also be a funder. It&rsquo;s important in these cases to have the relevant people involved in the evaluation from the outset. This means discussing the objectives and proposed methods with them. Not only will this give your conclusions greater credibility with the target audience, but it will also help to ensure relevance. Further, they might be able to offer insight or resources from other work they&rsquo;ve seen.</p>
 
 <h2>What can we do internally, where do we need support?</h2>
 
@@ -151,18 +151,18 @@ Typical objectives include wanting to:</p>
 
 <h2>Do we understand the evaluation design?</h2>
 
-<p>In order to interpret the results of the evaluation it will be vital for you to understand how those results were reached. This doesn't necessarily mean, for example, that you need to know how to calculate a "two-stage Heckit regression". You do at least need to know why this method was used (i.e. in response to selection bias) so that you know that the findings do account for the fact that sample of people consulted was biased. This is important for forming your own judgements about the results and for dealing with criticisms from others.</p>
+<p>In order to interpret the results of the evaluation it will be vital for you to understand how those results were reached. This doesn&rsquo;t necessarily mean, for example, that you need to know how to calculate a &ldquo;two-stage Heckit regression&rdquo;. You do at least need to know why this method was used (i.e. in response to selection bias) so that you know that the findings do account for the fact that sample of people consulted was biased. This is important for forming your own judgements about the results and for dealing with criticisms from others.</p>
 
-<p>A empirically flawless method is useless if none of your audience can make sense of the results. That's not to say that you should avoid technical research methods; indeed this question might be better phrased as: what do we need to learn to understand the evaluation design?</p>
+<p>A empirically flawless method is useless if none of your audience can make sense of the results. That&rsquo;s not to say that you should avoid technical research methods; indeed this question might be better phrased as: what do we need to learn to understand the evaluation design?</p>
 
 <h2>What data do we already have?</h2>
 
 <p>Having data available may help to save on the costs of data collection. Data can come from obvious sources such as:</p>
 
 <ul>
-<li>the monitoring data you're contractually obliged to collect,</li>
+<li>the monitoring data you&rsquo;re contractually obliged to collect,</li>
 <li>management information you use to direct your work, or</li>
-<li>feedback forms you've used to ongoing service development.</li>
+<li>feedback forms you&rsquo;ve used to ongoing service development.</li>
 </ul>
 
 
@@ -178,7 +178,7 @@ Typical objectives include wanting to:</p>
 <p>You should also expect to provide evaluators with:</p>
 
 <ul>
-<li>contact information for consultees - at the strategic and beneficiary level,</li>
+<li>contact information for consultees &ndash; at the strategic and beneficiary level,</li>
 <li>background information (particularly any work done to scope, appraise, design or commission your service), and</li>
 <li>contractual and financial records.</li>
 </ul>
