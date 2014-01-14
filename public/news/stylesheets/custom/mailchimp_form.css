@@ -1,0 +1,15 @@
+/* line 1, ../../../../sass/custom/mailchimp_form.scss */
+#mc_embed_signup {
+  margin-bottom: 4em;
+}
+
+/* line 4, ../../../../sass/custom/mailchimp_form.scss */
+.mc-field-group {
+  float: left;
+  padding-right: 1em;
+}
+
+/* line 8, ../../../../sass/custom/mailchimp_form.scss */
+#mce-responses.clear {
+  clear: both;
+}
