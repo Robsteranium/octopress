@@ -4,7 +4,7 @@
   <title><![CDATA[Category: statistics | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/statistics/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-14T09:04:34+01:00</updated>
+  <updated>2014-01-17T09:12:50+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[LEP Economic Profiles - How do local assets affect productivity]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity/"/>
+    <updated>2014-01-17T08:31:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity</id>
+    <content type="html"><![CDATA[<p>Jim Twomey of <a href="http://www.pion-economics.co.uk/">Pion Economics</a> put together a fascinating statistical analysis of Local Economic Partnership areas. I offered to visualise the findings, and here are the results (click through for the interactive visualisation):</p>
+
+<p><a href="http://infonomics.ltd.uk/lep-profiles/index.html"><img src="/images/post_images/lep_analysis_screenshot.png" title="LEP Analysis Screenshot" ></a></p>
+
+<!-- more -->
+
+
+<p>The statistical techqniue is quite advanced, and I&rsquo;m still searching for a simple way to explain it. The objective is to describe differences in productivity in terms of the attributes of each place so that performance may be understood, and insights found into what a place might need to improve. First the attributes are gathered together into asset groups that correlate closely with one another (factor analysis). Then the level of these 8 groups is compared against local economic productivity to estimate the contribution of those assets to performance. More information on the technique may be found in the <a href="http://pion-economics.co.uk/cms/resources/uploads/File/LEP_document.pdf">Developing LEP Economies Report</a>.</p>
+
+<p>The interactive visualisation is designed to provide both an overview of the patterns across LEP areas and a means of finding the results that apply to each LEP individually. The analysis presents three panels. The map on the left is for navigation. By hovering over a given place, the relevant LEP profile will be selected. On the right, the top panel presents all LEPs ordered by productivity level and the bottom panel the contribution of assets. Each chart shows the overall range of values for context, with the selected LEP area highlighted in bold. You may also navigate using the top right panel.</p>
+
+<p>The interactive element allows you to explore patterns and relationships. Try, for example, drawing your cursor from the periphery of England in towards London. Note how the level of productivity and the contribution of the Access asset group changes. Try comparing rural and urban areas.</p>
+
+<p>We found that this visualisation technique makes it far more efficient to present research findings (displaying 39 profiles in one graphic) and allows additional insights to be discovered through interactive exploration.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to choose a Sample Size]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-14T09:04:34+01:00</updated>
+  <updated>2014-01-17T09:12:50+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[LEP Economic Profiles - How do local assets affect productivity]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity/"/>
+    <updated>2014-01-17T08:31:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity</id>
+    <content type="html"><![CDATA[<p>Jim Twomey of <a href="http://www.pion-economics.co.uk/">Pion Economics</a> put together a fascinating statistical analysis of Local Economic Partnership areas. I offered to visualise the findings, and here are the results (click through for the interactive visualisation):</p>
+
+<p><a href="http://infonomics.ltd.uk/lep-profiles/index.html"><img src="http://infonomics.ltd.uk/news/images/post_images/lep_analysis_screenshot.png" title="LEP Analysis Screenshot" ></a></p>
+
+<!-- more -->
+
+
+<p>The statistical techqniue is quite advanced, and I&rsquo;m still searching for a simple way to explain it. The objective is to describe differences in productivity in terms of the attributes of each place so that performance may be understood, and insights found into what a place might need to improve. First the attributes are gathered together into asset groups that correlate closely with one another (factor analysis). Then the level of these 8 groups is compared against local economic productivity to estimate the contribution of those assets to performance. More information on the technique may be found in the <a href="http://pion-economics.co.uk/cms/resources/uploads/File/LEP_document.pdf">Developing LEP Economies Report</a>.</p>
+
+<p>The interactive visualisation is designed to provide both an overview of the patterns across LEP areas and a means of finding the results that apply to each LEP individually. The analysis presents three panels. The map on the left is for navigation. By hovering over a given place, the relevant LEP profile will be selected. On the right, the top panel presents all LEPs ordered by productivity level and the bottom panel the contribution of assets. Each chart shows the overall range of values for context, with the selected LEP area highlighted in bold. You may also navigate using the top right panel.</p>
+
+<p>The interactive element allows you to explore patterns and relationships. Try, for example, drawing your cursor from the periphery of England in towards London. Note how the level of productivity and the contribution of the Access asset group changes. Try comparing rural and urban areas.</p>
+
+<p>We found that this visualisation technique makes it far more efficient to present research findings (displaying 39 profiles in one graphic) and allows additional insights to be discovered through interactive exploration.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to choose a Sample Size]]></title>
@@ -1554,99 +1576,6 @@ The discussion of factors of additionality demonstrates that counting gross outp
 
 
 <p>We agree with Prof Varian.&nbsp; We believe that our capacity for converting data into information makes Infonomics an attractive prospect for our clients.&nbsp; We&#8217;ll leave the reader to decide whether or not this plays a role in the physical attractiveness of our consultants - after all <a href="http://infonomics.ltd.uk/news/blog/2008/12/19/lies-damn-lies-and-your-evidence-base/">correlation doesn&#8217;t always imply correlation</a>!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The public has spoken - exploring e-petitions]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions/"/>
-    <updated>2009-04-24T00:00:00+02:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2009/04/24/the-public-has-spoken-exploring-e-petitions</id>
-    <content type="html"><![CDATA[<h2>Petitions for Action - Verbs used in e-petitions</h2>
-
-
-<p><img src="http://infonomics.ltd.uk/news/images/post_images/p-verbs-manyeyes.preview.png" title="&#34;Petitions for action - verbs used in e-petitions&#34;" alt="&#34;Petitions for action - verbs used in e-petitions&#34;"></p>
-
-<!--more-->
-
-
-<h3>E-Petitions as an alternative to consultation</h3>
-
-
-<p>The <a href="http://petitions.number10.gov.uk/">e-petitions on Number10.gov</a> are fascinating.&nbsp; As we&#8217;ve come to expect from <a target="_blank" href="http://www.mysociety.org/projects/">mySociety projects</a>, &quot;the e-petition system has been designed to be transparent and trustworthy&quot;.&nbsp; The petitions provide an unbiased perspective on the view of the UK public and a <strong>valuable evidence base</strong> for policy makers.</p>
-
-
-<p>Although the feedback is free from the constraints of normal consultation (where the questions may be&nbsp; framed unintentionally) it is unstructured and this makes it difficult for policy makers to use.&nbsp; Hope is not lost however, help is at hand in the form of <strong>semantic analysis</strong>.</p>
-
-
-<h3>Extract information from e-petition data with semantic analysis</h3>
-
-
-<p>The image above was constructed by annotating the text in the titles of the petitions.&nbsp; We searched for verbs and extracted the pruned form of those verbs (e.g. &quot;increasing&quot; becomes &quot;increase&quot;) along with the number of signatures to the petition where the verbs were found.&nbsp; The words are weighted according to the total number of signatures.&nbsp; The visualisation was prepared using IBM&#8217;s <a href="http://manyeyes.alphaworks.ibm.com/manyeyes/" target="_blank" rel="nofollow">Many Eyes</a> (note that data submitted to Many Eyes can be viewed by anyone on the internet).</p>
-
-
-<p>Annotation can also be used to find organisations and places.&nbsp; The results of those analyses are presented in the lists below.</p>
-
-
-<table cellspacing="1" cellpadding="1" border="0">
-    <tbody>
-        <tr>
-            <td>
-            <h3>Top 10 Organisations in UK&nbsp;petitions</h3>
-            </td>
-            <td>
-            <h3>Top 10 Places in UK petitions</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <ol>
-                <li>United Nations (17323)</li>
-                <li>Service of Her Majesty (15648)</li>
-                <li>Royal Bank of Scotland (3131)</li>
-                <li>Government (3668)</li>
-                <li>National Health Service (2274)</li>
-                <li>Royal Infirmary (2084)</li>
-                <li>Yorkshire Television (1668)</li>
-                <li>UK Emergency Services (1601)</li>
-                <li>European Union (1716)</li>
-                <li>GCHQ (980)</li>
-            </ol>
-            </td>
-            <td>
-            <ol>
-                <li>England (23171)</li>
-                <li>Bletchley Park (20197)</li>
-                <li>London (17084)</li>
-                <li>Cherry Lane (12450)</li>
-                <li>UK (17808)</li>
-                <li>Northern Ireland (5188)</li>
-                <li>Richmond (3454)</li>
-                <li>Memorial Wall (3372)</li>
-                <li>Scotland (2187)</li>
-                <li>Leeds (1668)</li>
-            </ol>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-
-<h3>Beware of junk data</h3>
-
-
-<p>Although the openness of e-petitions is a virtue, it does mean that there is a lot of junk to sift through.&nbsp; Only 1.3% of open petitions have enough signatures (at least 200) to qualify for consideration by Government.&nbsp; Clearly the other petitions have some value even though they may be minority concerns.&nbsp; Indeed the number of signatures is not a perfect measure of quality or relevance.</p>
-
-
-<h3>Using the evidence in policy development</h3>
-
-
-<ul>
-    <li><strong>Keep track of petitions that are made regarding your organisation or place</strong>.&nbsp; We were able to identify 352 references to organisations, 36 of which were Councils.&nbsp; <a href="http://infonomics.ltd.uk/contact">Get in touch</a> for some tips on monitoring the web for references to your organisation.</li>
-    <li><strong>Identify issues that are relevant to your objectives</strong>.&nbsp; We recently employed <a href="http://infonomics.ltd.uk/portfolio_project/4">semantic analysis that helped Investor Developers at the East Midlands Development Agency forecast demand for support by extracting information from visit reports</a>.&nbsp; Petitions provide evidence of needs (or at least demands) and issues (learn from others mistakes).</li>
-    <li><strong>Gauge public opinions on existing policy</strong>.&nbsp; Congestion-charging, War, Bank-bailouts - they&#8217;re all subjects of petitions.&nbsp; While many of the petitions express peoples&#8217; feelings on these issues there are others that contain concrete suggestions for policy improvements.</li>
-</ul>
 
 ]]></content>
   </entry>
