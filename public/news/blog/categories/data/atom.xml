@@ -4,7 +4,7 @@
   <title><![CDATA[Category: data | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/data/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-17T09:12:50+01:00</updated>
+  <updated>2014-01-20T09:58:47+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,137 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sonification and Auditory Display Primer]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/01/19/sonification-and-auditory-display-primer/"/>
+    <updated>2014-01-19T18:36:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/01/19/sonification-and-auditory-display-primer</id>
+    <content type="html"><![CDATA[<p>An auditory display uses sound to convery information. Sonification is defined as a type auditory display that uses non-speech audio, rendering sound in response to data and interaction.</p>
+
+<p>This post provides a brief introduction to sonfication based upon <a href="http://sonification.de/handbook/index.php/chapters/chapter2/">Chapter 2</a> of the <a href="http://sonification.de/handbook/">Sonification Handbook</a>.</p>
+
+<div class="well">
+  <p>A <a href="http://sonify.psych.gatech.edu/research/soundscapes/">soundscape mapping a stock market index to ecological sounds</a>. As the index rises, bird calls, crickets, frogs, and other forest sounds are added. As the index falls, rain and thunder are heard. The soundscape is designed to be monitoring peripherally and not to be intrusive.</p>
+  <p><audio src="http://sonify.psych.gatech.edu/research/soundscapes/sounds/fullsample01.mp3" type="audio/mpeg" controls></audio></p>
+</div>
+
+
+
+
+<!--more-->
+
+
+<h2>Why sonification is useful</h2>
+
+<div class="well callout">
+  <p><a href="http://silentlistening.wordpress.com/2008/05/09/dispersion-of-sound-waves-in-ice-sheets/">Andreas Bick's field recording of ice cracks</a> is already in the audible range. The recording exhibits the difference between the transmission of the echoes through ice and water.</p>
+  <p><audio src="http://silentlistening.files.wordpress.com/2008/04/frost-pattern.mp3" controls></audio></p>
+</div>
+
+
+<ul>
+<li>the human auditory system is good at recognising temporal changes or patterns</li>
+<li>the operator may not always be able to see a visual display
+
+<ul>
+<li>the content does not require constant observation such as warning alarms</li>
+<li>an existing visual system may be overloaded</li>
+<li>the perceiver may be visually impaired</li>
+</ul>
+</li>
+<li>the data is verbal-categorical, has a high number of dimensions, or requires rapid detection</li>
+<li>because the rise of mobile devices mean smaller screens and less room for visual displays</li>
+</ul>
+
+
+<h2>Use cases</h2>
+
+<div class="well callout">
+  <p>An auditory menu designed for use by drivers. You can hear the user scrolling through an address book. The spindex cues give an overview of alphabetical position, with slower navigation triggering spearcons for each contact.</p>
+  <p><audio src="http://sonification.de/handbook/media/chapter2/SHB-S2.2.mp3" type="audio/mpeg" controls></audio></p>
+</div>
+
+
+<ul>
+<li>alerts and notifications (indicating an occurance)</li>
+<li>alarms and warnings (indicating an adverse occurance, perhaps requiring an urgent response)</li>
+<li>status and progress indicators</li>
+<li>data exploration and auditory graphs</li>
+<li>art, entertainment, sport and leisure</li>
+</ul>
+
+
+<h2>Types of Sonification</h2>
+
+<h3>Interaction</h3>
+
+<div class="well callout">
+<p>
+<img src="http://infonomics.ltd.uk/news/images/post_images/tectonics.png" alt="Tectonics thumbnail" />
+Florian Dombois' audification of <a href="http://www.auditory-seismology.org/version2004/tectonics.html">Plate Tectonics</a> demonstrates the difference between the plop of the parting Atlantic ocean plates and the crack of the plates drifting against each other).
+</p>
+</div>
+
+
+<p>At one end of the scale, there are non-interactive sonifications that once triggered play in their entirety as a concert or a tour around the information. This has parallels with the direction instruction method of teaching whereby an existing conclusion or viewpoint is demonstrated.</p>
+
+<p>At the other end of the scale, there are user-initiated sonifications that require the user to engage in a conversation. This has parallels with the enquiry-based learning method which begins with questions, problems, or scenarios allowing knowledge to be discovered through exploration.</p>
+
+<p>Somewhere in between lies the facility for manipulation of the sonification at basic level &ndash; controlling the speed, pausing, fast-forwarding, and/ or rewinding.</p>
+
+<h3>Methods</h3>
+
+<ul>
+<li><em>Audification</em> transforms periodic or other data that has a waveform structure into the audible range.</li>
+<li><em>Parameter Mapping Sonification</em> extends this to other data forms, mapping a data dimension to an accoustic dimension</li>
+<li><em>Model-based Sonfication</em> emerges from the interaction of a user with an instrument so that the data structure is understood through the sonic responses of a virtual object.</li>
+</ul>
+
+
+<p>An <em>auditory icon</em> represents something and bears an analogous resemblence so that it should be understood without explanation. An <em>earcon</em> is more symbolic, and has and arbitrary mapping of sound to meaning. Although Earcons are more flexible, they may have to be learned. The <em>spearcon</em>, a speech earcon, has the potential to offer the best of both worlds &ndash; flexibility and understandability. A <em>spindex</em> is a set of brief speech sounds that are used to navigate a long menu.</p>
+
+<h3>Design Considerations</h3>
+
+<p>Qualitative data may be better represented by dimensions of sound that are perceived as categorical, such as timbre. Whereas pitch or loudness, which are more continuous, may be better for ratio or interval data.</p>
+
+<p>The polarity of the mapping matters. In one study, listeners agreed that pitch should increase with increasing temperature but that it should decrease with increasing size.</p>
+
+<p>While the human hearing range stretches from about 20 Hz to 20,000 Hz, it may be more successful to scale data to the range where hearing is most sensitive, for example between 1000-5000 Hz.</p>
+
+<p>A musical model, for example the notes on a piano, can provide a scale with perceptually equal steps. This convenience does come at the cost of resolution. A MIDI display using only notes 35-100 provides 65 points whereas a microtonal scale would be comparatively infinite.</p>
+
+<p>Monitoring tasks require that the listener has a priori knowledge of a particular template so that they may recognise a sound and it&rsquo;s meaning.</p>
+
+<p>Concurrent presentation of multiple data streams requires that the user be able to segregate the streams. Differences in timbre (musical instrument) or spatial separation (stereo panning) have been used for this purpose.</p>
+
+<p>Context cues can aid perception. Like tick marks on the axis of a visual graph, a series of clicks can help the user keep track of time and a repeating reference tone can help with point estimation.</p>
+
+<div class="well">
+<p>The <a href="http://www.sonifyer.org/sound/erdbewegung/progress/?id=38">Sonification of Tohoku Earthquake</a> accelerates seismic activiy by a factor of 1440 to bring signal into the audible range.</a></p>
+<div id="ytplayer"></div>
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '390',
+      width: '640',
+      videoId: '3PJxUPvz9Oo'
+    });
+  }
+</script>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[LEP Economic Profiles - How do local assets affect productivity]]></title>
@@ -181,75 +312,6 @@ If you&rsquo;re interested in text analysis then I highly recommend that you che
 <p><a href="http://freebase.org/">Freebase</a> is a free, open knowledge graph covering 37 million topics, 2000 types, and 30,000 properties. Topics (e.g. <a href="http://www.freebase.com/m/04lg6">Leonardo da Vinci</a>) can have types (e.g. Visual Artists) and types contain properties (e.g. his <a href="http://www.freebase.com/query?autorun=1&amp;q=%5B%7B%22id%22:%22/m/04lg6%22,%22name%22:null,%22/visual_art/visual_artist/artworks%22:%5B%5D%7D%5D">artworks</a>).</p>
 
 <p>Hopefully that gives you a flavour of what is out there. I&rsquo;d welcome any additional suggestions in the comments&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Public Sector Information: what's available and where you can find it]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
-    <updated>2013-03-18T15:43:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
-    <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
-
-<p>This post was prepared as part of my contribution to the <a href="http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/">Business of Open Data Workshop</a>. This workshop is the first in a series organised by <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a> and <a href="http://futureeverything.org">Future Everything</a>.</p>
-
-<p>To understand why public sector information is the main source of open data you may wish to read about the <a href="/news/blog/2012/10/25/the-economics-of-open-data">economics of open data</a>.</p>
-
-<!-- more -->
-
-
-<h2>Who is publishing Public Sector Information &ndash; Where can I find it?</h2>
-
-<h3>data.gov.uk</h3>
-
-<p><img class="left" src="/images/post_images/dgu-header.png">
-In 2009 <a href="http://data.gov.uk">data.gov.uk</a> was established to provide a central catalogue of public sector information, covering over 9,000 sources (as I write this). It provides meta data, that is, it acts an index of other data rather than a respository itself. The site is built on the <a href="http://okfn.org">Open Knowledge Foundation&rsquo;s</a> <a href="http://ckan.org/">CKAN</a> platform. It provides a <a href="http://data.gov.uk/sparql">SPARQL endpoint</a> for a <a href="http://data.gov.uk/linked-data/who-is-doing-what">variety of Linked Open Data resources</a>.
-In theory, this site should cover most of what is available from Government. Although in the past, the coverage has been patchy in parts and duplicated in others, this has largely been resolved over the past few years. The main problem with data.gov.uk is that it&rsquo;s sometimes best to go direct to the horses' mouth particularly when what you&rsquo;re interested in is a delivery API, not metadata discovery. As such I&rsquo;ll go into a little more detail about the places you&rsquo;ll usually find yourself after you&rsquo;ve explored data.gov.uk.</p>
-
-<h3>The Office of National Statistics</h3>
-
-<p><img class="right" src="/images/post_images/s300_NS_logo.jpg"></p>
-
-<p>The Office for National Statistics is the executive office of the UK Statistics Authority. The authority is a dedicated non-ministerial government department with responsibility for assessing <em>Official statistics</em> (i.e. &ldquo;those produced by a government department or persons acting on behalf of the crown&rdquo;) against it&rsquo;s <a href="http://www.statisticsauthority.gov.uk/assessment/code-of-practice/">Code of Practice</a> to ensure that only compliant publications are designated <em>National Statistics</em>.</p>
-
-<p>The <a href="http://www.ons.gov.uk">ONS</a> has long been providing data as both <a href="http://www.ons.gov.uk/ons/datasets-and-tables/index.html">datasets</a> and <a href="http://www.ons.gov.uk/ons/publications/index.html">published reports</a> (books, articles, bulletins) that include some narrative and interpretation. The most recent incarnation of the ONS site has convenient filters for discovering what available by theme, release date (including <a href="http://www.ons.gov.uk/ons/release-calendar/index.html">forthcoming releases</a>), and geographic scope and precision (i.e. where is covers and with what breakdowns). While it&rsquo;s naturally tempting to rush to the raw data you should also bear in mind that the <a href="http://www.ons.gov.uk/ons/guide-method/index.html">methodological guidance</a> is very important &ndash; there&rsquo;s many a time this has either saved me making a mistake in interpretation (fixed-capital investment figures used to be apportioned by jobs and so were no more informative for making regional comparisons) or suggested an alternate &lsquo;experimental&rsquo; dataset that offered new insights (e.g. multiple approaches to measuring Gross Value Added).</p>
-
-<p>Of particular note are:</p>
-
-<ul>
-<li>the ONS&rsquo;s site for labour market statistics &ndash; <a href="http://www.nomisweb.co.uk">nomis</a> &ndash; they have a <a href="http://www.nomisweb.co.uk/api/v01/help">RESTful API</a> which is compliant with the Statistical Data and Metadata eXchange (SMDX) ISO standard. The API offers both discovery and delivery services, URI resolution, and HTML, XML, json, and csv response formats.</li>
-<li>the <a href="http://www.neighbourhood.statistics.gov.uk/">Neighbourhood Statistics Exchange (NeSS)</a> &ndash; with their <a href="http://www.neighbourhood.statistics.gov.uk/dissemination/Info.do?page=nde.htm">Neighbourhood Data Exchange (NDE) API</a>, version 2 of which is now RESTful (I&rsquo;ve got some ruby bindings knocking around somewhere if you really want to use the SOAP interface instead).</li>
-<li>the <a href="http://www.ons.gov.uk/ons/about-ons/what-we-do/programmes---projects/enhancing-access-to-ons-data/ons-api/index.html">forthcoming ONS API</a> which will operate under a similar principle and is designed with data from the 2011 Census in mind.</li>
-</ul>
-
-
-<h3>Central Government Departments</h3>
-
-<p><img class="left" src="/images/post_images/govuk-crest.png">
-As part of their daily work and obligations for reporting, <a href="https://www.gov.uk/government/organisations">Central Government Departments</a> produce great volumes of data that is publically available. This departments have gradually be brought out from a heterogenous collection of sites operating under a department.gov.uk sub domain to a consistent www.gov.uk/department arrangement. This has made it much easier to search across Government for <a href="https://www.gov.uk/government/publications?publication_filter_option=statistics">statistics</a> or <a href="https://www.gov.uk/government/publications?publication_filter_option=research-and-analysis">research and analysis</a>. Indeed a convenient <a href="https://www.gov.uk/government/statistical-data-sets">index of statistical data sets</a> is provided.</p>
-
-<h3>data.gov.*</h3>
-
-<p><img class="right" src="/images/post_images/datagm-beta.png">
-There is also a plethora of other PSI datastores from <a href="http://www.datagm.org.uk/">Manchester</a> to <a href="http://data.gov.md/">Moldova</a> and, indeed, <a href="http://datacatalogs.org">all over the world</a>.</p>
-
-<h2>What&rsquo;s available? The Big Names in PSI</h2>
-
-<p><img src="/images/post_images/oslogo.png"></p>
-
-<ul>
-<li>For transport, the main data sets are the <a href="">National Public Transport Access Nodes (NapTAN)</a>, which unique identifies public transport access points, and the <a href="http://data.gov.uk/dataset/nptdr">National Public Transport Data Repository</a>, which provides a snapshot of every GB journey in ATCO-CIF and TransXChange formats. Historically, the NPTDR has been taken annually in October but it is now being provided weekly as the <a href="http://traveline.info/tnds.html">Traveline National Dataset</a> (requires registration for FTP access).</li>
-<li>The <a href="http://data.gov.uk/dataset/index-of-multiple-deprivation">Indicies of Multiple Deprivation</a> &ndash; which ranks English neighbourhoods (or Lower-layer Super Output Areas &ndash; LSOAs) according to seven dimensions of deprivation. The IMD is often used as a means of allocating resources by need. NB: the publication is irregularly timed and has (historically at least) been subject to methodological changes between years making it difficult to use this dataset for trend analysis. It does, however, provide an incredible level of geographic precision.</li>
-<li>The <a href="http://data.gov.uk/dataset/coins">Combined Online Information System (COINS)</a> &ndash; which is basically the governments central accounts, all 4.3Gb of them!</li>
-<li>The <a href="http://www.ons.gov.uk/ons/guide-method/geography/products/postcode-directories/-nspp-/index.html">ONS Postcode Directory and National Statistics Postcode Lookup</a> &ndash; which provides a lookup for transforming postcodes into other geographic terms including statistical areas (e.g. LSOAs) and geocodes (i.e. Latitude-Longitude/ Northings-Eastings).</li>
-<li><a href="http://www.ordnancesurvey.co.uk/oswebsite/products/os-opendata.html">Ordnance Survey Open Data</a> including the &lsquo;tiles&rsquo; of the map (raster), government administrative boundaries (vector ESRI shapefiles), code-points (a csv of postcode coordinates etc), and gazetteers of place and road names.</li>
-<li><a href="http://legislation.gov.uk">Legislation.gov.uk</a> publishes all UK legislation in both the original enacted form and with revisions that are made over time. The platform is managed by the <a href="http://www.nationalarchives.gov.uk/">The National Archives</a> and provides Linked Data access (try adding /data.xml to the end of a URI).</li>
-</ul>
-
-
-<p>If you&rsquo;re interested in more of the top datasets you might like to peruse <a href="http://data.gov.uk/data/site-usage/dataset">data.gov.uk&rsquo;s own list of popular datasets</a> or read on to <a href="/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">find out about what&rsquo;s available outside of the public sector</a>.</p>
-
-<p>Have I missed some major sources or data sets? Let me know in the comments&hellip;</p>
 ]]></content>
   </entry>
   

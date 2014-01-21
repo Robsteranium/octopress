@@ -1,0 +1,7 @@
+/* line 1, ../../../../sass/custom/callout.scss */
+.callout {
+  float: right;
+  margin-left: 1em;
+  width: 40%;
+  text-align: center;
+}

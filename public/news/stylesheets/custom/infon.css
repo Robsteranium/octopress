@@ -2,103 +2,111 @@
 /* colour scheme - dark to light */
 /* monochrome for testing */
 /* complementary greens */
-/* line 1, ../../../sass/custom/mailchimp_form.scss */
+/* line 1, ../../../../sass/custom/mailchimp_form.scss */
 #mc_embed_signup {
   margin-bottom: 4em;
 }
 
-/* line 4, ../../../sass/custom/mailchimp_form.scss */
+/* line 4, ../../../../sass/custom/mailchimp_form.scss */
 .mc-field-group {
   float: left;
   padding-right: 1em;
 }
 
-/* line 8, ../../../sass/custom/mailchimp_form.scss */
+/* line 8, ../../../../sass/custom/mailchimp_form.scss */
 #mce-responses.clear {
   clear: both;
 }
 
-/* line 7, ../../../sass/custom/infon.scss */
+/* line 1, ../../../../sass/custom/callout.scss */
+.callout {
+  float: right;
+  margin-left: 1em;
+  width: 40%;
+  text-align: center;
+}
+
+/* line 8, ../../../../sass/custom/infon.scss */
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   background: white;
   color: #747474;
 }
 
-/* line 18, ../../../sass/custom/infon.scss */
+/* line 19, ../../../../sass/custom/infon.scss */
 h1, h2, h3, h4, h5, .btn {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
 
-/* line 23, ../../../sass/custom/infon.scss */
+/* line 24, ../../../../sass/custom/infon.scss */
 a {
   color: #333399;
   text-decoration: none;
 }
-/* line 26, ../../../sass/custom/infon.scss */
+/* line 27, ../../../../sass/custom/infon.scss */
 a:hover {
   color: #747474;
   text-decoration: underline;
 }
 
-/* line 31, ../../../sass/custom/infon.scss */
+/* line 32, ../../../../sass/custom/infon.scss */
 p.navbar-text {
   font-size: 20px;
 }
 
-/* line 35, ../../../sass/custom/infon.scss */
+/* line 36, ../../../../sass/custom/infon.scss */
 .logomaster {
   background-image: url('/news/images/buddabrot.png');
   background-position: 0px -100px;
   color: white;
 }
-/* line 39, ../../../sass/custom/infon.scss */
+/* line 40, ../../../../sass/custom/infon.scss */
 .logomaster h1 {
   font-size: 80px;
 }
-/* line 42, ../../../sass/custom/infon.scss */
+/* line 43, ../../../../sass/custom/infon.scss */
 .logomaster p {
   font-size: 28px;
 }
-/* line 45, ../../../sass/custom/infon.scss */
+/* line 46, ../../../../sass/custom/infon.scss */
 .logomaster a {
   color: white;
 }
-/* line 47, ../../../sass/custom/infon.scss */
+/* line 48, ../../../../sass/custom/infon.scss */
 .logomaster a:hover {
   text-decoration: none;
 }
 
-/* line 53, ../../../sass/custom/infon.scss */
+/* line 54, ../../../../sass/custom/infon.scss */
 #contentcontainer {
   padding-top: 114px;
   background: white;
 }
 
-/* line 60, ../../../sass/custom/infon.scss */
+/* line 61, ../../../../sass/custom/infon.scss */
 section #actions {
   text-align: center;
 }
-/* line 62, ../../../sass/custom/infon.scss */
+/* line 63, ../../../../sass/custom/infon.scss */
 section #actions a {
   margin: 4em;
 }
-/* line 66, ../../../sass/custom/infon.scss */
+/* line 67, ../../../../sass/custom/infon.scss */
 section #benefits {
   color: black;
 }
-/* line 68, ../../../sass/custom/infon.scss */
+/* line 69, ../../../../sass/custom/infon.scss */
 section #benefits .span1 {
   text-align: center;
 }
-/* line 71, ../../../sass/custom/infon.scss */
+/* line 72, ../../../../sass/custom/infon.scss */
 section #benefits i {
   font-size: 60px;
   line-height: 100px;
 }
 
-/* line 80, ../../../sass/custom/infon.scss */
+/* line 81, ../../../../sass/custom/infon.scss */
 #bordercontainer h1 {
   padding: 0em;
   margin: 0em;
@@ -108,30 +116,30 @@ section #benefits i {
   color: black;
 }
 
-/* line 94, ../../../sass/custom/infon.scss */
+/* line 95, ../../../../sass/custom/infon.scss */
 #project_line #project_name {
   line-height: 50px;
 }
 
-/* line 101, ../../../sass/custom/infon.scss */
+/* line 102, ../../../../sass/custom/infon.scss */
 #client_lines .row-fluid #client_name {
   height: 50px;
   top: -50%;
 }
 
-/* line 118, ../../../sass/custom/infon.scss */
+/* line 119, ../../../../sass/custom/infon.scss */
 input, textarea {
   -moz-box-shadow: inset 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
 }
 
-/* line 124, ../../../sass/custom/infon.scss */
+/* line 125, ../../../../sass/custom/infon.scss */
 #stretcher {
   height: 300px;
 }
 
-/* line 128, ../../../sass/custom/infon.scss */
+/* line 129, ../../../../sass/custom/infon.scss */
 div#page-footer {
   padding: 100px 0px;
   margin-top: 100px;
@@ -139,7 +147,7 @@ div#page-footer {
   background-color: whiteSmoke;
 }
 
-/* line 135, ../../../sass/custom/infon.scss */
+/* line 136, ../../../../sass/custom/infon.scss */
 #blog-archives h2 {
   margin-top: 0px;
 }
