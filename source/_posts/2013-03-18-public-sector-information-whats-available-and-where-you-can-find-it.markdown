@@ -6,11 +6,11 @@ comments: true
 categories: [open data, public sector information, API, statistics, data] 
 ---
 
-This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on [open data beyond the public sector](/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector).
+This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on [open data beyond the public sector](/blog/2013/03/20/open-data-sources-beyond-the-public-sector).
 
 This post was prepared as part of my contribution to the [Business of Open Data Workshop](http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/). This workshop is the first in a series organised by [Open Data Manchester](http://opendatamanchester.org.uk/) and [Future Everything](http://futureeverything.org).
 
-To understand why public sector information is the main source of open data you may wish to read about the [economics of open data](/news/blog/2012/10/25/the-economics-of-open-data). 
+To understand why public sector information is the main source of open data you may wish to read about the [economics of open data](/blog/2012/10/25/the-economics-of-open-data). 
 <!-- more -->
 
 ## Who is publishing Public Sector Information - Where can I find it?
@@ -51,6 +51,6 @@ There is also a plethora of other PSI datastores from [Manchester](http://www.da
 - [Ordnance Survey Open Data](http://www.ordnancesurvey.co.uk/oswebsite/products/os-opendata.html) including the 'tiles' of the map (raster), government administrative boundaries (vector ESRI shapefiles), code-points (a csv of postcode coordinates etc), and gazetteers of place and road names.
 - [Legislation.gov.uk](http://legislation.gov.uk) publishes all UK legislation in both the original enacted form and with revisions that are made over time. The platform is managed by the [The National Archives](http://www.nationalarchives.gov.uk/) and provides Linked Data access (try adding /data.xml to the end of a URI).
 
-If you're interested in more of the top datasets you might like to peruse [data.gov.uk's own list of popular datasets](http://data.gov.uk/data/site-usage/dataset) or read on to [find out about what's available outside of the public sector](/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector).
+If you're interested in more of the top datasets you might like to peruse [data.gov.uk's own list of popular datasets](http://data.gov.uk/data/site-usage/dataset) or read on to [find out about what's available outside of the public sector](/blog/2013/03/20/open-data-sources-beyond-the-public-sector).
 
 Have I missed some major sources or data sets? Let me know in the comments...

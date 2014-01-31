@@ -214,7 +214,7 @@ The decicions you reach on the above considerations will help to determine which
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="www.gnu.org/licenses/gpl.html"><p><span><acronym title="General Public License">GPL</acronym></span></p></a>
+  <a href="http://www.gnu.org/licenses/gpl.html"><p><span><acronym title="General Public License">GPL</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -243,7 +243,7 @@ The decicions you reach on the above considerations will help to determine which
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="www.gnu.org/copyleft/lesser.html"><p><span><acronym title="Lesser General Public License">LGPL</acronym></span></p></a>
+  <a href="http://www.gnu.org/copyleft/lesser.html"><p><span><acronym title="Lesser General Public License">LGPL</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -330,7 +330,7 @@ The decicions you reach on the above considerations will help to determine which
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="mit-license.org"><p><span><acronym title="Massachusetts Institute of Technology">MIT<acronym></span></p></a>
+  <a href="http://mit-license.org"><p><span><acronym title="Massachusetts Institute of Technology">MIT<acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -359,7 +359,7 @@ The decicions you reach on the above considerations will help to determine which
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="creativecommons.org/licenses/by/3.0"><p><span><acronym title="Creative Commons Attribution">CC by</acronym></span></p></a>
+  <a href="http://creativecommons.org/licenses/by/3.0"><p><span><acronym title="Creative Commons Attribution">CC by</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -388,7 +388,7 @@ The decicions you reach on the above considerations will help to determine which
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="creativecommons.org/licenses/by-sa/3.0"><p><span><acronym title="Creative Commons Attribution ShareAlike">CC by-sa</acronym></span></p></a>
+  <a href="http://creativecommons.org/licenses/by-sa/3.0"><p><span><acronym title="Creative Commons Attribution ShareAlike">CC by-sa</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -417,7 +417,7 @@ The decicions you reach on the above considerations will help to determine which
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="creativecommons.org/licenses/by-nc-nd/3.0"><p><span><acronym title="Creative Commons Attribution Non-Commerical No-Derivatives">CC by-nc-nd</acronym></span></p></a>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0"><p><span><acronym title="Creative Commons Attribution Non-Commerical No-Derivatives">CC by-nc-nd</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: public sector information | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/public-sector-information/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-20T09:58:47+01:00</updated>
+  <updated>2014-01-31T09:59:45+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -18,11 +18,11 @@
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
     <updated>2013-03-18T15:43:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
-    <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
+    <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
 
 <p>This post was prepared as part of my contribution to the <a href="http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/">Business of Open Data Workshop</a>. This workshop is the first in a series organised by <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a> and <a href="http://futureeverything.org">Future Everything</a>.</p>
 
-<p>To understand why public sector information is the main source of open data you may wish to read about the <a href="/news/blog/2012/10/25/the-economics-of-open-data">economics of open data</a>.</p>
+<p>To understand why public sector information is the main source of open data you may wish to read about the <a href="/blog/2012/10/25/the-economics-of-open-data">economics of open data</a>.</p>
 
 <!-- more -->
 
@@ -76,7 +76,7 @@ There is also a plethora of other PSI datastores from <a href="http://www.datagm
 </ul>
 
 
-<p>If you&rsquo;re interested in more of the top datasets you might like to peruse <a href="http://data.gov.uk/data/site-usage/dataset">data.gov.uk&rsquo;s own list of popular datasets</a> or read on to <a href="/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">find out about what&rsquo;s available outside of the public sector</a>.</p>
+<p>If you&rsquo;re interested in more of the top datasets you might like to peruse <a href="http://data.gov.uk/data/site-usage/dataset">data.gov.uk&rsquo;s own list of popular datasets</a> or read on to <a href="/blog/2013/03/20/open-data-sources-beyond-the-public-sector">find out about what&rsquo;s available outside of the public sector</a>.</p>
 
 <p>Have I missed some major sources or data sets? Let me know in the comments&hellip;</p>
 ]]></content>

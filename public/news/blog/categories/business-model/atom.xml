@@ -4,7 +4,7 @@
   <title><![CDATA[Category: business model | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/business-model/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-20T09:58:47+01:00</updated>
+  <updated>2014-01-31T09:59:45+01:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -444,7 +444,7 @@ Typically there is:</p>
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="www.gnu.org/licenses/gpl.html"><p><span><acronym title="General Public License">GPL</acronym></span></p></a>
+  <a href="http://www.gnu.org/licenses/gpl.html"><p><span><acronym title="General Public License">GPL</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -473,7 +473,7 @@ Typically there is:</p>
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="www.gnu.org/copyleft/lesser.html"><p><span><acronym title="Lesser General Public License">LGPL</acronym></span></p></a>
+  <a href="http://www.gnu.org/copyleft/lesser.html"><p><span><acronym title="Lesser General Public License">LGPL</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -560,7 +560,7 @@ Typically there is:</p>
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="mit-license.org"><p><span><acronym title="Massachusetts Institute of Technology">MIT<acronym></span></p></a>
+  <a href="http://mit-license.org"><p><span><acronym title="Massachusetts Institute of Technology">MIT<acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -589,7 +589,7 @@ Typically there is:</p>
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="creativecommons.org/licenses/by/3.0"><p><span><acronym title="Creative Commons Attribution">CC by</acronym></span></p></a>
+  <a href="http://creativecommons.org/licenses/by/3.0"><p><span><acronym title="Creative Commons Attribution">CC by</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -618,7 +618,7 @@ Typically there is:</p>
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="creativecommons.org/licenses/by-sa/3.0"><p><span><acronym title="Creative Commons Attribution ShareAlike">CC by-sa</acronym></span></p></a>
+  <a href="http://creativecommons.org/licenses/by-sa/3.0"><p><span><acronym title="Creative Commons Attribution ShareAlike">CC by-sa</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -647,7 +647,7 @@ Typically there is:</p>
  </tr>
  <tr>
   <td nowrap valign="bottom">
-  <a href="creativecommons.org/licenses/by-nc-nd/3.0"><p><span><acronym title="Creative Commons Attribution Non-Commerical No-Derivatives">CC by-nc-nd</acronym></span></p></a>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0"><p><span><acronym title="Creative Commons Attribution Non-Commerical No-Derivatives">CC by-nc-nd</acronym></span></p></a>
   </td>
   <td nowrap style="background: #91CF60">
   <p align="center"><span>Yes</span></p>
@@ -733,7 +733,7 @@ Typically there is:</p>
 <li>Businesses that attempt to defend outdated business models by keeping data closed won&rsquo;t be able to compete with an open alternatives (alternatives that they are encouraging by keeping their data closed);</li>
 <li>It&rsquo;s probably better for such businesses to open their data before a competitor does &ndash; they shouldn&rsquo;t waste their current position of dominance;</li>
 <li>In some cases, where the market fails completely, public intervention to fund the creation or provision of information will help to improve economic growth and social welfare;</li>
-<li>In other cases there will be considerable <a href="/blog/2013/03/01/open-data-business-models">opportunities for private firms to innovate and capture the benefits of open data</a>.</li>
+<li>In other cases there will be considerable <a href="/blog/2013/03/01/open-data-business-models/">opportunities for private firms to innovate and capture the benefits of open data</a>.</li>
 </ol>
 
 ]]></content>

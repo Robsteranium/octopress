@@ -6,7 +6,7 @@ comments: true
 categories: [open data, API, statistics, data] 
 ---
 
-This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at [where to go for open government data](/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/).
+This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at [where to go for open government data](/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/).
 
 This post was prepared as part of my contribution to the [Business of Open Data Workshop](http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/). This workshop is the first in a series organised by [Open Data Manchester](http://opendatamanchester.org.uk/) and [Future Everything](http://futureeverything.org).
 <!-- more -->

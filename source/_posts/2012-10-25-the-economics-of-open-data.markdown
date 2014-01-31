@@ -40,5 +40,5 @@ So what does this economic analysis tell us?
 2.  Businesses that attempt to defend outdated business models by keeping data closed won't be able to compete with an open alternatives (alternatives that they are encouraging by keeping their data closed);
 3.  It's probably better for such businesses to open their data before a competitor does - they shouldn't waste their current position of dominance;
 4.  In some cases, where the market fails completely, public intervention to fund the creation or provision of information will help to improve economic growth and social welfare;
-5.  In other cases there will be considerable [opportunities for private firms to innovate and capture the benefits of open data](/blog/2013/03/01/open-data-business-models).
+5.  In other cases there will be considerable [opportunities for private firms to innovate and capture the benefits of open data](/blog/2013/03/01/open-data-business-models/).
 
