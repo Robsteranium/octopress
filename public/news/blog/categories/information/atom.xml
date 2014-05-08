@@ -4,7 +4,7 @@
   <title><![CDATA[Category: information | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/information/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-31T09:59:45+01:00</updated>
+  <updated>2014-05-08T10:28:50+02:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
+    <updated>2014-05-08T10:02:00+02:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
+
+<p>A great place to start is the <a href="http://5stardata.info/">5 star deployment scheme</a> which describes a maturity curve for open data:</p>
+
+<ol>
+<li> ★ make your stuff available on the Web (i.e. in whatever format) under an open license</li>
+<li> ★★ make it available as structured machine-readable data (e.g. Excel instead of image scan of a table)</li>
+<li> ★★★  use non-proprietary formats (e.g. CSV instead of Excel)</li>
+<li> ★★★★   use <acronym title="Uniform Resource Identifier">URI</acronym>s to denote things, so that people can point at your stuff</li>
+<li> ★★★★★    link your data to other data to provide context</li>
+</ol>
+
+
+<p>This scheme certainly provides a strategic overview (release early/ improve later, embrace openness, aim to create linked open data) but it doesn&rsquo;t say much about specific questions such as: how should the data be structured or presented and what should it include?</p>
+
+<p>I have prepared the below advice based upon the experiences I&rsquo;ve had as a consumer of data, common obstacles to analysis that might have been avoided if the data had been prepared in the right way.</p>
+
+<p>In writing this, it occurs to me that the general principle is to increase information entropy. <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<!--more-->
+
+
+<h2>More is usually better than less (but don&rsquo;t just repeat everybody else)</h2>
+
+<p>While it is (comparatively) easy to ignore irrelevant or useless data, it is impossible to consider data that you don&rsquo;t have. If it&rsquo;s easy enough to share everything then do so. Bandwidth is cheap and it&rsquo;s relatively straightforward to filter data. Those analysing your data may have a different perspective on what&rsquo;s useful &ndash; you don&rsquo;t know what they don&rsquo;t know.</p>
+
+<p>This may be inefficient, particularly if the receiver is already in possession of the data you&rsquo;re sending. Where your data set includes data from a third party it may be better to provide a linking index to that data, rather than to replicate it wholesale. Indeed even if the data you have available to release is small, it may be made larger through linking it to other sources.</p>
+
+<h2>Codes and Codelists allow for linking (which makes your data more valuable)</h2>
+
+<p>There are positive network effects to data linking &ndash; the value of data grows exponentially as not only may it be linked with other data, but that other data may be linked with it. Indeed, perhaps the most valuable data sources of all are the indicies that allow for linking between datasets. This is often called reference data &ndash; sets of permissible values that ensure that two datasets refer to a common concept in the same terms. The quality of a dataset may be improved by adding reference data or codes from standard code lists. A typical example of this is the Government Statistical Service codes that the ONS use to identify geographic areas in the UK (this is much prefered over area names that can&rsquo;t be linked because of differences in spelling that prevent &ndash; &ldquo;Bristol&rdquo; or &ldquo;Bristol, City of&rdquo;, it&rsquo;s all <a href="http://statistics.data.gov.uk/explore?URI=http://statistics.data.gov.uk/id/statistical-geography/E06000023">E06000023</a> to me!).</p>
+
+<p>If you&rsquo;re creating your own codelist it ought to follow the C.E.M.E. principle &ndash; Comprehensively Exhaustive and Mutually Exclusive. If the codes don&rsquo;t cover a significant category you&rsquo;ll have lot&rsquo;s of &ldquo;other"s which will basically render the codelist useless. If the codes overlap then they can&rsquo;t be compared and the offending codes will ultimately need to be combined.</p>
+
+<h2>Normalised data is more reliable and more efficient</h2>
+
+<p>Here I&rsquo;m referring to <a href="http://en.wikipedia.org/wiki/Database_normalization">database normalisation</a>, rather than <a href="http://en.wikipedia.org/wiki/Normalization_%28statistics%29">statistical normalisation</a>. A normalised database is one with a minimum redundancy &ndash; the same data isn&rsquo;t repeated in multiple places. Look-up tables are used, for example, so that a categorical variable doesn&rsquo;t need to have it&rsquo;s categories repeated (and possibly misspelled). If you have a table with two or more rows that need to be changed at the same time (because in some place they&rsquo;re referring to the same thing) then some normalisation is required.</p>
+
+<p>Database normalisation ensures integrity (otherwise if two things purporting to be the same are different then how do you know which one is right?) and efficiency (repetition is waste).</p>
+
+<h2>Be precise, allow data users to simplify (as unsimplification isn&rsquo;t possible)</h2>
+
+<p>Be wary about introducing codes where they&rsquo;re unneccessary. It&rsquo;s unfortunately quite common to see a continuous variable represented by categories. This seems to be particularly common with Age. The problem is, of course, that different datasets make different choices about the age intervals, and so can&rsquo;t be compared. One might use &lsquo;working age&rsquo; 16-74 and another &lsquo;adult&rsquo; 15+. Unless data with the original precision can be found, then the analyst will need to apportion or interpolate values in between categories.</p>
+
+<p>Categories that do not divide a continuous dimension evenly are also problematic. This is particularly common in survey data, where respondents are presented with a closed-list of intervals as options, rather than being asked to provide an estimate of the value itself. The result is often that the majority of responses fall into one category, with few in the others. Presenting a closed-list of options is sometimes to be prefered for other reasons (e.g. in questions about income, categories might ellicit more responses) &ndash; if so the bounds should be chosen with reference to the expected frequencies of responses not the linear scale of the dimension (i.e. the categories should have similar numbers of observations in them, not occupy similar sized intervals along the range of the variable being categorised).</p>
+
+<p>Precise data can be codified into less precise data. The reverse process is not possible (or at least not accurately).</p>
+
+<h2>Represent Nothingness accurately (be clear even when you don&rsquo;t know)</h2>
+
+<p>It&rsquo;s important to distinguish between different types of nothingness. Nothing can be:</p>
+
+<ul>
+<li>Not available &ndash; where no value has been provided (the value is unknown);</li>
+<li>Null &ndash; where the value is known to be nothing;</li>
+<li>Zero &ndash; which is actually a specific number (although it may sometimes be used to represent null).</li>
+</ul>
+
+
+<p>A blank space or a number defaulting to 0 could be any of these types of nothingness. Not knowing which type of nothing you&rsquo;re dealing with can undermine analysis.</p>
+
+<h2>Provide metadata (describe and explain your data)</h2>
+
+<p>Metadata is data about data. It describes provenance (how the data was collected or derived) and coverage (e.g. years, places, limits to scope, criteria for categories), and provides warnings about assumptions and their implications for interpretation.</p>
+
+<p>Metadata isn&rsquo;t just a descriptive narrative. It can be analysed as data itself. It can tell someone whether or not your data is relevant to their requirements without them having to download and review it.</p>
+
+<h2>In summary &ndash; increase information entropy</h2>
+
+<p>These tips are all related to a general principle of increasing entropy. As explained above, <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<ul>
+<li>More data, whether in the original release or in the other sources that may be linked to it, means more variety, which means more uncertainty can be resolved, and thus more value provided.</li>
+<li>Duplication (and thus the potential for inconsistency) in the message means that it doesn&rsquo;t resolve uncertainty, and thus doesn&rsquo;t add value.</li>
+<li>Normalised data retains the same variety in a smaller, clearer message.</li>
+<li>Precise data can take on more possible values and thus clarify more uncertainty than codified data.</li>
+<li>Inaccurately represented nothingness also means that the message isn&rsquo;t able to resolve uncertainty (about which type of nothing applies).</li>
+<li>Metadata makes the recipient more certain about the content of your data</li>
+</ul>
+
+
+<p>Herein lies a counter-intuitive aspect of releasing data. It seems to be sensible to reduce variety and uncertainty in the data, to make sense and interpret the raw data before it is presented. To provide more rather than less ordered data. In fact such actions make the data less informative, and make it harder to re-interpret the data in a wider range of contexts. Indeed much of the impetus behind Big Data is the recognition that unstructured, raw data has immense information potential. It is the capacity for re-interpretation that makes data valuable.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[9 Tools Every Information Analyst Should Have]]></title>
@@ -252,26 +342,6 @@ Benchmarking against other interventions provides valuable contextual informatio
 <li>using evaluation to guide research (to identify otherwise implicit assumptions that need to be validated).</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What is Infonomics?]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics/"/>
-    <updated>2012-12-06T12:45:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics</id>
-    <content type="html"><![CDATA[<p>When I started my <a href="http://infonomics.ltd.uk">economic consultancy and information analysis business</a> back in 2007 I was searching for a name that would describe my work in economics and information analysis and that was unique enough to appear early on in the search enginge result pages without too much trouble. At that time is was still cool to use a portmanteau (this was before dropping out a vowel caught-on) so I was certain that I was on to a winner.</p>
-
-<!--more-->
-
-
-<p>I didn&rsquo;t realise for some time that the term had already been coined by Doug Laney, then at META Group, to describe the practice of treating information as an asset. As an intangible asset information is given a price, appears on financial accounts, and is managed accordingly.</p>
-
-<p>Since this definition now seems to dominate the <a href="http://en.wikipedia.org/w/index.php?title=Infonomics">wikipedia page</a> on the subject, I think it&rsquo;s about time I added my voice to the debate.</p>
-
-<p>In my mind, at least, <strong>Infonomics is about information-based on economics, not economics-based on information</strong>. Whereas econometrics refers to economic statistics (and, let&rsquo;s be honest, principally regression analysis), I imagined Infonomics as a super-set including elements of computer science (such as information theory, algorithmic design, artificial intelligence, and data visualisation).</p>
-
-<p>Of course there&rsquo;s rarely a single, unambigious definition of a neologism. But at least we can all agree that <a href="http://en.wikipedia.org/w/index.php?title=Infonomics&amp;diff=prev&amp;oldid=471082260">wikipedia should no longer say</a> &ldquo;nobody has as yet referred to himself/herself as an infonomist&rdquo;.</p>
 ]]></content>
   </entry>
   

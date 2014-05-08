@@ -4,7 +4,7 @@
   <title><![CDATA[Category: data | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/data/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-31T09:59:45+01:00</updated>
+  <updated>2014-05-08T10:28:50+02:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
+    <updated>2014-05-08T10:02:00+02:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
+
+<p>A great place to start is the <a href="http://5stardata.info/">5 star deployment scheme</a> which describes a maturity curve for open data:</p>
+
+<ol>
+<li> ★ make your stuff available on the Web (i.e. in whatever format) under an open license</li>
+<li> ★★ make it available as structured machine-readable data (e.g. Excel instead of image scan of a table)</li>
+<li> ★★★  use non-proprietary formats (e.g. CSV instead of Excel)</li>
+<li> ★★★★   use <acronym title="Uniform Resource Identifier">URI</acronym>s to denote things, so that people can point at your stuff</li>
+<li> ★★★★★    link your data to other data to provide context</li>
+</ol>
+
+
+<p>This scheme certainly provides a strategic overview (release early/ improve later, embrace openness, aim to create linked open data) but it doesn&rsquo;t say much about specific questions such as: how should the data be structured or presented and what should it include?</p>
+
+<p>I have prepared the below advice based upon the experiences I&rsquo;ve had as a consumer of data, common obstacles to analysis that might have been avoided if the data had been prepared in the right way.</p>
+
+<p>In writing this, it occurs to me that the general principle is to increase information entropy. <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<!--more-->
+
+
+<h2>More is usually better than less (but don&rsquo;t just repeat everybody else)</h2>
+
+<p>While it is (comparatively) easy to ignore irrelevant or useless data, it is impossible to consider data that you don&rsquo;t have. If it&rsquo;s easy enough to share everything then do so. Bandwidth is cheap and it&rsquo;s relatively straightforward to filter data. Those analysing your data may have a different perspective on what&rsquo;s useful &ndash; you don&rsquo;t know what they don&rsquo;t know.</p>
+
+<p>This may be inefficient, particularly if the receiver is already in possession of the data you&rsquo;re sending. Where your data set includes data from a third party it may be better to provide a linking index to that data, rather than to replicate it wholesale. Indeed even if the data you have available to release is small, it may be made larger through linking it to other sources.</p>
+
+<h2>Codes and Codelists allow for linking (which makes your data more valuable)</h2>
+
+<p>There are positive network effects to data linking &ndash; the value of data grows exponentially as not only may it be linked with other data, but that other data may be linked with it. Indeed, perhaps the most valuable data sources of all are the indicies that allow for linking between datasets. This is often called reference data &ndash; sets of permissible values that ensure that two datasets refer to a common concept in the same terms. The quality of a dataset may be improved by adding reference data or codes from standard code lists. A typical example of this is the Government Statistical Service codes that the ONS use to identify geographic areas in the UK (this is much prefered over area names that can&rsquo;t be linked because of differences in spelling that prevent &ndash; &ldquo;Bristol&rdquo; or &ldquo;Bristol, City of&rdquo;, it&rsquo;s all <a href="http://statistics.data.gov.uk/explore?URI=http://statistics.data.gov.uk/id/statistical-geography/E06000023">E06000023</a> to me!).</p>
+
+<p>If you&rsquo;re creating your own codelist it ought to follow the C.E.M.E. principle &ndash; Comprehensively Exhaustive and Mutually Exclusive. If the codes don&rsquo;t cover a significant category you&rsquo;ll have lot&rsquo;s of &ldquo;other"s which will basically render the codelist useless. If the codes overlap then they can&rsquo;t be compared and the offending codes will ultimately need to be combined.</p>
+
+<h2>Normalised data is more reliable and more efficient</h2>
+
+<p>Here I&rsquo;m referring to <a href="http://en.wikipedia.org/wiki/Database_normalization">database normalisation</a>, rather than <a href="http://en.wikipedia.org/wiki/Normalization_%28statistics%29">statistical normalisation</a>. A normalised database is one with a minimum redundancy &ndash; the same data isn&rsquo;t repeated in multiple places. Look-up tables are used, for example, so that a categorical variable doesn&rsquo;t need to have it&rsquo;s categories repeated (and possibly misspelled). If you have a table with two or more rows that need to be changed at the same time (because in some place they&rsquo;re referring to the same thing) then some normalisation is required.</p>
+
+<p>Database normalisation ensures integrity (otherwise if two things purporting to be the same are different then how do you know which one is right?) and efficiency (repetition is waste).</p>
+
+<h2>Be precise, allow data users to simplify (as unsimplification isn&rsquo;t possible)</h2>
+
+<p>Be wary about introducing codes where they&rsquo;re unneccessary. It&rsquo;s unfortunately quite common to see a continuous variable represented by categories. This seems to be particularly common with Age. The problem is, of course, that different datasets make different choices about the age intervals, and so can&rsquo;t be compared. One might use &lsquo;working age&rsquo; 16-74 and another &lsquo;adult&rsquo; 15+. Unless data with the original precision can be found, then the analyst will need to apportion or interpolate values in between categories.</p>
+
+<p>Categories that do not divide a continuous dimension evenly are also problematic. This is particularly common in survey data, where respondents are presented with a closed-list of intervals as options, rather than being asked to provide an estimate of the value itself. The result is often that the majority of responses fall into one category, with few in the others. Presenting a closed-list of options is sometimes to be prefered for other reasons (e.g. in questions about income, categories might ellicit more responses) &ndash; if so the bounds should be chosen with reference to the expected frequencies of responses not the linear scale of the dimension (i.e. the categories should have similar numbers of observations in them, not occupy similar sized intervals along the range of the variable being categorised).</p>
+
+<p>Precise data can be codified into less precise data. The reverse process is not possible (or at least not accurately).</p>
+
+<h2>Represent Nothingness accurately (be clear even when you don&rsquo;t know)</h2>
+
+<p>It&rsquo;s important to distinguish between different types of nothingness. Nothing can be:</p>
+
+<ul>
+<li>Not available &ndash; where no value has been provided (the value is unknown);</li>
+<li>Null &ndash; where the value is known to be nothing;</li>
+<li>Zero &ndash; which is actually a specific number (although it may sometimes be used to represent null).</li>
+</ul>
+
+
+<p>A blank space or a number defaulting to 0 could be any of these types of nothingness. Not knowing which type of nothing you&rsquo;re dealing with can undermine analysis.</p>
+
+<h2>Provide metadata (describe and explain your data)</h2>
+
+<p>Metadata is data about data. It describes provenance (how the data was collected or derived) and coverage (e.g. years, places, limits to scope, criteria for categories), and provides warnings about assumptions and their implications for interpretation.</p>
+
+<p>Metadata isn&rsquo;t just a descriptive narrative. It can be analysed as data itself. It can tell someone whether or not your data is relevant to their requirements without them having to download and review it.</p>
+
+<h2>In summary &ndash; increase information entropy</h2>
+
+<p>These tips are all related to a general principle of increasing entropy. As explained above, <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<ul>
+<li>More data, whether in the original release or in the other sources that may be linked to it, means more variety, which means more uncertainty can be resolved, and thus more value provided.</li>
+<li>Duplication (and thus the potential for inconsistency) in the message means that it doesn&rsquo;t resolve uncertainty, and thus doesn&rsquo;t add value.</li>
+<li>Normalised data retains the same variety in a smaller, clearer message.</li>
+<li>Precise data can take on more possible values and thus clarify more uncertainty than codified data.</li>
+<li>Inaccurately represented nothingness also means that the message isn&rsquo;t able to resolve uncertainty (about which type of nothing applies).</li>
+<li>Metadata makes the recipient more certain about the content of your data</li>
+</ul>
+
+
+<p>Herein lies a counter-intuitive aspect of releasing data. It seems to be sensible to reduce variety and uncertainty in the data, to make sense and interpret the raw data before it is presented. To provide more rather than less ordered data. In fact such actions make the data less informative, and make it harder to re-interpret the data in a wider range of contexts. Indeed much of the impetus behind Big Data is the recognition that unstructured, raw data has immense information potential. It is the capacity for re-interpretation that makes data valuable.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sonification and Auditory Display Primer]]></title>
@@ -249,69 +339,6 @@ Florian Dombois' audification of <a href="http://www.auditory-seismology.org/ver
 
 
 <p>The common theme here is that these projects adopt open standards which allow us to learn from others and add our efforts to a common purpose. The tools themselves build around common standards and so may be customised to suit the specific context of each city (i.e. in terms of it&rsquo;s open street map layout).</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Open Data Sources - Beyond the Public Sector]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/"/>
-    <updated>2013-03-20T09:40:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector</id>
-    <content type="html"><![CDATA[<p>This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at <a href="/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">where to go for open government data</a>.</p>
-
-<p>This post was prepared as part of my contribution to the <a href="http://futureeverything.org/summit/conference/workshops-fringe-events/business-of-open-data-workshop/">Business of Open Data Workshop</a>. This workshop is the first in a series organised by <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a> and <a href="http://futureeverything.org">Future Everything</a>.</p>
-
-<!-- more -->
-
-
-<h2>The Social Web</h2>
-
-<p><img src="/images/post_images/circles-bird.png"></p>
-
-<p>As you might expect, there&rsquo;s a tremendous amount of data being generated across social networking platforms. These businesses thrive on having porous walls (from a data perspective at least). It&rsquo;s little surprise then that they all come with a suite of developer tools to help you build functionality into their offering. This approach wouldn&rsquo;t be considered by all to constitute openness (and indeed some are <a href="http://www.fsf.org/facebook">completely resistant to the prospect of Facebook owning their identity</a>) but it is worth mentioning as these resources contain a wealth of information. Typically permission must be given by a user for you to access their perspective on the social network using protocols such as open auth</p>
-
-<ul>
-<li><a href="https://dev.twitter.com/">Twitter&rsquo;s Developer APIs</a> provide programmatic access to what they call &lsquo;platform objects&rsquo;: Tweets, Users, Entities (#hashtags, media, urls, and @mentions), and Places.</li>
-<li><a href="https://developers.facebook.com">Facebook for Developers</a> includes the Graph API for reading from and writing to Facebook platform: Users, Pages, Groups, Photos, Videos, and the actions between objects. They&rsquo;ve even got their <a href="https://developers.facebook.com/docs/technical-guides/fql/">own query language</a>!</li>
-<li><a href="https://developer.linkedin.com/">Linked-in APIs</a> for People, Groups, Companies, and Jobs.</li>
-<li><a href="https://developers.google.com/+/">The Google+ Platform</a> for People, Activities, Comments and Moments</li>
-</ul>
-
-
-<h2>Open Corporates</h2>
-
-<p><img src="/images/post_images/mapping-tesco.png"></p>
-
-<p><a href="http://opencorporates.com/">OpenCorporates</a> has a straightforward (though big) ambition: to have a URL for every company in the world. The project combines data collected from official registries (such as Companies House in the UK) with crowd-sourced data (e.g. from unparseable filings etc). The <a href="http://blog.opencorporates.com/">blog</a> reveals some of the fascinating analyses that are possible (such as <a href="http://blog.opencorporates.com/2012/12/17/guest-post-data-sketching-with-the-opencorporates-api/">this network graph of directors and companies</a>) and issues that exist in this area (<a href="http://blog.opencorporates.com/2012/07/24/are-duns-numbers-the-crack-cocaine-of-id-systems-and-is-the-uk-the-latest-addict/">are DUNS numbers the crack cocaine of business identification?</a>).</p>
-
-<h2>Princeton Wordnet</h2>
-
-<p>The <a href="http://wordnet.princeton.edu/">Princeton WordNet</a> is a lexical database of English &ndash; a catalogue of words.
-<blockquote><p>Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet&rsquo;s structure makes it a useful tool for computational linguistics and natural language processing.</p></blockquote>
-If you&rsquo;re interested in text analysis then I highly recommend that you check out <a href="http://gate.ac.uk/">Gate</a> which of course has a Wordnet plugin.</p>
-
-<h2>OPTA MCFC-Analytics</h2>
-
-<p><img src="/images/post_images/Opta.png"></p>
-
-<p>Opta &ndash; a sports data company &ndash; has released data as part of the MCFC-Analytics project. There are two datasets:
-&ndash; The &ldquo;Lite&rdquo; Dataset which has an entry for every player&rsquo;s appearance in each match (10,370 in total) from the 2011-12 Premier League Season. The 185 fields cover a handful of contextual details (name of player and team etc) and counts for all of the &ldquo;on ball&rdquo; events in some detail (e.g. &ldquo;Total Successful Passes Excl Crosses Corners&rdquo;). The data is provided in csv.
-&ndash; The &ldquo;Advanced&rdquo; data provides a time and space (x, y, and z!) coded feed of events, codified by type. The initial set of open data covers only Manchester City players although more is promised if you can demonstrate some interesting developments&hellip;</p>
-
-<h2>DBpedia</h2>
-
-<p><img src="/images/post_images/dbpedia_logo.png"></p>
-
-<p><a href="http://dbpedia.org/">DBpedia</a>&hellip;
-<blockquote><p>&hellip;is a crowd-sourced community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to make sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking, and improving the encyclopedia itself.</p></blockquote></p>
-
-<h2>Freebase</h2>
-
-<p><img src="/images/post_images/freebase-logo.png"></p>
-
-<p><a href="http://freebase.org/">Freebase</a> is a free, open knowledge graph covering 37 million topics, 2000 types, and 30,000 properties. Topics (e.g. <a href="http://www.freebase.com/m/04lg6">Leonardo da Vinci</a>) can have types (e.g. Visual Artists) and types contain properties (e.g. his <a href="http://www.freebase.com/query?autorun=1&amp;q=%5B%7B%22id%22:%22/m/04lg6%22,%22name%22:null,%22/visual_art/visual_artist/artworks%22:%5B%5D%7D%5D">artworks</a>).</p>
-
-<p>Hopefully that gives you a flavour of what is out there. I&rsquo;d welcome any additional suggestions in the comments&hellip;</p>
 ]]></content>
   </entry>
   

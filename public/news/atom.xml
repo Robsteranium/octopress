@@ -4,7 +4,7 @@
   <title><![CDATA[Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-01-31T09:59:45+01:00</updated>
+  <updated>2014-05-08T10:28:50+02:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
+    <updated>2014-05-08T10:02:00+02:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
+
+<p>A great place to start is the <a href="http://5stardata.info/">5 star deployment scheme</a> which describes a maturity curve for open data:</p>
+
+<ol>
+<li> ★ make your stuff available on the Web (i.e. in whatever format) under an open license</li>
+<li> ★★ make it available as structured machine-readable data (e.g. Excel instead of image scan of a table)</li>
+<li> ★★★  use non-proprietary formats (e.g. CSV instead of Excel)</li>
+<li> ★★★★   use <acronym title="Uniform Resource Identifier">URI</acronym>s to denote things, so that people can point at your stuff</li>
+<li> ★★★★★    link your data to other data to provide context</li>
+</ol>
+
+
+<p>This scheme certainly provides a strategic overview (release early/ improve later, embrace openness, aim to create linked open data) but it doesn&rsquo;t say much about specific questions such as: how should the data be structured or presented and what should it include?</p>
+
+<p>I have prepared the below advice based upon the experiences I&rsquo;ve had as a consumer of data, common obstacles to analysis that might have been avoided if the data had been prepared in the right way.</p>
+
+<p>In writing this, it occurs to me that the general principle is to increase information entropy. <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<!--more-->
+
+
+<h2>More is usually better than less (but don&rsquo;t just repeat everybody else)</h2>
+
+<p>While it is (comparatively) easy to ignore irrelevant or useless data, it is impossible to consider data that you don&rsquo;t have. If it&rsquo;s easy enough to share everything then do so. Bandwidth is cheap and it&rsquo;s relatively straightforward to filter data. Those analysing your data may have a different perspective on what&rsquo;s useful &ndash; you don&rsquo;t know what they don&rsquo;t know.</p>
+
+<p>This may be inefficient, particularly if the receiver is already in possession of the data you&rsquo;re sending. Where your data set includes data from a third party it may be better to provide a linking index to that data, rather than to replicate it wholesale. Indeed even if the data you have available to release is small, it may be made larger through linking it to other sources.</p>
+
+<h2>Codes and Codelists allow for linking (which makes your data more valuable)</h2>
+
+<p>There are positive network effects to data linking &ndash; the value of data grows exponentially as not only may it be linked with other data, but that other data may be linked with it. Indeed, perhaps the most valuable data sources of all are the indicies that allow for linking between datasets. This is often called reference data &ndash; sets of permissible values that ensure that two datasets refer to a common concept in the same terms. The quality of a dataset may be improved by adding reference data or codes from standard code lists. A typical example of this is the Government Statistical Service codes that the ONS use to identify geographic areas in the UK (this is much prefered over area names that can&rsquo;t be linked because of differences in spelling that prevent &ndash; &ldquo;Bristol&rdquo; or &ldquo;Bristol, City of&rdquo;, it&rsquo;s all <a href="http://statistics.data.gov.uk/explore?URI=http://statistics.data.gov.uk/id/statistical-geography/E06000023">E06000023</a> to me!).</p>
+
+<p>If you&rsquo;re creating your own codelist it ought to follow the C.E.M.E. principle &ndash; Comprehensively Exhaustive and Mutually Exclusive. If the codes don&rsquo;t cover a significant category you&rsquo;ll have lot&rsquo;s of &ldquo;other&#8221;s which will basically render the codelist useless. If the codes overlap then they can&rsquo;t be compared and the offending codes will ultimately need to be combined.</p>
+
+<h2>Normalised data is more reliable and more efficient</h2>
+
+<p>Here I&rsquo;m referring to <a href="http://en.wikipedia.org/wiki/Database_normalization">database normalisation</a>, rather than <a href="http://en.wikipedia.org/wiki/Normalization_%28statistics%29">statistical normalisation</a>. A normalised database is one with a minimum redundancy &ndash; the same data isn&rsquo;t repeated in multiple places. Look-up tables are used, for example, so that a categorical variable doesn&rsquo;t need to have it&rsquo;s categories repeated (and possibly misspelled). If you have a table with two or more rows that need to be changed at the same time (because in some place they&rsquo;re referring to the same thing) then some normalisation is required.</p>
+
+<p>Database normalisation ensures integrity (otherwise if two things purporting to be the same are different then how do you know which one is right?) and efficiency (repetition is waste).</p>
+
+<h2>Be precise, allow data users to simplify (as unsimplification isn&rsquo;t possible)</h2>
+
+<p>Be wary about introducing codes where they&rsquo;re unneccessary. It&rsquo;s unfortunately quite common to see a continuous variable represented by categories. This seems to be particularly common with Age. The problem is, of course, that different datasets make different choices about the age intervals, and so can&rsquo;t be compared. One might use &lsquo;working age&rsquo; 16-74 and another &lsquo;adult&rsquo; 15+. Unless data with the original precision can be found, then the analyst will need to apportion or interpolate values in between categories.</p>
+
+<p>Categories that do not divide a continuous dimension evenly are also problematic. This is particularly common in survey data, where respondents are presented with a closed-list of intervals as options, rather than being asked to provide an estimate of the value itself. The result is often that the majority of responses fall into one category, with few in the others. Presenting a closed-list of options is sometimes to be prefered for other reasons (e.g. in questions about income, categories might ellicit more responses) &ndash; if so the bounds should be chosen with reference to the expected frequencies of responses not the linear scale of the dimension (i.e. the categories should have similar numbers of observations in them, not occupy similar sized intervals along the range of the variable being categorised).</p>
+
+<p>Precise data can be codified into less precise data. The reverse process is not possible (or at least not accurately).</p>
+
+<h2>Represent Nothingness accurately (be clear even when you don&rsquo;t know)</h2>
+
+<p>It&rsquo;s important to distinguish between different types of nothingness. Nothing can be:</p>
+
+<ul>
+<li>Not available &ndash; where no value has been provided (the value is unknown);</li>
+<li>Null &ndash; where the value is known to be nothing;</li>
+<li>Zero &ndash; which is actually a specific number (although it may sometimes be used to represent null).</li>
+</ul>
+
+
+<p>A blank space or a number defaulting to 0 could be any of these types of nothingness. Not knowing which type of nothing you&rsquo;re dealing with can undermine analysis.</p>
+
+<h2>Provide metadata (describe and explain your data)</h2>
+
+<p>Metadata is data about data. It describes provenance (how the data was collected or derived) and coverage (e.g. years, places, limits to scope, criteria for categories), and provides warnings about assumptions and their implications for interpretation.</p>
+
+<p>Metadata isn&rsquo;t just a descriptive narrative. It can be analysed as data itself. It can tell someone whether or not your data is relevant to their requirements without them having to download and review it.</p>
+
+<h2>In summary &ndash; increase information entropy</h2>
+
+<p>These tips are all related to a general principle of increasing entropy. As explained above, <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<ul>
+<li>More data, whether in the original release or in the other sources that may be linked to it, means more variety, which means more uncertainty can be resolved, and thus more value provided.</li>
+<li>Duplication (and thus the potential for inconsistency) in the message means that it doesn&rsquo;t resolve uncertainty, and thus doesn&rsquo;t add value.</li>
+<li>Normalised data retains the same variety in a smaller, clearer message.</li>
+<li>Precise data can take on more possible values and thus clarify more uncertainty than codified data.</li>
+<li>Inaccurately represented nothingness also means that the message isn&rsquo;t able to resolve uncertainty (about which type of nothing applies).</li>
+<li>Metadata makes the recipient more certain about the content of your data</li>
+</ul>
+
+
+<p>Herein lies a counter-intuitive aspect of releasing data. It seems to be sensible to reduce variety and uncertainty in the data, to make sense and interpret the raw data before it is presented. To provide more rather than less ordered data. In fact such actions make the data less informative, and make it harder to re-interpret the data in a wider range of contexts. Indeed much of the impetus behind Big Data is the recognition that unstructured, raw data has immense information potential. It is the capacity for re-interpretation that makes data valuable.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sonification and Auditory Display Primer]]></title>
@@ -1600,91 +1690,6 @@ We&#8217;ve been busy developing some new products.&nbsp; We&#8217;re proud to a
 
 
 <p>There are more exciting innovations in the pipeline so watch this space!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Impact Evaluation Methods]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2010/04/27/impact-evaluation-methods/"/>
-    <updated>2010-04-27T00:00:00+02:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2010/04/27/impact-evaluation-methods</id>
-    <content type="html"><![CDATA[<p>This is a brief review of impact evaluation methods.&nbsp; We consider the: <a href="http://www.berr.gov.uk/files/file21900.pdf">Impact Evaluation Framework</a> for Regional Development Agencies, the <a href="http://www.offpat.info/Publication.aspx?ID=2536">English Partnerships Additionality Guide</a>, and the <a href="http://www.sroi-uk.org/component/option,com_docman/task,cat_view/gid,29/Itemid,38/">Social Return on Investment</a> method.<br />
-<br />
-We will demonstrate that:</p>
-
-
-<ul>
-    <li>it&#8217;s vital to realise that the results monitored by projects should not all count towards a measure of impact (as some of those results may have happened anyway);</li>
-    <li>the method of calculating impact may be as interesting as the results of those calculations and, since interpretations may vary, transparency is vital to credibility;</li>
-    <li>an appreciation of context is fundamental to successful impact evaluation.</li>
-</ul>
-
-
-<!--more-->
-
-
-<p><h2>From the easy-to-measure to the hard-to-prove </h2><br />
-Each method builds upon the notion that, in order to evaluate the impact of public policy, we must consider outcomes rather than simply outputs.&nbsp; That is to say, that simply counting the results of activities (or even the level of activity) is not enough - we must investigate the consequences of those results.<br />
-Each method translates gross outcomes to net outcomes.&nbsp; This is in response to the observation that not every observed benefit arises as a direct consequence of the intervention in question.&nbsp; Instead, by drawing on the notion of &#8216;additionally&#8217; we may begin to question what might have happened without the support.&nbsp; Impact evaluation then, takes us from the easy to measure to the hard to prove.&nbsp; Each method recommends that a &#8216;theory of change&#8217; be established so that the chain logic from inputs to impacts is explicit.<br />
-This logic chain ought to cover the whole policy process from problem to solution.&nbsp; An understanding of the business case for investment is therefore absolutely vital to evaluation.<br />
-<br />
-<h2>Additional Impact</h2><br />
-The methods do not include the same concepts and have markedly different recommendations on how impact ought to be calculated.&nbsp; Generally speaking, the following elements are considered:</p>
-
-
-<ul>
-    <li>Deadweight (aka the reference case): those benefits that might have occurred anyway (not to be confused with &#8216;deadweight loss&#8217; that refers to the loss of consumer and producer surplus that occurs when a tax reduces the quantity of trade).</li>
-    <li>Displacement: the increase in benefits that is offset by a reduction elsewhere (e.g. where a business grows at the expense of competitors there is no net benefit to the economy).</li>
-    <li>Substitution: the possibility that people have transferred existing activity in order to benefit from the policy under evaluation (rather than through an existing route to the outcome).</li>
-    <li>Multipliers: the indirect, or &#8216;second-round&#8217; benefits that arise as a consequence of the direct benefits.</li>
-    <li>Leakage: the possibility that some benefits accrue to people who are not part of the target group.</li>
-    <li>Leverage: where the intervention induces other stakeholders to contribute additional expenditure (or reduce that expenditure).</li>
-    <li>Unintended effects: benefits or costs that were not anticipated.</li>
-    <li>Attribution: those results that were not the direct result of the policy intervention under question - i.e. those results for which other groups were responsible.</li>
-</ul>
-
-
-<p>These factors are usually treated as ratios that are applied to the gross value in order to calculate a net value.<br />
-The English Parnterships Additionality Guide calculates net impact as the difference between a set of intervention options and a reference case (a counter-factual hypothesis of what would have happened otherwise) where measures of leakage, displace, substation and multipliers are applied to both the invention option and the reference case.<br />
-The <acronym title="Social Return on Investment">SROI</acronym> method requires that outputs or outcomes are converted into sterling by drawing upon financial proxies that may be used to translate intangible social benefits into a standard unit of account.&nbsp; These are commonly the unit costs of alternate interventions or estimates from hedonic pricing models.</p>
-
-
-<p><br />
-<h2>Theory into Practice</h2><br />
-There is a degree of overlap between these concepts.&nbsp; Substitution may be also appear as displacement (was the alternative activity public or private?) or deadweight (is it fair to say that the benefits would have happened anyway if that result was attributable to another policy?).&nbsp; Attribution and deadweight may also be seen to overlap (again, was the result achieved by another policy?).<br />
-Furthermore, linear models that combine these factors may over-simplify the complexity of the underlying situation.&nbsp; For example, it will be difficult to attribute responsibility for the benefits separately to each of those involved where two partners had to work in concert to achieve the outcome (in such a case the benefit might be counted twice - once for each partner).&nbsp; It might also be argued that multipliers ought to be applied to substitution and displacement effects (which in turn will also have second round effects).&nbsp; In reality the chain of causality will be non-linear, and may even be cyclical, with the outcomes from one stage contributing to those in another.&nbsp; In this situation it becomes very difficult to avoid counting outcomes more than once.<br />
-This complexity is particularly relevant when conducting Social Return on Investment analysis as this approach to impact evaluation accounts for the social value that arises from economic value.&nbsp; For example, where an unemployed person gains employment there is a obvious economic benefit to that individual (immediately the salary and, over the longer-term, career opportunities will improve) and also social benefits such as savings on transfer payments (as the individual will stop claiming Job Seekers Allowance and start making income tax contributions).&nbsp; The rule of thumb suggested in the SROI guidance is that, to avoid double-counting, one should consider: &quot;am I counting the same value, for the same stakeholder, twice?&quot;.<br />
-<br />
-<h2>Impact is in the eye of the stakeholder</h2><br />
-Context and perspective are vital to the interpretation of impact.&nbsp; Since no policy operates in a vacuum, and there will usually be related programmes of intervention, evaluators must consider how the policy interacts with other forms of public support as well as how it impacts the targeted beneficiaries.<br />
-Consideration of each stakeholder is designed into the SROI method.&nbsp; Indeed this method essentially advocates that the impact on each stakeholder be considered in parallel with separate impact calculations being made for each.&nbsp; The discussion above highlights the difficulty evaluators face in distinguishing between stakeholders.&nbsp; Indeed it&#8217;s not clear how collective benefits (those that may be said to be more than the sum of the individual outcomes - the inward investment that a town enjoys as a result of a better skilled workforce is more than simply the aggregate productivity increase among trainees) ought to be modelled, if at all, although a general &quot;state&quot; stakeholder may be called-upon as a catch-all for those benefits enjoyed by society.<br />
-The <acronym title="Impact Evaluation Framework">IEF</acronym> method incorporates external (i.e. non-<acronym title="Regional Development Agency">RDA</acronym>) stakeholders under the assessment of &quot;strategic added value&quot;.&nbsp; This models the impact that the RDA has upon partners in terms of:</p>
-
-
-<ul>
-    <li>Strategic leadership &amp; catalyst: Articulating and communicating regional development needs, opportunities and solutions to partners and stakeholders in the region and elsewhere;</li>
-    <li>Strategic influence: Carrying out or stimulating activity that defines the distinctive roles of partners, gets them to commit to shared strategic objectives and to behave and allocate their funds accordingly;</li>
-    <li>Leverage: Providing financial and other incentives to mobilise partner and stakeholder resources &ndash; equipment, people as well as funding</li>
-    <li>Synergy: Using organisational capacity, knowledge and expertise to improve information exchange and knowledge transfer and coordination and/or integration of the design and delivery of interventions between partners;</li>
-    <li>Engagement: Setting up the mechanisms and incentives for more effective and deliberative engagement of stakeholders in the design and delivery of regional and sub-regional priorities and programmes.</li>
-</ul>
-
-
-<p>By comparison with the SROI method, the notion of Strategic Added Value is less mathematical.&nbsp; <acronym title="Strategic Added Value">SAV</acronym> does not model the impact on each stakeholder explicitly and instead takes a &#8216;soft-systems&#8217; approach where the focus is on organisational structures and processes rather than on measuring benefits accrued.</p>
-
-
-<p>&nbsp;</p>
-
-
-<p><h2>Summary</h2><br />
-The discussion of factors of additionality demonstrates that counting gross outputs will not provide a fair perspective and that outcomes must be considered when evaluating impact.</p>
-
-
-<p>In practice these factors may overlap and combine.&nbsp; An understanding of context is vital to disentangle the interplay of these factors.</p>
-
-
-<p>These factors will vary again when viewed from the perspective of different stakeholders.&nbsp; A balanced impact evaluation will take this into account.</p>
 
 ]]></content>
   </entry>
