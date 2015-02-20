@@ -4,7 +4,7 @@
   <title><![CDATA[Category: open data | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/open-data/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-05-08T10:28:50+02:00</updated>
+  <updated>2015-02-20T17:22:06+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,9 +14,225 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The Linked Data Mind Set]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set/"/>
+    <updated>2015-02-20T17:13:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set</id>
+    <content type="html"><![CDATA[<p>Linked Data is data that has been structured and published in such a way that it may be interlinked as part of the Semantic Web. In contrast to the traditional web, which is aimed at human readers, the semantic web is designed to be machine readable. It is built upon standard web technologies &ndash; <acronym title="Hypertext Transfer Protocol">HTTP</acronym>, <acronym title="Resource Description Framework">RDF<acronym>, and <acronym title="Uniform Resource Identifier">URI</acronym>s.</p>
+
+<p>I&rsquo;ve been working with Manchester-based Linked Data pioneers <a href="http://www.swirrl.com/">Swirrl</a> to convert open data to linked data format. This experience has opened my eyes to the immense power of linked data. I thought it was simply a good, extensible structure with some nice web-oriented features. What I&rsquo;ve actually found is some pretty fundamental differences that require quite a change in mind set.</p>
+
+<!--more-->
+
+
+<h2>Introduction to Linked Data</h2>
+
+<p>If you&rsquo;re already familiar with linked-data then jump down to read about the changes in perspective it&rsquo;s led me to see. If you&rsquo;re new to the topic or a bit rusty then you might want to read about the basic principles first.</p>
+
+<p>The recently updated <a href="http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140225/">RDF Primer 1.1</a> provides an excellent introduction to RDF. A brief summary follows.</p>
+
+<h3>Everything is a graph</h3>
+
+<p>Graphs, in the mathematical sense, are collections of nodes joined by edges. In linked-data this is described in terms of triples &ndash; statements which relate a subject to an object via a predicate:</p>
+
+<pre><code>&lt;subject&gt; &lt;predicate&gt; &lt;object&gt;
+&lt;Bob&gt; &lt;is a&gt; &lt;person&gt;
+&lt;Bob&gt; &lt;is a friend of&gt; &lt;Alice&gt;
+&lt;Bob&gt; &lt;is born on&gt; &lt;the 4th of July 1990&gt;
+</code></pre>
+
+<p>These statements are typically grouped together into graphs or contexts. A quad statement has a subject, predicate, object, and context (or graph).</p>
+
+<h3>URIs and Literal</h3>
+
+<p>The subjects and predicates are all identifiers symbolic representations that a supposed to be globally unique, called uniform resource identifiers (URIs). URIs are much like URLs (Uniform Resource Locators) that you may be familiar with using to find web pages (this &ldquo;finding&rdquo; process &ndash; requesting a URL in your browser to get a web page in response &ndash; is more technically known as &ldquo;dereferencing&rdquo;). URIs are a superset of URLs which also include URNs (Uniform Resource Names) such as ISBNs (International Standard Book Numbers).</p>
+
+<p>The objects can also be URIs or they can take the form of literal values (like strings, numbers and dates).</p>
+
+<h3>Turtle and SPARQL</h3>
+
+<p>There are a number of serialisation formats for RDF. By far the most readable is <a href="http://www.w3.org/TR/turtle/">Turtle</a>.</p>
+
+<pre><code>BASE   &lt;http://example.org/&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX schema: &lt;http://schema.org/&gt;
+
+&lt;bob#me&gt;
+    a foaf:Person ;
+    foaf:knows &lt;alice#me&gt; ;
+    schema:birthDate "1990-07-04"^^xsd:date ;
+</code></pre>
+
+<p><a href="http://www.w3.org/TR/rdf-sparql-query/">SPAQRL</a> is a query language for RDF. The query below selects Bob.</p>
+
+<pre><code>SELECT ?person WHERE { ?person foaf:knows &lt;http://example.org/alice#me&gt; }
+</code></pre>
+
+<h2>Thinking with a Linked Data Mindset</h2>
+
+<p>Now that we&rsquo;ve established the basics, we can go on to consider how this perspective can lead to a different mindset.</p>
+
+<h3>There&rsquo;s no distinction between data and metadata</h3>
+
+<p>Metadata is data that describes data. For example, the date a dataset was published. In traditional spreadsheets there&rsquo;s not always an obvious place to put this information. It&rsquo;s recorded in the filename or on a &ldquo;miscellanous details&rdquo; sheet. This isn&rsquo;t ideal as a) it&rsquo;s not generally referenceable, and b) it is easily lost if it&rsquo;s not copied around with the data itself.</p>
+
+<p>In RDF, metadata is stored in essentially the same way as data. It&rsquo;s triples all the way down! Certainly there are some vocabularies that are designed for metadata purposes (<a href="http://dublincore.org/">Dublin Core</a>, <a href="http://www.w3.org/TR/void/">VOID</a>, etc) but the content is described using the same structures and is amenable to the same sorts of interrogation techniques.</p>
+
+<p>This makes a lot of sense when you think about it. Metadata serves two purposes: to enable discovery and to allow the recording of facts that wouldn&rsquo;t otherwise fit.</p>
+
+<p>Discovery is the process of finding data relevant to your interests. Metadata summarises the scope of a dataset so that we can make requests like: &ldquo;show me all of the datasets published since XXXX about YYYY available on a neighbourhood level&rdquo;. But this question could be answered with the data itself. The distinction between metadata and data exists in large part, because of the way we package data. That is to say we typically present data in spreadsheets where the content and scope cannot be accessed without the user first acquiring and then interpreting the data. Obviously this can&rsquo;t be done in bulk unless the spreadsheets follow a common schema (some human interaction is otherwise necessary to prepare the data). If we remove the data from these packages, and allow deep inspection of it&rsquo;s content, then discovery can be acheived without resorting to a separate metadata index (although metadata descriptions can still make the process more efficient).</p>
+
+<p>The recording of facts that don&rsquo;t fit is usually a problem for metadata because it doesn&rsquo;t vary along the dimensions of the dataset in the traditional (tabular) way it&rsquo;s usually present. This isn&rsquo;t a problem for linked data.</p>
+
+<h3>The entity-relationship model doesn&rsquo;t (always) fit</h3>
+
+<p>The capacity of entity-relationship models is demonstrated by the popularity of object-oriented programming and relational-databases. Linked-data too can represent entity-relationship very naturally. The typically problem with the ER approach is that there&rsquo;s so often an exception to the rule. A given entity doesn&rsquo;t fit with the others and has a few odd properties that don&rsquo;t apply to everything else. Different relationships between instances of the same two types (typically recorded with primary/ foreign keys) are qualitatively different. Since in ER, information about an object is stored within it, the data model can become brittle. In linked-data, properties can be defined quite apart from objects.</p>
+
+<h3>There&rsquo;s no schema: arbitrary data can be added anywhere</h3>
+
+<p>In a traditional table representation, it&rsquo;s awkward to add arbitrary data. If you want to add a datum that doesn&rsquo;t fit into the schema then the schema must be modified. Adding new columns for a single datum is wasteful, and quickly leads to a bloated and confusing list of seldom-used fields.</p>
+
+<p>In part, this frustration gave rise to the Schemaless/ NoSQL databases. These systems sit at the other end of the scale. Without any structure it can be complex to make queries and maintain data integrity. These problems are shifted from the database to the application layer.</p>
+
+<p>In a graph representation, anything can be added anywhere. The schema is in the data itself and we can decide how much structure (like constraints and datatypes) we want to add.</p>
+
+<h3>The data is self-describing</h3>
+
+<p>This flexibility &ndash; the ability to add arbitrary facts without the constriction of a schema &ndash; can certainly seem daunting. Without a schema what is going to prevent errors, provide guarantees, or ensure consistency? In fact linked-data does have a schema of sorts. Vocabularies are used to describe the data. A few popular ontologies are worth mentioning:</p>
+
+<ul>
+<li><a href="http://www.w3.org/TR/rdf-schema/">RDFS</a>: the RDF Schema extends the basic RDF vocabulary to include a class and property system.</li>
+<li><a href="http://www.w3.org/TR/owl-primer/">OWL</a>: the Web Ontology Language is designed to represent rich and complex knowledge about things, groups of things, and relations between things</li>
+<li><a href="http://www.w3.org/TR/skos-primer">SKOS</a>: provides a model for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, folksonomies, and other similar types of controlled vocabulary.</li>
+</ul>
+
+
+<h3>There&rsquo;s no one right way to do things</h3>
+
+<p>The flexibility of the data format means that there are often several ways to model the same dataset. This can lead to a sort of options-paralysis! It often pays to make a choice for the sake of progress, then review it later once more of the pieces of the puzzle are in place. Realising that it doesn&rsquo;t need to be perfect first time is certainly liberating.</p>
+
+<h3>Naming is hard</h3>
+
+<p>Naming is one of the hardest problems in programming. Linked data modelling is 90% naming. The <a href="http://patterns.dataincubator.org/book/">Linked Data Patterns book</a> provides some useful suggestions for how to approach naming (URI design) in a range of contexts.</p>
+
+<p><a href="http://thomsonreuters.com/corporate/pdf/creating-value-with-identifiers-in-an-open-data-world.pdf">Identifiers have value</a>: clarifying ambiguity, promoting consensus, providing reliability, ensuring stability, and facilitating integration.</p>
+
+<h3>Vocabularies aren&rsquo;t settled</h3>
+
+<p>When developing a linked-data model, it&rsquo;s vital to understand the work done by others before you. After all, you need to adopt other vocabularies and URIs in order to link your data to the rest of the semantic web. There are lots of alternatives. The <a href="http://lov.okfn.org">Linked Open Vocabularies</a> site provides a way to search and compare vocabularies to help you decide which to use.</p>
+
+<h2>The Linked-Data Mind Set</h2>
+
+<p>In summary:</p>
+
+<ul>
+<li>Metadata can be data too, don&rsquo;t treat it as a second class citizen</li>
+<li>Use entities if it helps, but don&rsquo;t get too hung-up on them</li>
+<li>Let your schema grow and change over time as you learn more about the domain</li>
+<li>Use the core vocabularies to bring commonly understood structure to your data</li>
+<li>Experiment with different models to see what works best for your data and applications</li>
+<li>Create identifiers &ndash; it might be hard to start with, but everybody benefits in the long-term</li>
+<li>Stand on the shoulders of giants &ndash; follow patterns and adopt vocabularies</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
+    <updated>2014-05-08T10:02:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
+
+<p>A great place to start is the <a href="http://5stardata.info/">5 star deployment scheme</a> which describes a maturity curve for open data:</p>
+
+<ol>
+<li> ★ make your stuff available on the Web (i.e. in whatever format) under an open license</li>
+<li> ★★ make it available as structured machine-readable data (e.g. Excel instead of image scan of a table)</li>
+<li> ★★★  use non-proprietary formats (e.g. CSV instead of Excel)</li>
+<li> ★★★★   use <acronym title="Uniform Resource Identifier">URI</acronym>s to denote things, so that people can point at your stuff</li>
+<li> ★★★★★    link your data to other data to provide context</li>
+</ol>
+
+
+<p>This scheme certainly provides a strategic overview (release early/ improve later, embrace openness, aim to create linked open data) but it doesn&rsquo;t say much about specific questions such as: how should the data be structured or presented and what should it include?</p>
+
+<p>I have prepared the below advice based upon the experiences I&rsquo;ve had as a consumer of data, common obstacles to analysis that might have been avoided if the data had been prepared in the right way.</p>
+
+<p>In writing this, it occurs to me that the general principle is to increase information entropy. <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<!--more-->
+
+
+<h2>More is usually better than less (but don&rsquo;t just repeat everybody else)</h2>
+
+<p>While it is (comparatively) easy to ignore irrelevant or useless data, it is impossible to consider data that you don&rsquo;t have. If it&rsquo;s easy enough to share everything then do so. Bandwidth is cheap and it&rsquo;s relatively straightforward to filter data. Those analysing your data may have a different perspective on what&rsquo;s useful &ndash; you don&rsquo;t know what they don&rsquo;t know.</p>
+
+<p>This may be inefficient, particularly if the receiver is already in possession of the data you&rsquo;re sending. Where your data set includes data from a third party it may be better to provide a linking index to that data, rather than to replicate it wholesale. Indeed even if the data you have available to release is small, it may be made larger through linking it to other sources.</p>
+
+<h2>Codes and Codelists allow for linking (which makes your data more valuable)</h2>
+
+<p>There are positive network effects to data linking &ndash; the value of data grows exponentially as not only may it be linked with other data, but that other data may be linked with it. Indeed, perhaps the most valuable data sources of all are the indicies that allow for linking between datasets. This is often called reference data &ndash; sets of permissible values that ensure that two datasets refer to a common concept in the same terms. The quality of a dataset may be improved by adding reference data or codes from standard code lists. A typical example of this is the Government Statistical Service codes that the ONS use to identify geographic areas in the UK (this is much prefered over area names that can&rsquo;t be linked because of differences in spelling that prevent &ndash; &ldquo;Bristol&rdquo; or &ldquo;Bristol, City of&rdquo;, it&rsquo;s all <a href="http://statistics.data.gov.uk/explore?URI=http://statistics.data.gov.uk/id/statistical-geography/E06000023">E06000023</a> to me!).</p>
+
+<p>If you&rsquo;re creating your own codelist it ought to follow the C.E.M.E. principle &ndash; Comprehensively Exhaustive and Mutually Exclusive. If the codes don&rsquo;t cover a significant category you&rsquo;ll have lot&rsquo;s of &ldquo;other"s which will basically render the codelist useless. If the codes overlap then they can&rsquo;t be compared and the offending codes will ultimately need to be combined.</p>
+
+<h2>Normalised data is more reliable and more efficient</h2>
+
+<p>Here I&rsquo;m referring to <a href="http://en.wikipedia.org/wiki/Database_normalization">database normalisation</a>, rather than <a href="http://en.wikipedia.org/wiki/Normalization_%28statistics%29">statistical normalisation</a>. A normalised database is one with a minimum redundancy &ndash; the same data isn&rsquo;t repeated in multiple places. Look-up tables are used, for example, so that a categorical variable doesn&rsquo;t need to have it&rsquo;s categories repeated (and possibly misspelled). If you have a table with two or more rows that need to be changed at the same time (because in some place they&rsquo;re referring to the same thing) then some normalisation is required.</p>
+
+<p>Database normalisation ensures integrity (otherwise if two things purporting to be the same are different then how do you know which one is right?) and efficiency (repetition is waste).</p>
+
+<h2>Be precise, allow data users to simplify (as unsimplification isn&rsquo;t possible)</h2>
+
+<p>Be wary about introducing codes where they&rsquo;re unneccessary. It&rsquo;s unfortunately quite common to see a continuous variable represented by categories. This seems to be particularly common with Age. The problem is, of course, that different datasets make different choices about the age intervals, and so can&rsquo;t be compared. One might use &lsquo;working age&rsquo; 16-74 and another &lsquo;adult&rsquo; 15+. Unless data with the original precision can be found, then the analyst will need to apportion or interpolate values in between categories.</p>
+
+<p>Categories that do not divide a continuous dimension evenly are also problematic. This is particularly common in survey data, where respondents are presented with a closed-list of intervals as options, rather than being asked to provide an estimate of the value itself. The result is often that the majority of responses fall into one category, with few in the others. Presenting a closed-list of options is sometimes to be prefered for other reasons (e.g. in questions about income, categories might ellicit more responses) &ndash; if so the bounds should be chosen with reference to the expected frequencies of responses not the linear scale of the dimension (i.e. the categories should have similar numbers of observations in them, not occupy similar sized intervals along the range of the variable being categorised).</p>
+
+<p>Precise data can be codified into less precise data. The reverse process is not possible (or at least not accurately).</p>
+
+<h2>Represent Nothingness accurately (be clear even when you don&rsquo;t know)</h2>
+
+<p>It&rsquo;s important to distinguish between different types of nothingness. Nothing can be:</p>
+
+<ul>
+<li>Not available &ndash; where no value has been provided (the value is unknown);</li>
+<li>Null &ndash; where the value is known to be nothing;</li>
+<li>Zero &ndash; which is actually a specific number (although it may sometimes be used to represent null).</li>
+</ul>
+
+
+<p>A blank space or a number defaulting to 0 could be any of these types of nothingness. Not knowing which type of nothing you&rsquo;re dealing with can undermine analysis.</p>
+
+<h2>Provide metadata (describe and explain your data)</h2>
+
+<p>Metadata is data about data. It describes provenance (how the data was collected or derived) and coverage (e.g. years, places, limits to scope, criteria for categories), and provides warnings about assumptions and their implications for interpretation.</p>
+
+<p>Metadata isn&rsquo;t just a descriptive narrative. It can be analysed as data itself. It can tell someone whether or not your data is relevant to their requirements without them having to download and review it.</p>
+
+<h2>In summary &ndash; increase information entropy</h2>
+
+<p>These tips are all related to a general principle of increasing entropy. As explained above, <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<ul>
+<li>More data, whether in the original release or in the other sources that may be linked to it, means more variety, which means more uncertainty can be resolved, and thus more value provided.</li>
+<li>Duplication (and thus the potential for inconsistency) in the message means that it doesn&rsquo;t resolve uncertainty, and thus doesn&rsquo;t add value.</li>
+<li>Normalised data retains the same variety in a smaller, clearer message.</li>
+<li>Precise data can take on more possible values and thus clarify more uncertainty than codified data.</li>
+<li>Inaccurately represented nothingness also means that the message isn&rsquo;t able to resolve uncertainty (about which type of nothing applies).</li>
+<li>Metadata makes the recipient more certain about the content of your data</li>
+</ul>
+
+
+<p>Herein lies a counter-intuitive aspect of releasing data. It seems to be sensible to reduce variety and uncertainty in the data, to make sense and interpret the raw data before it is presented. To provide more rather than less ordered data. In fact such actions make the data less informative, and make it harder to re-interpret the data in a wider range of contexts. Indeed much of the impetus behind Big Data is the recognition that unstructured, raw data has immense information potential. It is the capacity for re-interpretation that makes data valuable.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Open Infrastructure - Tools for Smarter Citizens]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens/"/>
-    <updated>2013-10-17T17:12:00+02:00</updated>
+    <updated>2013-10-17T17:12:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens</id>
     <content type="html"><![CDATA[<p>This year the <a href="http://futureeverything.org/summit/summit-highlights/">Future Everything conference</a> focussed on three core themes: creative code, future cities, and the data society. In one of the final sessions (<a href="http://futureeverything.org/summit/conference/sessions/the-bespoke-smart-city/">The Bespoke Smart City</a>), keynote speaker Anthony Townsend set a challenge to the audience. He asked whether &lsquo;smart&rsquo; techniques were transferable from city to city, given that each city has it&rsquo;s own unique context. This article is a response to that question: I believe that there exists a set of processes and standards that may be replicated from place to place.</p>
 
@@ -51,7 +267,7 @@
   <entry>
     <title type="html"><![CDATA[Open Data Sources - Beyond the Public Sector]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/"/>
-    <updated>2013-03-20T09:40:00+01:00</updated>
+    <updated>2013-03-20T09:40:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector</id>
     <content type="html"><![CDATA[<p>This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at <a href="/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">where to go for open government data</a>.</p>
 
@@ -114,7 +330,7 @@ If you&rsquo;re interested in text analysis then I highly recommend that you che
   <entry>
     <title type="html"><![CDATA[Public Sector Information: what's available and where you can find it]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
-    <updated>2013-03-18T15:43:00+01:00</updated>
+    <updated>2013-03-18T15:43:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
     <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
 
@@ -177,221 +393,6 @@ There is also a plethora of other PSI datastores from <a href="http://www.datagm
 <p>If you&rsquo;re interested in more of the top datasets you might like to peruse <a href="http://data.gov.uk/data/site-usage/dataset">data.gov.uk&rsquo;s own list of popular datasets</a> or read on to <a href="/blog/2013/03/20/open-data-sources-beyond-the-public-sector">find out about what&rsquo;s available outside of the public sector</a>.</p>
 
 <p>Have I missed some major sources or data sets? Let me know in the comments&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Open Data Business Models]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/"/>
-    <updated>2013-03-01T19:16:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models</id>
-    <content type="html"><![CDATA[<p>Data doesn&rsquo;t make for a good tradable commodity, as discussed in a previous post on the <a href="/blog/2012/10/25/the-economics-of-open-data">Economics of Open Data</a>. Because of these market failures, there&rsquo;s a strong business case for the public sector to open data.
-But what about commercial business models for open data? This post explains why it&rsquo;s not just the public sector who ought to pay attention to this opportunity.
-The post is split into three topics: opening data that you own (why data assets are more valuable to you open), using open data (how to exploit your or someone else&rsquo;s open data) and commercial models (how to get paid in the process).</p>
-
-<!--more-->
-
-
-<h2>Opening your data</h2>
-
-<p>Why should you open your data? Here are a few reasons:</p>
-
-<ul>
-<li>Network effects</li>
-<li>Risk mitigation</li>
-<li>Reputation</li>
-<li>Attention</li>
-</ul>
-
-
-<h3>Network effects &ndash; Open is more exploitable</h3>
-
-<p>There is a much greater potential for exploting data where more people have access. As a result your data will have greater value when it is open (to see how see below). Although you may have to share some of the pie with others, the overall pie (and so potentially your slice too) will be bigger.
-This is particularly obvious for businesses who have ambitions for their data that are beyond their reach. It&rsquo;s clear that small businesses may not be able to afford a dedicated resource for data manipulation or scientific analysis. It&rsquo;s also true of larger organisations where the analysis is particularly complex and requires the skills of a specialist.
-The notion of a network-effect actually goes a step further to argue that it&rsquo;s impossible for any individual business to realise the full potential of their data internally. The data has value for each person that uses it, and in turn each use increases the value of the data. This is because data doesn&rsquo;t hold a value <em>per se</em> &ndash; it&rsquo;s value is only realised when data is interpreted with context as information (i.e. when a datum is combined with another datum). If the openness is reciprocal (share-alike) then your data will increase in value as it is shared and linked with other sources. You may even reasonably expect to have your data corrected, cleaned, and maintained (reducing the cost of ownership). There is also the possiblity of other businesses being able to extract value with niche customisations that you don&rsquo;t have the interest (let alone the capacity or knowledge) to consider.
-It should be apparent that this benefit is not guaranteed in all situations. If the pie doesn&rsquo;t get any bigger then there may be little to gain from sharing it. The likelihood is that it may be very hard to predict all possible avenues for exploiting your data. Further it&rsquo;s not certain, therefore that keeping data closed a precaution is prudent &ndash; it may turn out to be short-sighted&hellip;</p>
-
-<h3>Risk mitigation &ndash; Open it or else</h3>
-
-<p>If you don&rsquo;t open it, your competitors will.
-The value of information depends upon it revealing something novel. Since there are usually a variety of ways of answering a given question it&rsquo;s likely that your data is not entirely unique (i.e. for every purpose, and every user). As a result you stand to be undermined by a competitor who is willing to offer alternative (although not necessarily completely substitutable) data at a lower price. Economic theory suggests that, in competitive markets, the price will equal the marginal cost of supply. Since the marginal cost of supplying data is effectively 0 (or at least very low), you may well find yourself undercut by an open data provider. You are only insulated from this risk to the extent that alternative sources are not perfect substitutes for your data from the perspective of your customers and markets.
-Again, this risk is not certain. If you have the sole provider of a data source for which there are no direct substitutes then the probability of being undercut is lower. By exploiting this monopolistic position, however, you leave tremendous incentives for others to find imaginative alternatives to your offering. It may turn out that you&rsquo;re not as unique as you&rsquo;d assumed. Indeed there&rsquo;s no guarantee that you&rsquo;ll sustain the position of sole provider. Changing technology means that markets that were once protected by barriers to entry are now open to competition. If you are to operate an open data business model, however, and focus on a complementary service, then you are much more likely to cement your position as the default provider and retain your standing in the market&hellip;</p>
-
-<h3>Reputation &ndash; Open is credible</h3>
-
-<p>Opening data is a powerful means of being transparent. That transparency will make your propositions credibile by sending the signal that you have nothing to hide.
-As has been particularly obvious in the food industry of late (for historians reading this blog in the next millenium we&rsquo;re in the middle of a crisis about eating horse meat that was advertised as beef), the complexity of global supply chains bring risks because provenance is hard to establish. Open data presents a solution to this problem.
-This has to be genuine. Releasing data under the pretense of openness and at the same time making it difficult for anyone to interpret the data will be recognised as a cynical gesture.</p>
-
-<h3>Attention &ndash; Open is attractive</h3>
-
-<p>Where data is opened in an easily accessible format with some guarantee that the openness will be sustained, it will gather a lot of attention. A captive audience is certainly a valuable asset. The traffic it generates may be more valuable than the data itself. The technical implementation must be thought through carefully if the attention is going to be captured/ channeled through this approach.</p>
-
-<h2>Using Open Data</h2>
-
-<p>There are a variety of ways to profit from open data. The line-between this categories is blurred. The general sequence is from data source to final use. Applications may include one or more steps.</p>
-
-<ul>
-<li>Enabling Infrastructural</li>
-<li>Information Enrichment</li>
-<li>Analysis and Consultancy</li>
-<li>Application Development</li>
-</ul>
-
-
-<h3>Enabling Infrastructure</h3>
-
-<p>Although open data ought to be free to access it may not be free to enable that access. There is a cost (and therefore a profit) associated with opening data. A business or a government agency who wishes to open their a data are customers in this regard. Thus there is a business opportunity in supplying services such as:</p>
-
-<ul>
-<li>Information architecture design &ndash; planning out the schema, ontology, or technical implementation details for open data (either as a service or as creation of an open meta-data asset);</li>
-<li>Database &ndash; the technology that will hold the data;</li>
-<li>Web hosting &ndash; the technology that will open-up access to the data;</li>
-<li>Service/ Application layer &ndash; the technology that will make it (re)usable: Linked-open data, indexing services, user interfaces, APIs, integration gateways, data loaders etc (note that I&rsquo;m thinking particularly of just the server-side &lsquo;openning&rsquo; bit here, not client-side applications of open data &ndash; that comes next!);</li>
-<li>Advice on Licensing &ndash; the legal framework; and</li>
-<li>Business Advice on Strategy &ndash; as per this post!</li>
-</ul>
-
-
-<h3>Information Enrichment</h3>
-
-<p>As we have seen, data is valuable when presented in context as information. There is a value then, in enriching data by adding more data or context. Some ideas for what this might look like are shared below. The general distinction about enrichment I&rsquo;ve made is that it stops short of being analysis (i.e. the output of enrichment is more open data, not conclusions or decisions &ndash; see the following section for that).
-Enrichment services might include:</p>
-
-<ul>
-<li>Linking-open data sources (tying a dataset into the semantic web)</li>
-<li>Quality assurance &ndash; providing an independent certification or compliance service (must be careful to consider who pays/ scrutinises for the sake of credibility)</li>
-<li>Text analysis &ndash; information extraction (entity recognition, annotation)</li>
-<li>Cleaning data &ndash; e.g. reconciling duplicates, ensuring consistency, identifying junk data, processing data so that it conforms with an objective standard)</li>
-<li>Reformating &ndash; i.e. tranforming data so that it&rsquo;s provided in a more useful (typically machine readable) format e.g. translating pdfs into csv, wrapping a database in an API</li>
-</ul>
-
-
-<h3>Analysis and Consultancy</h3>
-
-<p>Open data can be a vital input into services designed to provide advice and support to decision makers. Beyond the simple fact that the information is free, there is a value in using a resource that is open because it is verifiable. That is to say, your analysis may be reproduced and checked. Notice that this doesn&rsquo;t actually need to have happened for this to be of benefit, indeed the very possibility may be credible enough.
-For the sake of completeness here are some examples of analytical services that might benefit from using open data sources:</p>
-
-<ul>
-<li>Consultancy/ Advice/ Decision support/ Insight</li>
-<li>Policy Development/ Advocacy/ Lobbying</li>
-<li>Statistical analysis and modelling</li>
-<li>Presentation (data graphics/ visualisation, sonification, and interaction)</li>
-<li>Scientific, Technical or Operational research (and product or process development)</li>
-</ul>
-
-
-<h3>Application Development</h3>
-
-<p>Finally open data can be integrated into applications that provide value to consumers, businesses, government, or indeed other developers. Here open data is interpreted in a particular domain of interest to provide a service.</p>
-
-<h2>Commercial models for Open Data</h2>
-
-<p>So we&rsquo;ve seen the value of openning data, and of using open data, but how can this value be translated into profit? Here I&rsquo;ll present a few models:</p>
-
-<ul>
-<li>normal pricing</li>
-<li>cross-subsidy</li>
-<li>freemium</li>
-<li>advertising</li>
-<li>sponsorship</li>
-<li>affiliation</li>
-</ul>
-
-
-<h3>Normal pricing</h3>
-
-<p>The most obvious model is &lsquo;normal&rsquo; pricing. This bears stating as it&rsquo;s not always apparent from listening to open data advocates! Just because the data is provided for free, it doesn&rsquo;t mean that the services that apply this data must be provided for free. Your ability to charge for something will depend upon how costly it would be for another person (or business) to reproduce the application you&rsquo;ve created.
-Traditional pricing models are also part of&hellip;</p>
-
-<h3>Cross-subsidy</h3>
-
-<p>The idea here is that an open data proposition enhances the value of complementary services to the extent that those other services make enough extra profit to pay for the costs of openning the data. Clearly this is easiest where the organisation that decides to open the data is also the one generating profit from the service although it may be possible to design commercial arrangements for a payment between two organisations.
-The inherent difficulty with this model is problem of quantifying the contribution of the open data to the complementary service. Since open data is untraded and thus there&rsquo;s no price signal of value. While it may be possible to calculate the total value of network effects captured by a given organisation, it is particularly difficult to put a price on the risk avoidance or reputational benefits.</p>
-
-<h3>Freemium</h3>
-
-<p>Where the service is the provision of data itself it&rsquo;s not possible to follow either of the first two models. As such an alternative is to segment the market &ndash; providing a basic level of &lsquo;free&rsquo; service and a premium level of &lsquo;paid&rsquo; service (essentially a cross-subsidy from the latter to the former). This can operate like a loss-leader. Typically the market is segmented according to the level of access provided (number or range of requests permitted or the speed of response). As the premium services begin to differ systematically from the core open data offering (e.g. training or consultancy) this pricing model begins to ressemble the cross-subsidy archetype.</p>
-
-<h3>Advertising</h3>
-
-<p>This is the most generally-applicable of the pricing models. Where a cross-subsidy cannot be established (perhaps because the difficulty agreeing a contract between the data opener and service vendor) it may be possible to pay for open data via advertising.</p>
-
-<h3>Sponsorship</h3>
-
-<p>If your data generates enough attention, people may be willing to pay you to include their content. Naturally this isn&rsquo;t an obvious option for a start-up or un-tested service and it may be inappropriate for some data sets. For example: sponsored links on Twitter, Google Search and Reddit.</p>
-
-<h3>Affiliation</h3>
-
-<p>This is the reverse side of sponsorship where affiliates receive open data for free which they then process and redistribute in order to send attention back up the chain. For example: Amazon.</p>
-
-<h2>Further information&hellip;</h2>
-
-<p>If you want to find out more then you might like to check out these links:</p>
-
-<ul>
-<li><a href="http://www.slideshare.net/OpeningUp/open-data-conference-john-sheridan-open-data-as-an-operating-model">Open Data as an Operating Model</a> &ndash; John Sheridan explains how a linked-open-data approach enabled a mutually beneficial ecosystem around legislation.gov.uk. Check out slides 17, 24, and 33 in particular &ndash; they should you how the pieces fit together.</li>
-<li><a href="http://chiefmartec.com/2010/01/7-business-models-for-linked-data/">7 Business Models for Linked Data</a> &ndash; Scott Brinker provides some far more catchy labels for these ideas than I have! <em>Data-layer ads</em>?!</li>
-<li><a href="http://blog.ldodds.com/2010/01/10/thoughts-on-linked-data-business-models/">Thoughts on Linked Data Business Models</a> &ndash; Leigh Dodds provides some insights into how Scott&rsquo;s ideas might be implemented and also comments on a motive I&rsquo;ve overlooked here &ndash; philanthropy!</li>
-<li><a href="http://www.scribd.com/doc/124951288/The-business-of-Open-Data-where-s-the-benefit">The Business of Open Data &ndash; Where&rsquo;s the Benefit</a> and <a href="https://soundcloud.com/theodi/odi-fridays-the-business-of">the accompanying audio track</a> &ndash; Jeni Tenison provides a contrast of a few models (including the closed data case) with the help of Osterwalder&rsquo;s Business Model Canvas.</li>
-</ul>
-
-
-<p>If that&rsquo;s not enough then you might be interested in attending a workshop on the <a href="http://futureeverything.org/summit/conference/business-of-open-data-workshop/">Business of Open Data</a> that&rsquo;s taking place as part of this year&rsquo;s <a href="http://futureeverything.org/">Future Everything Summit of Ideas &amp; Digtial Invention</a>.</p>
-
-<p>Indeed if you&rsquo;re in Manchester why not pop along to the next <a href="http://opendatamanchester.org.uk/">Open Data Manchester</a>?</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Economics of Open Data]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data/"/>
-    <updated>2012-10-25T15:35:00+02:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data</id>
-    <content type="html"><![CDATA[<p>Data doesn&rsquo;t make for a very good tradable commodity. Technological changes that allow us to connect and share data more easily are disrupting established business models. Therefore the public sector has a critical role to intervene in the data market and the private sector must adapt to ensure long-term sustainability.</p>
-
-<!--more-->
-
-
-<h2>The Market Isn&rsquo;t Always Perfect</h2>
-
-<p>Economists use this term to describe situations where the allocation of goods and services by the free market is inefficient (i.e. someone can be made better off without making another worse off). <strong>In some extreme cases the good or service would not be available without intervention by government</strong>. The market is only effective if the good or service:</p>
-
-<ul>
-<li>has a price which reflects all costs and benefits</li>
-<li>can be withheld from people at reasonable expense</li>
-<li>cannot be used by more than one person at the same time</li>
-</ul>
-
-
-<p>These characteristics don&rsquo;t apply in the case of open data&hellip;</p>
-
-<h2>Open Data: The Gift That Keeps On Giving</h2>
-
-<p>An externality, or spillover effect, is a cost or benefit that is incurred by someone who is not involved in the trade. The price will not reflect these indirect social impacts. Pollution is an example of how external costs can lead to excessive production.</p>
-
-<p><em>Network externalities</em> are a form of external benefit. Within a network the value of an adding an extra node or edge (e.g. person or friendship) is felt by every other part of the network. The Metrolink extension, for example, is not only of benefit to people in the new areas that can now use trams, but also to people in the existing areas that can now access new areas.</p>
-
-<p>Network externalities occur in the case of open data because data is only informative when it is interpreted. The value of each datum increases with the volume of other data that it may be connected with as the context and range of analysis that are possible increases. Thus, data operates as a network. In deciding whether or not to open their data, <strong>private organisations will not consider the indirect benefits that their data will have to improve the quality of every other dataset</strong> and so will release less data than is socially optimal.</p>
-
-<h2>Data As A Public Good</h2>
-
-<p>A <em>public good</em> is one which is non-excludable (impossible to prevent people from using it) and non-rival (one person&rsquo;s use doesn&rsquo;t not reduce availability to another). The problem with these goods is that consumers can take advantage without contributing sufficiently to their creation. If too many people decide to <em>free-ride</em> then the private revenues won&rsquo;t meet the private costs and the incentive to provide the good through the market will disappear.</p>
-
-<p>Data is typically non-excludable. Although legislation may prohibit the buyer from sharing data it is, in many cases, practically unenforcable (as is apparent with music sharing, for example). Data is also non-rival. Your reading of this post does not prevent another person from reading it &ndash; indeed I don&rsquo;t loose the ideas when I write them down &ndash; we can all enjoy them at the same time. <strong>Where data may be characterised as a public good, subject to the free-rider problem, there won&rsquo;t be sufficient private incentives for production and distribution</strong>.</p>
-
-<h2>Implications For Business &amp; Government</h2>
-
-<p>So what does this economic analysis tell us?</p>
-
-<ol>
-<li>Technological change (particularly the increasing capacity for connecting and sharing data) will disrupt certain markets by undermining established closed-data business models;</li>
-<li>Businesses that attempt to defend outdated business models by keeping data closed won&rsquo;t be able to compete with an open alternatives (alternatives that they are encouraging by keeping their data closed);</li>
-<li>It&rsquo;s probably better for such businesses to open their data before a competitor does &ndash; they shouldn&rsquo;t waste their current position of dominance;</li>
-<li>In some cases, where the market fails completely, public intervention to fund the creation or provision of information will help to improve economic growth and social welfare;</li>
-<li>In other cases there will be considerable <a href="/blog/2013/03/01/open-data-business-models/">opportunities for private firms to innovate and capture the benefits of open data</a>.</li>
-</ol>
-
 ]]></content>
   </entry>
   

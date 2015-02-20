@@ -4,7 +4,7 @@
   <title><![CDATA[Category: statistics | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/statistics/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-05-08T10:28:50+02:00</updated>
+  <updated>2015-02-20T17:22:06+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[LEP Economic Profiles - How do local assets affect productivity]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity/"/>
-    <updated>2014-01-17T08:31:00+01:00</updated>
+    <updated>2014-01-17T08:31:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity</id>
     <content type="html"><![CDATA[<p>Jim Twomey of <a href="http://www.pion-economics.co.uk/">Pion Economics</a> put together a fascinating statistical analysis of Local Economic Partnership areas. I offered to visualise the findings, and here are the results (click through for the interactive visualisation):</p>
 
@@ -38,7 +38,7 @@
   <entry>
     <title type="html"><![CDATA[How to choose a Sample Size]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/10/18/how-to-choose-a-sample-size/"/>
-    <updated>2013-10-18T09:26:00+02:00</updated>
+    <updated>2013-10-18T09:26:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/10/18/how-to-choose-a-sample-size</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked to provide advice on this question. The short answer is usually &ldquo;it depends&rdquo;. This is the longer answer that explains what it depends on!</p>
 
@@ -89,7 +89,7 @@
   <entry>
     <title type="html"><![CDATA[Open Infrastructure - Tools for Smarter Citizens]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens/"/>
-    <updated>2013-10-17T17:12:00+02:00</updated>
+    <updated>2013-10-17T17:12:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens</id>
     <content type="html"><![CDATA[<p>This year the <a href="http://futureeverything.org/summit/summit-highlights/">Future Everything conference</a> focussed on three core themes: creative code, future cities, and the data society. In one of the final sessions (<a href="http://futureeverything.org/summit/conference/sessions/the-bespoke-smart-city/">The Bespoke Smart City</a>), keynote speaker Anthony Townsend set a challenge to the audience. He asked whether &lsquo;smart&rsquo; techniques were transferable from city to city, given that each city has it&rsquo;s own unique context. This article is a response to that question: I believe that there exists a set of processes and standards that may be replicated from place to place.</p>
 
@@ -124,7 +124,7 @@
   <entry>
     <title type="html"><![CDATA[Open Data Sources - Beyond the Public Sector]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/"/>
-    <updated>2013-03-20T09:40:00+01:00</updated>
+    <updated>2013-03-20T09:40:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector</id>
     <content type="html"><![CDATA[<p>This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at <a href="/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">where to go for open government data</a>.</p>
 
@@ -187,7 +187,7 @@ If you&rsquo;re interested in text analysis then I highly recommend that you che
   <entry>
     <title type="html"><![CDATA[Public Sector Information: what's available and where you can find it]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
-    <updated>2013-03-18T15:43:00+01:00</updated>
+    <updated>2013-03-18T15:43:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
     <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
 

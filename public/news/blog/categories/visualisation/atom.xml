@@ -4,7 +4,7 @@
   <title><![CDATA[Category: visualisation | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/visualisation/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-05-08T10:28:50+02:00</updated>
+  <updated>2015-02-20T17:22:06+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Sonification and Auditory Display Primer]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/01/19/sonification-and-auditory-display-primer/"/>
-    <updated>2014-01-19T18:36:00+01:00</updated>
+    <updated>2014-01-19T18:36:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/01/19/sonification-and-auditory-display-primer</id>
     <content type="html"><![CDATA[<p>An auditory display uses sound to convery information. Sonification is defined as a type auditory display that uses non-speech audio, rendering sound in response to data and interaction.</p>
 
@@ -147,7 +147,7 @@ Florian Dombois' audification of <a href="http://www.auditory-seismology.org/ver
   <entry>
     <title type="html"><![CDATA[LEP Economic Profiles - How do local assets affect productivity]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity/"/>
-    <updated>2014-01-17T08:31:00+01:00</updated>
+    <updated>2014-01-17T08:31:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity</id>
     <content type="html"><![CDATA[<p>Jim Twomey of <a href="http://www.pion-economics.co.uk/">Pion Economics</a> put together a fascinating statistical analysis of Local Economic Partnership areas. I offered to visualise the findings, and here are the results (click through for the interactive visualisation):</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-05-08T10:28:50+02:00</updated>
+  <updated>2015-02-20T17:22:06+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,9 +14,135 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The Linked Data Mind Set]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set/"/>
+    <updated>2015-02-20T17:13:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set</id>
+    <content type="html"><![CDATA[<p>Linked Data is data that has been structured and published in such a way that it may be interlinked as part of the Semantic Web. In contrast to the traditional web, which is aimed at human readers, the semantic web is designed to be machine readable. It is built upon standard web technologies &ndash; <acronym title="Hypertext Transfer Protocol">HTTP</acronym>, <acronym title="Resource Description Framework">RDF<acronym>, and <acronym title="Uniform Resource Identifier">URI</acronym>s.</p>
+
+<p>I&rsquo;ve been working with Manchester-based Linked Data pioneers <a href="http://www.swirrl.com/">Swirrl</a> to convert open data to linked data format. This experience has opened my eyes to the immense power of linked data. I thought it was simply a good, extensible structure with some nice web-oriented features. What I&rsquo;ve actually found is some pretty fundamental differences that require quite a change in mind set.</p>
+
+<!--more-->
+
+
+<h2>Introduction to Linked Data</h2>
+
+<p>If you&rsquo;re already familiar with linked-data then jump down to read about the changes in perspective it&rsquo;s led me to see. If you&rsquo;re new to the topic or a bit rusty then you might want to read about the basic principles first.</p>
+
+<p>The recently updated <a href="http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140225/">RDF Primer 1.1</a> provides an excellent introduction to RDF. A brief summary follows.</p>
+
+<h3>Everything is a graph</h3>
+
+<p>Graphs, in the mathematical sense, are collections of nodes joined by edges. In linked-data this is described in terms of triples &ndash; statements which relate a subject to an object via a predicate:</p>
+
+<pre><code>&lt;subject&gt; &lt;predicate&gt; &lt;object&gt;
+&lt;Bob&gt; &lt;is a&gt; &lt;person&gt;
+&lt;Bob&gt; &lt;is a friend of&gt; &lt;Alice&gt;
+&lt;Bob&gt; &lt;is born on&gt; &lt;the 4th of July 1990&gt;
+</code></pre>
+
+<p>These statements are typically grouped together into graphs or contexts. A quad statement has a subject, predicate, object, and context (or graph).</p>
+
+<h3>URIs and Literal</h3>
+
+<p>The subjects and predicates are all identifiers symbolic representations that a supposed to be globally unique, called uniform resource identifiers (URIs). URIs are much like URLs (Uniform Resource Locators) that you may be familiar with using to find web pages (this &ldquo;finding&rdquo; process &ndash; requesting a URL in your browser to get a web page in response &ndash; is more technically known as &ldquo;dereferencing&rdquo;). URIs are a superset of URLs which also include URNs (Uniform Resource Names) such as ISBNs (International Standard Book Numbers).</p>
+
+<p>The objects can also be URIs or they can take the form of literal values (like strings, numbers and dates).</p>
+
+<h3>Turtle and SPARQL</h3>
+
+<p>There are a number of serialisation formats for RDF. By far the most readable is <a href="http://www.w3.org/TR/turtle/">Turtle</a>.</p>
+
+<pre><code>BASE   &lt;http://example.org/&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX schema: &lt;http://schema.org/&gt;
+
+&lt;bob#me&gt;
+    a foaf:Person ;
+    foaf:knows &lt;alice#me&gt; ;
+    schema:birthDate "1990-07-04"^^xsd:date ;
+</code></pre>
+
+<p><a href="http://www.w3.org/TR/rdf-sparql-query/">SPAQRL</a> is a query language for RDF. The query below selects Bob.</p>
+
+<pre><code>SELECT ?person WHERE { ?person foaf:knows &lt;http://example.org/alice#me&gt; }
+</code></pre>
+
+<h2>Thinking with a Linked Data Mindset</h2>
+
+<p>Now that we&rsquo;ve established the basics, we can go on to consider how this perspective can lead to a different mindset.</p>
+
+<h3>There&rsquo;s no distinction between data and metadata</h3>
+
+<p>Metadata is data that describes data. For example, the date a dataset was published. In traditional spreadsheets there&rsquo;s not always an obvious place to put this information. It&rsquo;s recorded in the filename or on a &ldquo;miscellanous details&rdquo; sheet. This isn&rsquo;t ideal as a) it&rsquo;s not generally referenceable, and b) it is easily lost if it&rsquo;s not copied around with the data itself.</p>
+
+<p>In RDF, metadata is stored in essentially the same way as data. It&rsquo;s triples all the way down! Certainly there are some vocabularies that are designed for metadata purposes (<a href="http://dublincore.org/">Dublin Core</a>, <a href="http://www.w3.org/TR/void/">VOID</a>, etc) but the content is described using the same structures and is amenable to the same sorts of interrogation techniques.</p>
+
+<p>This makes a lot of sense when you think about it. Metadata serves two purposes: to enable discovery and to allow the recording of facts that wouldn&rsquo;t otherwise fit.</p>
+
+<p>Discovery is the process of finding data relevant to your interests. Metadata summarises the scope of a dataset so that we can make requests like: &ldquo;show me all of the datasets published since XXXX about YYYY available on a neighbourhood level&rdquo;. But this question could be answered with the data itself. The distinction between metadata and data exists in large part, because of the way we package data. That is to say we typically present data in spreadsheets where the content and scope cannot be accessed without the user first acquiring and then interpreting the data. Obviously this can&rsquo;t be done in bulk unless the spreadsheets follow a common schema (some human interaction is otherwise necessary to prepare the data). If we remove the data from these packages, and allow deep inspection of it&rsquo;s content, then discovery can be acheived without resorting to a separate metadata index (although metadata descriptions can still make the process more efficient).</p>
+
+<p>The recording of facts that don&rsquo;t fit is usually a problem for metadata because it doesn&rsquo;t vary along the dimensions of the dataset in the traditional (tabular) way it&rsquo;s usually present. This isn&rsquo;t a problem for linked data.</p>
+
+<h3>The entity-relationship model doesn&rsquo;t (always) fit</h3>
+
+<p>The capacity of entity-relationship models is demonstrated by the popularity of object-oriented programming and relational-databases. Linked-data too can represent entity-relationship very naturally. The typically problem with the ER approach is that there&rsquo;s so often an exception to the rule. A given entity doesn&rsquo;t fit with the others and has a few odd properties that don&rsquo;t apply to everything else. Different relationships between instances of the same two types (typically recorded with primary/ foreign keys) are qualitatively different. Since in ER, information about an object is stored within it, the data model can become brittle. In linked-data, properties can be defined quite apart from objects.</p>
+
+<h3>There&rsquo;s no schema: arbitrary data can be added anywhere</h3>
+
+<p>In a traditional table representation, it&rsquo;s awkward to add arbitrary data. If you want to add a datum that doesn&rsquo;t fit into the schema then the schema must be modified. Adding new columns for a single datum is wasteful, and quickly leads to a bloated and confusing list of seldom-used fields.</p>
+
+<p>In part, this frustration gave rise to the Schemaless/ NoSQL databases. These systems sit at the other end of the scale. Without any structure it can be complex to make queries and maintain data integrity. These problems are shifted from the database to the application layer.</p>
+
+<p>In a graph representation, anything can be added anywhere. The schema is in the data itself and we can decide how much structure (like constraints and datatypes) we want to add.</p>
+
+<h3>The data is self-describing</h3>
+
+<p>This flexibility &ndash; the ability to add arbitrary facts without the constriction of a schema &ndash; can certainly seem daunting. Without a schema what is going to prevent errors, provide guarantees, or ensure consistency? In fact linked-data does have a schema of sorts. Vocabularies are used to describe the data. A few popular ontologies are worth mentioning:</p>
+
+<ul>
+<li><a href="http://www.w3.org/TR/rdf-schema/">RDFS</a>: the RDF Schema extends the basic RDF vocabulary to include a class and property system.</li>
+<li><a href="http://www.w3.org/TR/owl-primer/">OWL</a>: the Web Ontology Language is designed to represent rich and complex knowledge about things, groups of things, and relations between things</li>
+<li><a href="http://www.w3.org/TR/skos-primer">SKOS</a>: provides a model for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, folksonomies, and other similar types of controlled vocabulary.</li>
+</ul>
+
+
+<h3>There&rsquo;s no one right way to do things</h3>
+
+<p>The flexibility of the data format means that there are often several ways to model the same dataset. This can lead to a sort of options-paralysis! It often pays to make a choice for the sake of progress, then review it later once more of the pieces of the puzzle are in place. Realising that it doesn&rsquo;t need to be perfect first time is certainly liberating.</p>
+
+<h3>Naming is hard</h3>
+
+<p>Naming is one of the hardest problems in programming. Linked data modelling is 90% naming. The <a href="http://patterns.dataincubator.org/book/">Linked Data Patterns book</a> provides some useful suggestions for how to approach naming (URI design) in a range of contexts.</p>
+
+<p><a href="http://thomsonreuters.com/corporate/pdf/creating-value-with-identifiers-in-an-open-data-world.pdf">Identifiers have value</a>: clarifying ambiguity, promoting consensus, providing reliability, ensuring stability, and facilitating integration.</p>
+
+<h3>Vocabularies aren&rsquo;t settled</h3>
+
+<p>When developing a linked-data model, it&rsquo;s vital to understand the work done by others before you. After all, you need to adopt other vocabularies and URIs in order to link your data to the rest of the semantic web. There are lots of alternatives. The <a href="http://lov.okfn.org">Linked Open Vocabularies</a> site provides a way to search and compare vocabularies to help you decide which to use.</p>
+
+<h2>The Linked-Data Mind Set</h2>
+
+<p>In summary:</p>
+
+<ul>
+<li>Metadata can be data too, don&rsquo;t treat it as a second class citizen</li>
+<li>Use entities if it helps, but don&rsquo;t get too hung-up on them</li>
+<li>Let your schema grow and change over time as you learn more about the domain</li>
+<li>Use the core vocabularies to bring commonly understood structure to your data</li>
+<li>Experiment with different models to see what works best for your data and applications</li>
+<li>Create identifiers &ndash; it might be hard to start with, but everybody benefits in the long-term</li>
+<li>Stand on the shoulders of giants &ndash; follow patterns and adopt vocabularies</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
-    <updated>2014-05-08T10:02:00+02:00</updated>
+    <updated>2014-05-08T10:02:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
 
@@ -106,7 +232,7 @@
   <entry>
     <title type="html"><![CDATA[Sonification and Auditory Display Primer]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/01/19/sonification-and-auditory-display-primer/"/>
-    <updated>2014-01-19T18:36:00+01:00</updated>
+    <updated>2014-01-19T18:36:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/01/19/sonification-and-auditory-display-primer</id>
     <content type="html"><![CDATA[<p>An auditory display uses sound to convery information. Sonification is defined as a type auditory display that uses non-speech audio, rendering sound in response to data and interaction.</p>
 
@@ -237,7 +363,7 @@ Florian Dombois&#8217; audification of <a href="http://www.auditory-seismology.o
   <entry>
     <title type="html"><![CDATA[LEP Economic Profiles - How do local assets affect productivity]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity/"/>
-    <updated>2014-01-17T08:31:00+01:00</updated>
+    <updated>2014-01-17T08:31:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/01/17/lep-economic-profiles-how-do-local-assets-affect-productivity</id>
     <content type="html"><![CDATA[<p>Jim Twomey of <a href="http://www.pion-economics.co.uk/">Pion Economics</a> put together a fascinating statistical analysis of Local Economic Partnership areas. I offered to visualise the findings, and here are the results (click through for the interactive visualisation):</p>
 
@@ -259,7 +385,7 @@ Florian Dombois&#8217; audification of <a href="http://www.auditory-seismology.o
   <entry>
     <title type="html"><![CDATA[How to choose a Sample Size]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/10/18/how-to-choose-a-sample-size/"/>
-    <updated>2013-10-18T09:26:00+02:00</updated>
+    <updated>2013-10-18T09:26:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/10/18/how-to-choose-a-sample-size</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked to provide advice on this question. The short answer is usually &ldquo;it depends&rdquo;. This is the longer answer that explains what it depends on!</p>
 
@@ -310,7 +436,7 @@ Florian Dombois&#8217; audification of <a href="http://www.auditory-seismology.o
   <entry>
     <title type="html"><![CDATA[Open Infrastructure - Tools for Smarter Citizens]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens/"/>
-    <updated>2013-10-17T17:12:00+02:00</updated>
+    <updated>2013-10-17T17:12:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/10/17/open-infrastructure-tools-for-smarter-citizens</id>
     <content type="html"><![CDATA[<p>This year the <a href="http://futureeverything.org/summit/summit-highlights/">Future Everything conference</a> focussed on three core themes: creative code, future cities, and the data society. In one of the final sessions (<a href="http://futureeverything.org/summit/conference/sessions/the-bespoke-smart-city/">The Bespoke Smart City</a>), keynote speaker Anthony Townsend set a challenge to the audience. He asked whether &lsquo;smart&rsquo; techniques were transferable from city to city, given that each city has it&rsquo;s own unique context. This article is a response to that question: I believe that there exists a set of processes and standards that may be replicated from place to place.</p>
 
@@ -345,7 +471,7 @@ Florian Dombois&#8217; audification of <a href="http://www.auditory-seismology.o
   <entry>
     <title type="html"><![CDATA[Open Data Sources - Beyond the Public Sector]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector/"/>
-    <updated>2013-03-20T09:40:00+01:00</updated>
+    <updated>2013-03-20T09:40:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector</id>
     <content type="html"><![CDATA[<p>This is the second in a pair of posts designed to provide a primer on sources of open data. This post focuses on non-public sector sources, the previous one looked at <a href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/">where to go for open government data</a>.</p>
 
@@ -413,7 +539,7 @@ Florian Dombois&#8217; audification of <a href="http://www.auditory-seismology.o
   <entry>
     <title type="html"><![CDATA[Public Sector Information: what's available and where you can find it]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it/"/>
-    <updated>2013-03-18T15:43:00+01:00</updated>
+    <updated>2013-03-18T15:43:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/18/public-sector-information-whats-available-and-where-you-can-find-it</id>
     <content type="html"><![CDATA[<p>This is the first in a pair of posts designed to provide a primer on sources of open data. This post focuses on open government data and the next focusses on <a href="http://infonomics.ltd.uk/news/blog/2013/03/20/open-data-sources-beyond-the-public-sector">open data beyond the public sector</a>.</p>
 
@@ -482,7 +608,7 @@ There is also a plethora of other PSI datastores from <a href="http://www.datagm
   <entry>
     <title type="html"><![CDATA[Open Data Business Models]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/"/>
-    <updated>2013-03-01T19:16:00+01:00</updated>
+    <updated>2013-03-01T19:16:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models</id>
     <content type="html"><![CDATA[<p>Data doesn&rsquo;t make for a good tradable commodity, as discussed in a previous post on the <a href="http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data">Economics of Open Data</a>. Because of these market failures, there&rsquo;s a strong business case for the public sector to open data.
 But what about commercial business models for open data? This post explains why it&rsquo;s not just the public sector who ought to pay attention to this opportunity.
@@ -645,7 +771,7 @@ The inherent difficulty with this model is problem of quantifying the contributi
   <entry>
     <title type="html"><![CDATA[9 Tools Every Information Analyst Should Have]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/01/30/9-tools-every-information-analyst-should-have/"/>
-    <updated>2013-01-30T12:15:00+01:00</updated>
+    <updated>2013-01-30T12:15:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/01/30/9-tools-every-information-analyst-should-have</id>
     <content type="html"><![CDATA[<p>I was interested to read Rebecca Murphey&rsquo;s <a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/">Baseline for Front End Developers</a>  in which the author realizes that she has begun to take for granted a basic set of tools of the trade. She presents &ldquo;a few things that [she] wants to start expecting people to be familiar with, along with some resources you can use if you feel like you need to get up to speed&rdquo;. I&rsquo;d like to pay homage to that article and revise it in light of <em>the tools I believe are essential for an Information Analyst</em>. There is considerable overlap in the tools suggested although the application will differ.</p>
 
@@ -790,7 +916,7 @@ Information analysts ought to be able to handle (read, understand, parse and tra
   <entry>
     <title type="html"><![CDATA[Information Failure is not a Business Case]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case/"/>
-    <updated>2013-01-16T14:39:00+01:00</updated>
+    <updated>2013-01-16T14:39:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case</id>
     <content type="html"><![CDATA[<p>Ignorance is no excuse.</p>
 
@@ -810,7 +936,7 @@ Information analysts ought to be able to handle (read, understand, parse and tra
   <entry>
     <title type="html"><![CDATA[Pay for outcomes not activity]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/pay-for-outcomes-not-activity/"/>
-    <updated>2012-12-19T20:37:00+01:00</updated>
+    <updated>2012-12-19T20:37:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/19/pay-for-outcomes-not-activity</id>
     <content type="html"><![CDATA[<p>Commission outcomes not activity.</p>
 
@@ -844,7 +970,7 @@ Information analysts ought to be able to handle (read, understand, parse and tra
   <entry>
     <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
-    <updated>2012-12-19T16:43:00+01:00</updated>
+    <updated>2012-12-19T16:43:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
 
@@ -894,7 +1020,7 @@ Benchmarking against other interventions provides valuable contextual informatio
   <entry>
     <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
-    <updated>2012-12-11T16:04:00+01:00</updated>
+    <updated>2012-12-11T16:04:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
     <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
 
@@ -923,7 +1049,7 @@ Benchmarking against other interventions provides valuable contextual informatio
   <entry>
     <title type="html"><![CDATA[What is Infonomics?]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics/"/>
-    <updated>2012-12-06T12:45:00+01:00</updated>
+    <updated>2012-12-06T12:45:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/06/what-is-infonomics</id>
     <content type="html"><![CDATA[<p>When I started my <a href="http://infonomics.ltd.uk">economic consultancy and information analysis business</a> back in 2007 I was searching for a name that would describe my work in economics and information analysis and that was unique enough to appear early on in the search enginge result pages without too much trouble. At that time is was still cool to use a portmanteau (this was before dropping out a vowel caught-on) so I was certain that I was on to a winner.</p>
 
@@ -943,7 +1069,7 @@ Benchmarking against other interventions provides valuable contextual informatio
   <entry>
     <title type="html"><![CDATA[5 Questions to Consider Before Commissioning an Evaluation]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation/"/>
-    <updated>2012-12-05T10:50:00+01:00</updated>
+    <updated>2012-12-05T10:50:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/05/questions-to-consider-before-commissioning-an-evaluation</id>
     <content type="html"><![CDATA[<p>Planning is fundamental to successful evaluation. Considering these questions will help you to understand what you need to discuss with a contractor so that they can design an evaluation effectively.</p>
 
@@ -1037,7 +1163,7 @@ Typical objectives include wanting to:</p>
   <entry>
     <title type="html"><![CDATA[Open For Business]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business/"/>
-    <updated>2012-11-13T13:28:00+01:00</updated>
+    <updated>2012-11-13T13:28:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/11/13/open-for-business</id>
     <content type="html"><![CDATA[<p>This post outlines some business considerations for open source. It follows <a href="http://infonomics.ltd.uk/news/../portfolio_project/14">advice Infonomics provided to the World Wildlife Fund</a> in collaboration with <a href="http://www.ribble-consultants.co.uk">Ribble Consultants</a>.</p>
 
@@ -1548,7 +1674,7 @@ Typically there is:</p>
   <entry>
     <title type="html"><![CDATA[The Economics of Open Data]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data/"/>
-    <updated>2012-10-25T15:35:00+02:00</updated>
+    <updated>2012-10-25T15:35:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/10/25/the-economics-of-open-data</id>
     <content type="html"><![CDATA[<p>Data doesn&rsquo;t make for a very good tradable commodity. Technological changes that allow us to connect and share data more easily are disrupting established business models. Therefore the public sector has a critical role to intervene in the data market and the private sector must adapt to ensure long-term sustainability.</p>
 
@@ -1600,7 +1726,7 @@ Typically there is:</p>
   <entry>
     <title type="html"><![CDATA[Winning Public Sector Contracts]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts/"/>
-    <updated>2011-11-30T13:11:00+01:00</updated>
+    <updated>2011-11-30T13:11:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2011/11/30/winning-public-sector-contracts</id>
     <content type="html"><![CDATA[<p>I was invited to provide some training at the <a href="http://www.socialsolutionsacademy.co.uk/"><acronym title="Social Solutions Academy">SSA</acronym></a>&rsquo;s <a href="http://www.socialsolutionsacademy.co.uk/past-events/">Social Enterprise Action Day</a>.</p>
 
@@ -1621,7 +1747,7 @@ Typically there is:</p>
   <entry>
     <title type="html"><![CDATA[An Introduction to GNU-R]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk/"/>
-    <updated>2010-09-23T00:00:00+02:00</updated>
+    <updated>2010-09-23T00:00:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2010/09/23/invitation-to-an-introduction-to-gnu-r-talk</id>
     <content type="html"><![CDATA[<p>The Manchester Free Software group has invited me to give a talk on&nbsp;<a target="_blank" href="http://www.r-project.org/">GNU-R</a>.</p>
 
@@ -1642,54 +1768,6 @@ Typically there is:</p>
 
 
 <p><a href="http://libreplanet.org/wiki/Manchester">Manchester Free Software</a>&nbsp;was formed in response to the growing need for a group based in the Manchester area that focuses on Free Software and GNU/Linux primarily, but also on issues such as Digital Restrictions Management and other issues which infringe on the freedoms of computer users.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Introducing the AutoReporter]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2010/08/18/introducing-the-autoreporter/"/>
-    <updated>2010-08-18T00:00:00+02:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2010/08/18/introducing-the-autoreporter</id>
-    <content type="html"><![CDATA[<p>
-<img class="left" src="http://infonomics.ltd.uk/news/images/post_images/robot3.png" title="AutoReporter" >
-We&#8217;ve been busy developing some new products.&nbsp; We&#8217;re proud to announce the launch of the <a href="http://reports.infonomics.ltd.uk/">Auto-Reporter</a>.</p>
-
-
-<p>The AutoReporter writes economic and statistical reports automatically.&nbsp; Our algorithm gathers, analyses, visualises, and interprets data.&nbsp; Because the process is robotic, it can rewrite whole reports with the tweak of a parameter.&nbsp; You can follow this link to read a <a href="http://reports.infonomics.ltd.uk/AutoReporter_v1.pdf">white paper describing the method</a>.&nbsp; You can may also want to download an <a href="http://reports.infonomics.ltd.uk/DownturnMcr.pdf">example report</a> (showing how the economic downturn will affect Manchester&#8217;s economy).</p>
-
-
-<!--more-->
-
-
-<p>There are a range of benefits:</p>
-
-
-<ul>
-    <li><strong>Don&rsquo;t repeat yourself</strong>: once a report is written it  may be regenerated many times, most importantly, every time new data is  made available &ndash; even years after the original draft;</li>
-    <li><strong>Be transparent and credible</strong>: scripted reports  connect open data to decisions through analysis.  The evidence base, and  the logic used for interpretation is transparent and therefore  credible;</li>
-    <li><strong>Don&rsquo;t worry about carrying errors forward</strong>: with  manually generated research, any mistakes made at the beginning are  costly as the error will be carried forward through subsequent stages.   Even after an error is discovered and corrected, subsequent tasks may need to  be redone (if they are based on the erroneous data).  With reproducible  research this process requires no costly repetition of manual tasks;</li>
-    <li><strong>Benefit from lessons learned from other&rsquo;s mistakes</strong>:  a single report could be generated for multiple circumstances.  It&rsquo;s  likely that if your organisation values the report then others will too.   As a result, organisations may find that sharing ideas and techniques  will be of mutual benefit (notwithstanding issues of confidentiality or  competition);</li>
-    <li><strong>Accuracy</strong>: The numbers and graphics reported are  accurate.  They&#8217;re calculated from source data each time the report is  run.  This avoids problems with mismatched versions of data and analysis  that often arise from inconsistent manual updates.</li>
-    <li><strong>Power</strong>: Once a report has been written for one area,  it may be reproduced for others.  You&rsquo;ve written a report for your  borough and now you want one for each ward?  Fine!  Just change the  parameters on the report (data permitting) and you can generate the same  analysis (data tables and charts) for each neighbourhood.</li>
-</ul>
-
-
-<p>You can read a <a href="http://infonomics.ltd.uk/portfolio_project/8">case study</a> about how Innovas Consulting employed this tool to produce 60+ tailored Enterprise Catalyst reports to schools in Yorkshire as part of an evaluation of enterprise activities in the region.</p>
-
-
-<p>We&#8217;re keen to develop the technology further with our associates.&nbsp; We can prepare web applications that fit within your own websites, presented in with your own style and branding.&nbsp; This sort of technology will be valuable if you:</p>
-
-
-<ul>
-    <li>employ a common methodology to different clients,</li>
-    <li>are keen to demonstrate credibility with reproducible research,</li>
-    <li>regularly update your analysis with new data, and/or</li>
-    <li>need to produce tailored reports or analyses in bulk (i.e. across many topics, indicators or areas).</li>
-</ul>
-
-
-<p>There are more exciting innovations in the pipeline so watch this space!</p>
 
 ]]></content>
   </entry>

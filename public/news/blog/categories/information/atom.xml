@@ -4,7 +4,7 @@
   <title><![CDATA[Category: information | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/information/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-05-08T10:28:50+02:00</updated>
+  <updated>2015-02-20T17:22:06+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,9 +14,135 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The Linked Data Mind Set]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set/"/>
+    <updated>2015-02-20T17:13:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set</id>
+    <content type="html"><![CDATA[<p>Linked Data is data that has been structured and published in such a way that it may be interlinked as part of the Semantic Web. In contrast to the traditional web, which is aimed at human readers, the semantic web is designed to be machine readable. It is built upon standard web technologies &ndash; <acronym title="Hypertext Transfer Protocol">HTTP</acronym>, <acronym title="Resource Description Framework">RDF<acronym>, and <acronym title="Uniform Resource Identifier">URI</acronym>s.</p>
+
+<p>I&rsquo;ve been working with Manchester-based Linked Data pioneers <a href="http://www.swirrl.com/">Swirrl</a> to convert open data to linked data format. This experience has opened my eyes to the immense power of linked data. I thought it was simply a good, extensible structure with some nice web-oriented features. What I&rsquo;ve actually found is some pretty fundamental differences that require quite a change in mind set.</p>
+
+<!--more-->
+
+
+<h2>Introduction to Linked Data</h2>
+
+<p>If you&rsquo;re already familiar with linked-data then jump down to read about the changes in perspective it&rsquo;s led me to see. If you&rsquo;re new to the topic or a bit rusty then you might want to read about the basic principles first.</p>
+
+<p>The recently updated <a href="http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140225/">RDF Primer 1.1</a> provides an excellent introduction to RDF. A brief summary follows.</p>
+
+<h3>Everything is a graph</h3>
+
+<p>Graphs, in the mathematical sense, are collections of nodes joined by edges. In linked-data this is described in terms of triples &ndash; statements which relate a subject to an object via a predicate:</p>
+
+<pre><code>&lt;subject&gt; &lt;predicate&gt; &lt;object&gt;
+&lt;Bob&gt; &lt;is a&gt; &lt;person&gt;
+&lt;Bob&gt; &lt;is a friend of&gt; &lt;Alice&gt;
+&lt;Bob&gt; &lt;is born on&gt; &lt;the 4th of July 1990&gt;
+</code></pre>
+
+<p>These statements are typically grouped together into graphs or contexts. A quad statement has a subject, predicate, object, and context (or graph).</p>
+
+<h3>URIs and Literal</h3>
+
+<p>The subjects and predicates are all identifiers symbolic representations that a supposed to be globally unique, called uniform resource identifiers (URIs). URIs are much like URLs (Uniform Resource Locators) that you may be familiar with using to find web pages (this &ldquo;finding&rdquo; process &ndash; requesting a URL in your browser to get a web page in response &ndash; is more technically known as &ldquo;dereferencing&rdquo;). URIs are a superset of URLs which also include URNs (Uniform Resource Names) such as ISBNs (International Standard Book Numbers).</p>
+
+<p>The objects can also be URIs or they can take the form of literal values (like strings, numbers and dates).</p>
+
+<h3>Turtle and SPARQL</h3>
+
+<p>There are a number of serialisation formats for RDF. By far the most readable is <a href="http://www.w3.org/TR/turtle/">Turtle</a>.</p>
+
+<pre><code>BASE   &lt;http://example.org/&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX schema: &lt;http://schema.org/&gt;
+
+&lt;bob#me&gt;
+    a foaf:Person ;
+    foaf:knows &lt;alice#me&gt; ;
+    schema:birthDate "1990-07-04"^^xsd:date ;
+</code></pre>
+
+<p><a href="http://www.w3.org/TR/rdf-sparql-query/">SPAQRL</a> is a query language for RDF. The query below selects Bob.</p>
+
+<pre><code>SELECT ?person WHERE { ?person foaf:knows &lt;http://example.org/alice#me&gt; }
+</code></pre>
+
+<h2>Thinking with a Linked Data Mindset</h2>
+
+<p>Now that we&rsquo;ve established the basics, we can go on to consider how this perspective can lead to a different mindset.</p>
+
+<h3>There&rsquo;s no distinction between data and metadata</h3>
+
+<p>Metadata is data that describes data. For example, the date a dataset was published. In traditional spreadsheets there&rsquo;s not always an obvious place to put this information. It&rsquo;s recorded in the filename or on a &ldquo;miscellanous details&rdquo; sheet. This isn&rsquo;t ideal as a) it&rsquo;s not generally referenceable, and b) it is easily lost if it&rsquo;s not copied around with the data itself.</p>
+
+<p>In RDF, metadata is stored in essentially the same way as data. It&rsquo;s triples all the way down! Certainly there are some vocabularies that are designed for metadata purposes (<a href="http://dublincore.org/">Dublin Core</a>, <a href="http://www.w3.org/TR/void/">VOID</a>, etc) but the content is described using the same structures and is amenable to the same sorts of interrogation techniques.</p>
+
+<p>This makes a lot of sense when you think about it. Metadata serves two purposes: to enable discovery and to allow the recording of facts that wouldn&rsquo;t otherwise fit.</p>
+
+<p>Discovery is the process of finding data relevant to your interests. Metadata summarises the scope of a dataset so that we can make requests like: &ldquo;show me all of the datasets published since XXXX about YYYY available on a neighbourhood level&rdquo;. But this question could be answered with the data itself. The distinction between metadata and data exists in large part, because of the way we package data. That is to say we typically present data in spreadsheets where the content and scope cannot be accessed without the user first acquiring and then interpreting the data. Obviously this can&rsquo;t be done in bulk unless the spreadsheets follow a common schema (some human interaction is otherwise necessary to prepare the data). If we remove the data from these packages, and allow deep inspection of it&rsquo;s content, then discovery can be acheived without resorting to a separate metadata index (although metadata descriptions can still make the process more efficient).</p>
+
+<p>The recording of facts that don&rsquo;t fit is usually a problem for metadata because it doesn&rsquo;t vary along the dimensions of the dataset in the traditional (tabular) way it&rsquo;s usually present. This isn&rsquo;t a problem for linked data.</p>
+
+<h3>The entity-relationship model doesn&rsquo;t (always) fit</h3>
+
+<p>The capacity of entity-relationship models is demonstrated by the popularity of object-oriented programming and relational-databases. Linked-data too can represent entity-relationship very naturally. The typically problem with the ER approach is that there&rsquo;s so often an exception to the rule. A given entity doesn&rsquo;t fit with the others and has a few odd properties that don&rsquo;t apply to everything else. Different relationships between instances of the same two types (typically recorded with primary/ foreign keys) are qualitatively different. Since in ER, information about an object is stored within it, the data model can become brittle. In linked-data, properties can be defined quite apart from objects.</p>
+
+<h3>There&rsquo;s no schema: arbitrary data can be added anywhere</h3>
+
+<p>In a traditional table representation, it&rsquo;s awkward to add arbitrary data. If you want to add a datum that doesn&rsquo;t fit into the schema then the schema must be modified. Adding new columns for a single datum is wasteful, and quickly leads to a bloated and confusing list of seldom-used fields.</p>
+
+<p>In part, this frustration gave rise to the Schemaless/ NoSQL databases. These systems sit at the other end of the scale. Without any structure it can be complex to make queries and maintain data integrity. These problems are shifted from the database to the application layer.</p>
+
+<p>In a graph representation, anything can be added anywhere. The schema is in the data itself and we can decide how much structure (like constraints and datatypes) we want to add.</p>
+
+<h3>The data is self-describing</h3>
+
+<p>This flexibility &ndash; the ability to add arbitrary facts without the constriction of a schema &ndash; can certainly seem daunting. Without a schema what is going to prevent errors, provide guarantees, or ensure consistency? In fact linked-data does have a schema of sorts. Vocabularies are used to describe the data. A few popular ontologies are worth mentioning:</p>
+
+<ul>
+<li><a href="http://www.w3.org/TR/rdf-schema/">RDFS</a>: the RDF Schema extends the basic RDF vocabulary to include a class and property system.</li>
+<li><a href="http://www.w3.org/TR/owl-primer/">OWL</a>: the Web Ontology Language is designed to represent rich and complex knowledge about things, groups of things, and relations between things</li>
+<li><a href="http://www.w3.org/TR/skos-primer">SKOS</a>: provides a model for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, folksonomies, and other similar types of controlled vocabulary.</li>
+</ul>
+
+
+<h3>There&rsquo;s no one right way to do things</h3>
+
+<p>The flexibility of the data format means that there are often several ways to model the same dataset. This can lead to a sort of options-paralysis! It often pays to make a choice for the sake of progress, then review it later once more of the pieces of the puzzle are in place. Realising that it doesn&rsquo;t need to be perfect first time is certainly liberating.</p>
+
+<h3>Naming is hard</h3>
+
+<p>Naming is one of the hardest problems in programming. Linked data modelling is 90% naming. The <a href="http://patterns.dataincubator.org/book/">Linked Data Patterns book</a> provides some useful suggestions for how to approach naming (URI design) in a range of contexts.</p>
+
+<p><a href="http://thomsonreuters.com/corporate/pdf/creating-value-with-identifiers-in-an-open-data-world.pdf">Identifiers have value</a>: clarifying ambiguity, promoting consensus, providing reliability, ensuring stability, and facilitating integration.</p>
+
+<h3>Vocabularies aren&rsquo;t settled</h3>
+
+<p>When developing a linked-data model, it&rsquo;s vital to understand the work done by others before you. After all, you need to adopt other vocabularies and URIs in order to link your data to the rest of the semantic web. There are lots of alternatives. The <a href="http://lov.okfn.org">Linked Open Vocabularies</a> site provides a way to search and compare vocabularies to help you decide which to use.</p>
+
+<h2>The Linked-Data Mind Set</h2>
+
+<p>In summary:</p>
+
+<ul>
+<li>Metadata can be data too, don&rsquo;t treat it as a second class citizen</li>
+<li>Use entities if it helps, but don&rsquo;t get too hung-up on them</li>
+<li>Let your schema grow and change over time as you learn more about the domain</li>
+<li>Use the core vocabularies to bring commonly understood structure to your data</li>
+<li>Experiment with different models to see what works best for your data and applications</li>
+<li>Create identifiers &ndash; it might be hard to start with, but everybody benefits in the long-term</li>
+<li>Stand on the shoulders of giants &ndash; follow patterns and adopt vocabularies</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
-    <updated>2014-05-08T10:02:00+02:00</updated>
+    <updated>2014-05-08T10:02:00+01:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
 
@@ -106,7 +232,7 @@
   <entry>
     <title type="html"><![CDATA[9 Tools Every Information Analyst Should Have]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/01/30/9-tools-every-information-analyst-should-have/"/>
-    <updated>2013-01-30T12:15:00+01:00</updated>
+    <updated>2013-01-30T12:15:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/01/30/9-tools-every-information-analyst-should-have</id>
     <content type="html"><![CDATA[<p>I was interested to read Rebecca Murphey&rsquo;s <a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/">Baseline for Front End Developers</a>  in which the author realizes that she has begun to take for granted a basic set of tools of the trade. She presents &ldquo;a few things that [she] wants to start expecting people to be familiar with, along with some resources you can use if you feel like you need to get up to speed&rdquo;. I&rsquo;d like to pay homage to that article and revise it in light of <em>the tools I believe are essential for an Information Analyst</em>. There is considerable overlap in the tools suggested although the application will differ.</p>
 
@@ -249,7 +375,7 @@ Information analysts ought to be able to handle (read, understand, parse and tra
   <entry>
     <title type="html"><![CDATA[Information Failure is not a Business Case]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case/"/>
-    <updated>2013-01-16T14:39:00+01:00</updated>
+    <updated>2013-01-16T14:39:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/01/16/information-failure-is-not-a-business-case</id>
     <content type="html"><![CDATA[<p>Ignorance is no excuse.</p>
 
@@ -269,7 +395,7 @@ Information analysts ought to be able to handle (read, understand, parse and tra
   <entry>
     <title type="html"><![CDATA[3 Metrics for Heath Economics Analysis]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis/"/>
-    <updated>2012-12-19T16:43:00+01:00</updated>
+    <updated>2012-12-19T16:43:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2012/12/19/3-metrics-for-heath-economics-analysis</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked to suggest measures for assessing health interventions from an economic perspective. Here are explanations of four commonly used analytical methods:</p>
 
@@ -312,35 +438,6 @@ Benchmarking against other interventions provides valuable contextual informatio
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Modest Evaluation and the Burden of Proof]]></title>
-    <link href="http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof/"/>
-    <updated>2012-12-11T16:04:00+01:00</updated>
-    <id>http://infonomics.ltd.uk/news/blog/2012/12/11/evaluation-and-the-burden-of-proof</id>
-    <content type="html"><![CDATA[<p>Impact evaluation studies are often called upon to put a price on something that is impossible to value. Evaluators ought to take this limitation seriously when designing their research methods. This post discusses the problem and suggests some responses.</p>
-
-<!-- more -->
-
-
-<p>The <strong>burden of proof</strong> is said to lie with the party making a claim. In order to convince someone of some truth, you are obliged to support your claim with evidence. The audience hearing your claim will make a judgement by scrutinising the evidence you present in support.</p>
-
-<p>This obligation should not be treated lightly. In some cases, it isn&rsquo;t possible to marshall evidence to support our intuitions. Indeed we can&rsquo;t always know what we don&rsquo;t know and so we shouldn&rsquo;t act like we can. Recognition of this limitation is known as <strong>epistemological modesty</strong>. This perspective doesn&rsquo;t mean that we have to admit defeat. Instead it is basis for action. Action that takes place with an awareness of our necessarily limited understanding.</p>
-
-<p>This approach has important lessons for evaluation. It suggests that we should avoid the temptation to reduce the nuances of impact evaluation to a single result (i.e. an absolute figure in pounds sterling for the overall impact or a summary cost-benefit ratio). Although it might seem appealing to be able to boast about a large absolute impact figure or to point to a high return on investment, the evidence required to support those definite figures may not be credible. We should not invite the audience to question and undermine the claims being made. Instead we ought to make modest claims that allow for the greatest degree of flexibility over the evidence. <strong>It&rsquo;s better to be confident in a modest conclusion than unconfident in a bold one</strong>. Our efforts should be focussed on validating our assumptions and understanding situations under which our conclusions might be undermined. Thus the burden of proof is lightened and the claims more credibile.</p>
-
-<p>Our ability to do this will, of course, depend upon the circumstance but examples of how this might work in practice include:</p>
-
-<ul>
-<li>establishing the minimum level of evidence required to demonstrate that benefits are at least equal to costs (rather than straining evidence to calculate the maximum plausible ratio of benefits to costs),</li>
-<li>comparing projects on the basis of the credibility of the evidence required to demonstrate that break-even position,</li>
-<li>deriving relative rather than absolute measures (so that we be certain that the comparisons are fair and reasonable,)</li>
-<li>using confidence-intervals rather than point-estimates to make inferences, and</li>
-<li>using evaluation to guide research (to identify otherwise implicit assumptions that need to be validated).</li>
-</ul>
 
 ]]></content>
   </entry>

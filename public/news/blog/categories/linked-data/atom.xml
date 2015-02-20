@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linked data | Infonomics Blog]]></title>
   <link href="http://infonomics.ltd.uk/news/blog/categories/linked-data/atom.xml" rel="self"/>
   <link href="http://infonomics.ltd.uk/news/"/>
-  <updated>2014-05-08T10:28:50+02:00</updated>
+  <updated>2015-02-20T17:22:06+00:00</updated>
   <id>http://infonomics.ltd.uk/news/</id>
   <author>
     <name><![CDATA[Robin Gower]]></name>
@@ -14,9 +14,225 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The Linked Data Mind Set]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set/"/>
+    <updated>2015-02-20T17:13:00+00:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2015/02/20/the-linked-data-mind-set</id>
+    <content type="html"><![CDATA[<p>Linked Data is data that has been structured and published in such a way that it may be interlinked as part of the Semantic Web. In contrast to the traditional web, which is aimed at human readers, the semantic web is designed to be machine readable. It is built upon standard web technologies &ndash; <acronym title="Hypertext Transfer Protocol">HTTP</acronym>, <acronym title="Resource Description Framework">RDF<acronym>, and <acronym title="Uniform Resource Identifier">URI</acronym>s.</p>
+
+<p>I&rsquo;ve been working with Manchester-based Linked Data pioneers <a href="http://www.swirrl.com/">Swirrl</a> to convert open data to linked data format. This experience has opened my eyes to the immense power of linked data. I thought it was simply a good, extensible structure with some nice web-oriented features. What I&rsquo;ve actually found is some pretty fundamental differences that require quite a change in mind set.</p>
+
+<!--more-->
+
+
+<h2>Introduction to Linked Data</h2>
+
+<p>If you&rsquo;re already familiar with linked-data then jump down to read about the changes in perspective it&rsquo;s led me to see. If you&rsquo;re new to the topic or a bit rusty then you might want to read about the basic principles first.</p>
+
+<p>The recently updated <a href="http://www.w3.org/TR/2014/NOTE-rdf11-primer-20140225/">RDF Primer 1.1</a> provides an excellent introduction to RDF. A brief summary follows.</p>
+
+<h3>Everything is a graph</h3>
+
+<p>Graphs, in the mathematical sense, are collections of nodes joined by edges. In linked-data this is described in terms of triples &ndash; statements which relate a subject to an object via a predicate:</p>
+
+<pre><code>&lt;subject&gt; &lt;predicate&gt; &lt;object&gt;
+&lt;Bob&gt; &lt;is a&gt; &lt;person&gt;
+&lt;Bob&gt; &lt;is a friend of&gt; &lt;Alice&gt;
+&lt;Bob&gt; &lt;is born on&gt; &lt;the 4th of July 1990&gt;
+</code></pre>
+
+<p>These statements are typically grouped together into graphs or contexts. A quad statement has a subject, predicate, object, and context (or graph).</p>
+
+<h3>URIs and Literal</h3>
+
+<p>The subjects and predicates are all identifiers symbolic representations that a supposed to be globally unique, called uniform resource identifiers (URIs). URIs are much like URLs (Uniform Resource Locators) that you may be familiar with using to find web pages (this &ldquo;finding&rdquo; process &ndash; requesting a URL in your browser to get a web page in response &ndash; is more technically known as &ldquo;dereferencing&rdquo;). URIs are a superset of URLs which also include URNs (Uniform Resource Names) such as ISBNs (International Standard Book Numbers).</p>
+
+<p>The objects can also be URIs or they can take the form of literal values (like strings, numbers and dates).</p>
+
+<h3>Turtle and SPARQL</h3>
+
+<p>There are a number of serialisation formats for RDF. By far the most readable is <a href="http://www.w3.org/TR/turtle/">Turtle</a>.</p>
+
+<pre><code>BASE   &lt;http://example.org/&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX schema: &lt;http://schema.org/&gt;
+
+&lt;bob#me&gt;
+    a foaf:Person ;
+    foaf:knows &lt;alice#me&gt; ;
+    schema:birthDate "1990-07-04"^^xsd:date ;
+</code></pre>
+
+<p><a href="http://www.w3.org/TR/rdf-sparql-query/">SPAQRL</a> is a query language for RDF. The query below selects Bob.</p>
+
+<pre><code>SELECT ?person WHERE { ?person foaf:knows &lt;http://example.org/alice#me&gt; }
+</code></pre>
+
+<h2>Thinking with a Linked Data Mindset</h2>
+
+<p>Now that we&rsquo;ve established the basics, we can go on to consider how this perspective can lead to a different mindset.</p>
+
+<h3>There&rsquo;s no distinction between data and metadata</h3>
+
+<p>Metadata is data that describes data. For example, the date a dataset was published. In traditional spreadsheets there&rsquo;s not always an obvious place to put this information. It&rsquo;s recorded in the filename or on a &ldquo;miscellanous details&rdquo; sheet. This isn&rsquo;t ideal as a) it&rsquo;s not generally referenceable, and b) it is easily lost if it&rsquo;s not copied around with the data itself.</p>
+
+<p>In RDF, metadata is stored in essentially the same way as data. It&rsquo;s triples all the way down! Certainly there are some vocabularies that are designed for metadata purposes (<a href="http://dublincore.org/">Dublin Core</a>, <a href="http://www.w3.org/TR/void/">VOID</a>, etc) but the content is described using the same structures and is amenable to the same sorts of interrogation techniques.</p>
+
+<p>This makes a lot of sense when you think about it. Metadata serves two purposes: to enable discovery and to allow the recording of facts that wouldn&rsquo;t otherwise fit.</p>
+
+<p>Discovery is the process of finding data relevant to your interests. Metadata summarises the scope of a dataset so that we can make requests like: &ldquo;show me all of the datasets published since XXXX about YYYY available on a neighbourhood level&rdquo;. But this question could be answered with the data itself. The distinction between metadata and data exists in large part, because of the way we package data. That is to say we typically present data in spreadsheets where the content and scope cannot be accessed without the user first acquiring and then interpreting the data. Obviously this can&rsquo;t be done in bulk unless the spreadsheets follow a common schema (some human interaction is otherwise necessary to prepare the data). If we remove the data from these packages, and allow deep inspection of it&rsquo;s content, then discovery can be acheived without resorting to a separate metadata index (although metadata descriptions can still make the process more efficient).</p>
+
+<p>The recording of facts that don&rsquo;t fit is usually a problem for metadata because it doesn&rsquo;t vary along the dimensions of the dataset in the traditional (tabular) way it&rsquo;s usually present. This isn&rsquo;t a problem for linked data.</p>
+
+<h3>The entity-relationship model doesn&rsquo;t (always) fit</h3>
+
+<p>The capacity of entity-relationship models is demonstrated by the popularity of object-oriented programming and relational-databases. Linked-data too can represent entity-relationship very naturally. The typically problem with the ER approach is that there&rsquo;s so often an exception to the rule. A given entity doesn&rsquo;t fit with the others and has a few odd properties that don&rsquo;t apply to everything else. Different relationships between instances of the same two types (typically recorded with primary/ foreign keys) are qualitatively different. Since in ER, information about an object is stored within it, the data model can become brittle. In linked-data, properties can be defined quite apart from objects.</p>
+
+<h3>There&rsquo;s no schema: arbitrary data can be added anywhere</h3>
+
+<p>In a traditional table representation, it&rsquo;s awkward to add arbitrary data. If you want to add a datum that doesn&rsquo;t fit into the schema then the schema must be modified. Adding new columns for a single datum is wasteful, and quickly leads to a bloated and confusing list of seldom-used fields.</p>
+
+<p>In part, this frustration gave rise to the Schemaless/ NoSQL databases. These systems sit at the other end of the scale. Without any structure it can be complex to make queries and maintain data integrity. These problems are shifted from the database to the application layer.</p>
+
+<p>In a graph representation, anything can be added anywhere. The schema is in the data itself and we can decide how much structure (like constraints and datatypes) we want to add.</p>
+
+<h3>The data is self-describing</h3>
+
+<p>This flexibility &ndash; the ability to add arbitrary facts without the constriction of a schema &ndash; can certainly seem daunting. Without a schema what is going to prevent errors, provide guarantees, or ensure consistency? In fact linked-data does have a schema of sorts. Vocabularies are used to describe the data. A few popular ontologies are worth mentioning:</p>
+
+<ul>
+<li><a href="http://www.w3.org/TR/rdf-schema/">RDFS</a>: the RDF Schema extends the basic RDF vocabulary to include a class and property system.</li>
+<li><a href="http://www.w3.org/TR/owl-primer/">OWL</a>: the Web Ontology Language is designed to represent rich and complex knowledge about things, groups of things, and relations between things</li>
+<li><a href="http://www.w3.org/TR/skos-primer">SKOS</a>: provides a model for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, folksonomies, and other similar types of controlled vocabulary.</li>
+</ul>
+
+
+<h3>There&rsquo;s no one right way to do things</h3>
+
+<p>The flexibility of the data format means that there are often several ways to model the same dataset. This can lead to a sort of options-paralysis! It often pays to make a choice for the sake of progress, then review it later once more of the pieces of the puzzle are in place. Realising that it doesn&rsquo;t need to be perfect first time is certainly liberating.</p>
+
+<h3>Naming is hard</h3>
+
+<p>Naming is one of the hardest problems in programming. Linked data modelling is 90% naming. The <a href="http://patterns.dataincubator.org/book/">Linked Data Patterns book</a> provides some useful suggestions for how to approach naming (URI design) in a range of contexts.</p>
+
+<p><a href="http://thomsonreuters.com/corporate/pdf/creating-value-with-identifiers-in-an-open-data-world.pdf">Identifiers have value</a>: clarifying ambiguity, promoting consensus, providing reliability, ensuring stability, and facilitating integration.</p>
+
+<h3>Vocabularies aren&rsquo;t settled</h3>
+
+<p>When developing a linked-data model, it&rsquo;s vital to understand the work done by others before you. After all, you need to adopt other vocabularies and URIs in order to link your data to the rest of the semantic web. There are lots of alternatives. The <a href="http://lov.okfn.org">Linked Open Vocabularies</a> site provides a way to search and compare vocabularies to help you decide which to use.</p>
+
+<h2>The Linked-Data Mind Set</h2>
+
+<p>In summary:</p>
+
+<ul>
+<li>Metadata can be data too, don&rsquo;t treat it as a second class citizen</li>
+<li>Use entities if it helps, but don&rsquo;t get too hung-up on them</li>
+<li>Let your schema grow and change over time as you learn more about the domain</li>
+<li>Use the core vocabularies to bring commonly understood structure to your data</li>
+<li>Experiment with different models to see what works best for your data and applications</li>
+<li>Create identifiers &ndash; it might be hard to start with, but everybody benefits in the long-term</li>
+<li>Stand on the shoulders of giants &ndash; follow patterns and adopt vocabularies</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How Information Entropy teaches us to Improve Data Quality]]></title>
+    <link href="http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality/"/>
+    <updated>2014-05-08T10:02:00+01:00</updated>
+    <id>http://infonomics.ltd.uk/news/blog/2014/05/08/how-information-entropy-teaches-us-to-improve-data-quality</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked by data-owners for guidance on sharing data, whether it&rsquo;s with me on consulting engagements or by organisations looking to <a href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/">release the potential</a> of their <a href="http://infonomics.ltd.uk/news/blog/categories/open-data/">open data</a>.</p>
+
+<p>A great place to start is the <a href="http://5stardata.info/">5 star deployment scheme</a> which describes a maturity curve for open data:</p>
+
+<ol>
+<li> ★ make your stuff available on the Web (i.e. in whatever format) under an open license</li>
+<li> ★★ make it available as structured machine-readable data (e.g. Excel instead of image scan of a table)</li>
+<li> ★★★  use non-proprietary formats (e.g. CSV instead of Excel)</li>
+<li> ★★★★   use <acronym title="Uniform Resource Identifier">URI</acronym>s to denote things, so that people can point at your stuff</li>
+<li> ★★★★★    link your data to other data to provide context</li>
+</ol>
+
+
+<p>This scheme certainly provides a strategic overview (release early/ improve later, embrace openness, aim to create linked open data) but it doesn&rsquo;t say much about specific questions such as: how should the data be structured or presented and what should it include?</p>
+
+<p>I have prepared the below advice based upon the experiences I&rsquo;ve had as a consumer of data, common obstacles to analysis that might have been avoided if the data had been prepared in the right way.</p>
+
+<p>In writing this, it occurs to me that the general principle is to increase information entropy. <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<!--more-->
+
+
+<h2>More is usually better than less (but don&rsquo;t just repeat everybody else)</h2>
+
+<p>While it is (comparatively) easy to ignore irrelevant or useless data, it is impossible to consider data that you don&rsquo;t have. If it&rsquo;s easy enough to share everything then do so. Bandwidth is cheap and it&rsquo;s relatively straightforward to filter data. Those analysing your data may have a different perspective on what&rsquo;s useful &ndash; you don&rsquo;t know what they don&rsquo;t know.</p>
+
+<p>This may be inefficient, particularly if the receiver is already in possession of the data you&rsquo;re sending. Where your data set includes data from a third party it may be better to provide a linking index to that data, rather than to replicate it wholesale. Indeed even if the data you have available to release is small, it may be made larger through linking it to other sources.</p>
+
+<h2>Codes and Codelists allow for linking (which makes your data more valuable)</h2>
+
+<p>There are positive network effects to data linking &ndash; the value of data grows exponentially as not only may it be linked with other data, but that other data may be linked with it. Indeed, perhaps the most valuable data sources of all are the indicies that allow for linking between datasets. This is often called reference data &ndash; sets of permissible values that ensure that two datasets refer to a common concept in the same terms. The quality of a dataset may be improved by adding reference data or codes from standard code lists. A typical example of this is the Government Statistical Service codes that the ONS use to identify geographic areas in the UK (this is much prefered over area names that can&rsquo;t be linked because of differences in spelling that prevent &ndash; &ldquo;Bristol&rdquo; or &ldquo;Bristol, City of&rdquo;, it&rsquo;s all <a href="http://statistics.data.gov.uk/explore?URI=http://statistics.data.gov.uk/id/statistical-geography/E06000023">E06000023</a> to me!).</p>
+
+<p>If you&rsquo;re creating your own codelist it ought to follow the C.E.M.E. principle &ndash; Comprehensively Exhaustive and Mutually Exclusive. If the codes don&rsquo;t cover a significant category you&rsquo;ll have lot&rsquo;s of &ldquo;other"s which will basically render the codelist useless. If the codes overlap then they can&rsquo;t be compared and the offending codes will ultimately need to be combined.</p>
+
+<h2>Normalised data is more reliable and more efficient</h2>
+
+<p>Here I&rsquo;m referring to <a href="http://en.wikipedia.org/wiki/Database_normalization">database normalisation</a>, rather than <a href="http://en.wikipedia.org/wiki/Normalization_%28statistics%29">statistical normalisation</a>. A normalised database is one with a minimum redundancy &ndash; the same data isn&rsquo;t repeated in multiple places. Look-up tables are used, for example, so that a categorical variable doesn&rsquo;t need to have it&rsquo;s categories repeated (and possibly misspelled). If you have a table with two or more rows that need to be changed at the same time (because in some place they&rsquo;re referring to the same thing) then some normalisation is required.</p>
+
+<p>Database normalisation ensures integrity (otherwise if two things purporting to be the same are different then how do you know which one is right?) and efficiency (repetition is waste).</p>
+
+<h2>Be precise, allow data users to simplify (as unsimplification isn&rsquo;t possible)</h2>
+
+<p>Be wary about introducing codes where they&rsquo;re unneccessary. It&rsquo;s unfortunately quite common to see a continuous variable represented by categories. This seems to be particularly common with Age. The problem is, of course, that different datasets make different choices about the age intervals, and so can&rsquo;t be compared. One might use &lsquo;working age&rsquo; 16-74 and another &lsquo;adult&rsquo; 15+. Unless data with the original precision can be found, then the analyst will need to apportion or interpolate values in between categories.</p>
+
+<p>Categories that do not divide a continuous dimension evenly are also problematic. This is particularly common in survey data, where respondents are presented with a closed-list of intervals as options, rather than being asked to provide an estimate of the value itself. The result is often that the majority of responses fall into one category, with few in the others. Presenting a closed-list of options is sometimes to be prefered for other reasons (e.g. in questions about income, categories might ellicit more responses) &ndash; if so the bounds should be chosen with reference to the expected frequencies of responses not the linear scale of the dimension (i.e. the categories should have similar numbers of observations in them, not occupy similar sized intervals along the range of the variable being categorised).</p>
+
+<p>Precise data can be codified into less precise data. The reverse process is not possible (or at least not accurately).</p>
+
+<h2>Represent Nothingness accurately (be clear even when you don&rsquo;t know)</h2>
+
+<p>It&rsquo;s important to distinguish between different types of nothingness. Nothing can be:</p>
+
+<ul>
+<li>Not available &ndash; where no value has been provided (the value is unknown);</li>
+<li>Null &ndash; where the value is known to be nothing;</li>
+<li>Zero &ndash; which is actually a specific number (although it may sometimes be used to represent null).</li>
+</ul>
+
+
+<p>A blank space or a number defaulting to 0 could be any of these types of nothingness. Not knowing which type of nothing you&rsquo;re dealing with can undermine analysis.</p>
+
+<h2>Provide metadata (describe and explain your data)</h2>
+
+<p>Metadata is data about data. It describes provenance (how the data was collected or derived) and coverage (e.g. years, places, limits to scope, criteria for categories), and provides warnings about assumptions and their implications for interpretation.</p>
+
+<p>Metadata isn&rsquo;t just a descriptive narrative. It can be analysed as data itself. It can tell someone whether or not your data is relevant to their requirements without them having to download and review it.</p>
+
+<h2>In summary &ndash; increase information entropy</h2>
+
+<p>These tips are all related to a general principle of increasing entropy. As explained above, <a href="http://en.wikipedia.org/wiki/Entropy_%28information_theory%29">Information entropy</a> is a measure of the expected value of a message. It is higher when that message (once delivered) is able to resolve more uncertainty. That is to say, that the message is able to say more things, more clearly, that are novel to the recipient.</p>
+
+<ul>
+<li>More data, whether in the original release or in the other sources that may be linked to it, means more variety, which means more uncertainty can be resolved, and thus more value provided.</li>
+<li>Duplication (and thus the potential for inconsistency) in the message means that it doesn&rsquo;t resolve uncertainty, and thus doesn&rsquo;t add value.</li>
+<li>Normalised data retains the same variety in a smaller, clearer message.</li>
+<li>Precise data can take on more possible values and thus clarify more uncertainty than codified data.</li>
+<li>Inaccurately represented nothingness also means that the message isn&rsquo;t able to resolve uncertainty (about which type of nothing applies).</li>
+<li>Metadata makes the recipient more certain about the content of your data</li>
+</ul>
+
+
+<p>Herein lies a counter-intuitive aspect of releasing data. It seems to be sensible to reduce variety and uncertainty in the data, to make sense and interpret the raw data before it is presented. To provide more rather than less ordered data. In fact such actions make the data less informative, and make it harder to re-interpret the data in a wider range of contexts. Indeed much of the impetus behind Big Data is the recognition that unstructured, raw data has immense information potential. It is the capacity for re-interpretation that makes data valuable.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Open Data Business Models]]></title>
     <link href="http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/"/>
-    <updated>2013-03-01T19:16:00+01:00</updated>
+    <updated>2013-03-01T19:16:00+00:00</updated>
     <id>http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models</id>
     <content type="html"><![CDATA[<p>Data doesn&rsquo;t make for a good tradable commodity, as discussed in a previous post on the <a href="/blog/2012/10/25/the-economics-of-open-data">Economics of Open Data</a>. Because of these market failures, there&rsquo;s a strong business case for the public sector to open data.
 But what about commercial business models for open data? This post explains why it&rsquo;s not just the public sector who ought to pay attention to this opportunity.

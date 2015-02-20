@@ -3,7 +3,7 @@ layout: post
 title: "How Information Entropy teaches us to Improve Data Quality"
 date: 2014-05-08 10:02
 comments: true
-categories: [ data, open-data, information, infonomics, information-entropy, big-data, methodology, linked-data ]
+categories: [ data, open data, information, infonomics, information entropy, big data, methodology, linked data ]
 ---
 I'm often asked by data-owners for guidance on sharing data, whether it's with me on consulting engagements or by organisations looking to [release the potential](http://infonomics.ltd.uk/news/blog/2013/03/01/open-data-business-models/) of their [open data](http://infonomics.ltd.uk/news/blog/categories/open-data/).
 
